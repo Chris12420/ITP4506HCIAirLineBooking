@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!-- TITLE -->
+    <title>IVE airline-Booking</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/awe-booking-font.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery-ui.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    
+    <!-- CSS COLOR -->
+    <link id="colorreplace" rel="stylesheet" type="text/css" href="css/colors/blue.css">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+
+
+    <!--    table-->
+    <link href="styles/demo_style.css" rel="stylesheet" type="text/css">
+    <link href="styles/smart_wizard.css" rel="stylesheet" type="text/css">
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            //  Wizard 1
+            $('#wizard1').smartWizard({
+                transitionEffect:'fade',
+                onFinish:onFinishCallback,
+                onLeaveStep  : leaveAStepCallback,
+            });
+            function leaveAStepCallback(obj, context){
+                // To check and enable finish button if needed
+                if (context.fromStep >= 2) {
+                    $('#wizard1').smartWizard('enableFinish', true);
+                }
+                return true;
+            }
+            //  Wizard 2
+            $('#wizard2').smartWizard({transitionEffect:'slide',onFinish:onFinishCallback});
+            function onFinishCallback(){
+                alert('Finish Called');
+            }
+        });
+    </script>
+<!--    <script src="flightseat.js"></script>-->
+
+
+</head>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+        <!-- PRELOADER -->
+<!--        <div class="preloader"></div>-->
+        <!-- END / PRELOADER -->
+
+
+        <!-- HEADER PAGE -->
+        <header id="header-page">
+            <div class="header-page__inner">
+                <div class="container">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <!-- END / LOGO -->
+
+                    <!-- NAVIGATION -->
+                    <nav class="navigation awe-navigation" data-responsive="1200">
+                        <ul class="menu-list">
+                            <li class="menu-item-has-children current-menu-parent">
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="flight.html">Flight</a>
+                                <ul class="sub-menu">
+                                    <li><a href="flight.html">Flight</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="myCart.html">Checkout</a>
+                                <ul class="sub-menu">
+                                    <li><a href="myCart.html">Your cart</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="PaymentReview.html">Review Order</a>
+                                <ul class="sub-menu">
+                                    <li><a href="PaymentReview.html">Review Order</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="luckWheel.html">Lucky Wheel</a>
+                                <ul class="sub-menu">
+                                    <li><a href="luckWheel.html">Lucky Wheel</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="redemption.html">Redemption</a>
+                                <ul class="sub-menu">
+                                    <li><a href="redemption.html">Redemption</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="login.html" id="loginEle">Log In</a>
+                                <ul class="sub-menu">
+                                    <li><a href="login.html">Log In</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        </li>
+
+                        </ul>
+                    </nav>
+                    <!-- END / NAVIGATION -->
+
+
+
+                </div>
+            </div>
+        </header>
+        <!-- END / HEADER PAGE -->
+
+
+
+
+
+
+
+        <!--        &lt;!&ndash; BREADCRUMB &ndash;&gt;-->
+<!--        <section>-->
+<!--            <div class="container">-->
+<!--                <div class="breadcrumb">-->
+<!--                    <ul>-->
+<!--                        <li><a href="#">Home</a></li>-->
+<!--                        <li><a href="#">Destinations</a></li>-->
+<!--                        <li><a href="#">North America</a></li>-->
+<!--                        <li><a href="#">USA</a></li>-->
+<!--                        <li><span>NewYork</span></li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </section>-->
+<!--        &lt;!&ndash; BREADCRUMB &ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+
+
+
+        <section class="product-detail">
+            <div class="container">
+
+<!--                title-->
+<!--                <div class="row">-->
+<!--                    <div class="col-md-12">-->
+<!--                        <div class="product-detail__info">-->
+<!--                            <div class="product-title">-->
+<!--                                <h2>Qatar : Hanoi - NYC</h2>-->
+<!--                            </div>-->
+<!--                            <div class="product-address">-->
+<!--                                <span>9579 Wishing Mount, Wynot, ND,  US. | +1-888-8765-1234</span>-->
+<!--                            </div>-->
+<!--                            <div class="product-email">-->
+<!--                                <i class="fa fa-envelope"></i>-->
+<!--                                <a href="#">Send Email Inquiry</a>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+
+
+
+
+
+
+
+                <table align="center" border="0" cellpadding="0" cellspacing="0">
+                    <tr><td>
+<!--                        <h2>Example: Multiple Wizards</h2>-->
+<!--                        &lt;!&ndash; Smart Wizard wizard1&ndash;&gt;-->
+<!--                        <h3>Wizard 1</h3>-->
+                        <div id="wizard1" class="swMain">
+                            <ul>
+                                <li><a href="#step-1">
+                                    <label class="stepNumber">1</label>
+                                    <span class="stepDesc">
+                   Step 1<br />
+                   <small>Confirm Flight Info</small>
+                </span>
+                                </a></li>
+
+
+
+<!--                                <li><a href="#step-2">-->
+<!--                                    <label class="stepNumber">2</label>-->
+<!--                                    <span class="stepDesc">-->
+<!--                   Step 2<br />-->
+<!--                   <small>Fill Personal Info</small>-->
+<!--                </span>-->
+<!--                                </a></li>-->
+
+
+
+<!--                                <li><a href="#step-3">-->
+<!--                                    <label class="stepNumber">3</label>-->
+<!--                                    <span class="stepDesc">-->
+<!--                   Step 3<br />-->
+<!--                   <small>Choose Flight Seat</small>-->
+<!--                </span>-->
+<!--                                </a></li>-->
+
+
+
+
+
+
+
+                                <li><a href="#step-2">
+                                    <label class="stepNumber">2</label>
+                                    <span class="stepDesc">
+                   Step 2<br />
+                   <small>Choose Flight Seat</small>
+                </span>
+                                </a></li>
+
+
+
+                                <li><a href="#step-3">
+                                    <label class="stepNumber">3</label>
+                                    <span class="stepDesc">
+                   Step 3<br />
+                   <small>Meal reserve</small>
+                </span>
+                                </a></li>
+
+
+
+                                <li><a href="#step-4">
+                                    <label class="stepNumber">4</label>
+                                    <span class="stepDesc">
+                   Step 4<br />
+                   <small>Flight Reminder</small>
+                </span>
+                                </a></li>
+                            </ul>
+                            <div id="step-1">
+                                <h2 class="StepTitle">Step 1 Content</h2>
+
+
+                                <!-- ITEM -->
+                                <div class="initiative__item">
+                                    <div class="initiative-top">
+                                        <br><br><br><br>
+                                        <div class="title">
+                                            <div class="from-to">
+                                                <span class="from">Ha Noi</span>
+                                                <i class="awe-icon awe-icon-arrow-right"></i>
+                                                <span class="to">New York</span>
+                                            </div>
+                                            <div class="time">Thursday 12 Feb 2015 | Total time: 33h 30m</div>
+                                        </div>
+                                        <div class="price">
+                                            <span class="amount">$1200</span>
+                                            <a href="sale-flight-popup.html" class="initiative-choose-other-open">Choose other</a>
+                                        </div>
+                                    </div>
+                                    <table class="initiative-table">
+                                        <tbody>
+                                        <tr>
+                                            <th>
+                                                <div class="item-thumb">
+                                                    <div class="image-thumb">
+                                                        <img src="images/flight/4.jpg" alt="">
+                                                    </div>
+                                                    <div class="text">
+                                                        <span>Quatar Airway</span>
+                                                        <p>QR-829</p>
+                                                        <span>Economy</span>
+                                                    </div>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="item-body">
+                                                    <div class="item-from">
+                                                        <h3>HAN</h3>
+                                                        <span class="time">14:15</span>
+                                                        <span class="date">Thu, 12 Feb, 2015</span>
+                                                        <p class="desc">John F Kennedy, New York</p>
+                                                    </div>
+                                                    <div class="item-time">
+                                                        <i class="fa fa-clock-o"></i>
+                                                        <span>10h 25m</span>
+                                                    </div>
+                                                    <div class="item-to">
+                                                        <h3>DOH</h3>
+                                                        <span class="time">23:10</span>
+                                                        <span class="date">Thu, 12 Feb, 2015</span>
+                                                        <p class="desc">Doha, Doha</p>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+<!--                                        <tr>-->
+<!--                                            <th>-->
+<!--                                                <div class="item-thumb">-->
+<!--                                                    <div class="image-thumb">-->
+<!--                                                        <img src="images/flight/4.jpg" alt="">-->
+<!--                                                    </div>-->
+<!--                                                    <div class="text">-->
+<!--                                                        <span>Quatar Airway</span>-->
+<!--                                                        <p>QR-829</p>-->
+<!--                                                        <span>Economy</span>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </th>-->
+<!--                                            <td>-->
+<!--                                                <div class="item-body">-->
+<!--                                                    <div class="item-from">-->
+<!--                                                        <h3>HAN</h3>-->
+<!--                                                        <span class="time">14:15</span>-->
+<!--                                                        <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                        <p class="desc">John F Kennedy, New York</p>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="item-time">-->
+<!--                                                        <i class="fa fa-clock-o"></i>-->
+<!--                                                        <span>10h 25m</span>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="item-to">-->
+<!--                                                        <h3>DOH</h3>-->
+<!--                                                        <span class="time">23:10</span>-->
+<!--                                                        <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                        <p class="desc">Doha, Doha</p>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- END / ITEM -->
+
+
+
+                            </div>
+
+
+                            <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+                            <link rel="stylesheet" type="text/css" href="css/jquery.seat-charts.css">
+                            <div id="step-2">
+                                <h2 class="StepTitle">Step 2 Content</h2>
+                                <link rel="stylesheet" href="css/flightseat.css" />
+
+                                <div class="wrapper">
+                                    <div class="container">
+                                        <!--                                        <h1>jQuery Seat Charts Plugin Demo</h1>-->
+                                        <div id="seat-map">
+                                            <div class="front-indicator">Front</div>
+                                        </div>
+
+                                        <br><div></div>
+                                        <div class="booking-details">
+                                            <h2>Booking Details</h2>
+                                            <h3> Selected Seats (<span id="counter">0</span>):</h3>
+                                            <ul id="selected-seats">
+                                            </ul>
+                                            Total: <b>$<span id="total">0</span></b>
+                                            <!--                                            <button class="checkout-button">Checkout &raquo;</button>-->
+
+
+                                        </div>
+                                        <div>
+                                            <div class="front-indicator">End</div>
+                                        </div>
+
+
+                                    </div>
+                                    <div id="legend"></div>
+                                </div>
+                            </div>
+
+                            <style>
+
+                                .booking-details{
+                                    font-size: 20px;
+                                    font-family: "Times New Roman", Times, serif;
+                                }
+                                .booking-details h2 {
+                                    margin: 25px 0 20px 0;
+                                    font-size: 17px;
+                                }
+                                .booking-details h3 {
+                                    margin: 5px 5px 0 0;
+                                    font-size: 14px;
+                                }
+                                div.seatCharts-cell {
+                                    color: #182C4E;
+                                    height: 25px;
+                                    width: 25px;
+                                    line-height: 25px;
+
+                                }
+                                div.seatCharts-seat {
+                                    color: #FFFFFF;
+                                    cursor: pointer;
+                                }
+                                div.seatCharts-row {
+                                    height: 35px;
+                                }
+                                div.seatCharts-seat.available {
+                                    background-color: #B9DEA0;
+
+                                }
+                                div.seatCharts-seat.available.first-class {
+                                    /* 	background: url(vip.png); */
+                                    background-color: #3a78c3;
+                                }
+                                div.seatCharts-seat.focused {
+                                    background-color: #76B474;
+                                }
+                                div.seatCharts-seat.selected {
+                                    background-color: #E6CAC4;
+                                }
+                                div.seatCharts-seat.unavailable {
+                                    background-color: #472B34;
+                                }
+                                div.seatCharts-container {
+                                    border-right: 1px dotted #adadad;
+                                    width: 200px;
+                                    padding: 20px;
+                                    float: left;
+                                }
+                                div.seatCharts-legend {
+                                    padding-left: 0px;
+                                    position: absolute;
+                                    bottom: 16px;
+                                }
+                                ul.seatCharts-legendList {
+                                    padding-left: 0px;
+                                }
+                                span.seatCharts-legendDescription {
+                                    margin-left: 5px;
+                                    line-height: 30px;
+                                }
+                                .checkout-button {
+                                    display: block;
+                                    margin: 10px 0;
+                                    font-size: 14px;
+                                }
+                                #selected-seats {
+                                    max-height: 450px;
+                                    overflow-y: scroll;
+                                    overflow-x: none;
+                                    width: 240px;
+                                }
+                                div.seatCharts-container {
+                                    min-width: 700px;
+                                }
+
+                                div.seatCharts-legend {
+                                    border: left;
+                                    padding-left: 10%;
+                                    /*padding-left: 0%;*/
+                                    /* position: absolute; */
+                                    bottom: 70%;
+                                }
+                                div.seatCharts-container {
+                                    padding-left: 300px;
+                                    width: 200px;
+                                    /* padding: 100px; */
+                                    float: left;
+                                }
+                            </style>
+
+
+                            <style>
+                                /*text animation */
+                                @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
+                                /** {*/
+                                /*    padding: 0;*/
+                                /*    margin: 0;*/
+                                /*    box-sizing: border-box;*/
+                                /*}*/
+
+                                body {
+                                    background-color:  #151719;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    min-height: 100vh;
+                                }
+                                .waviy {
+                                    position: relative;
+                                    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+                                    font-size: 60px;
+                                }
+                                .waviy span {
+                                    font-family: 'Alfa Slab One', cursive;
+                                    position: relative;
+                                    display: inline-block;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    animation: waviy 1s infinite;
+                                    animation-delay: calc(.1s * var(--i));
+
+                                }
+                                @keyframes waviy {
+                                    0%,40%,100% {
+                                        transform: translateY(0)
+                                    }
+                                    20% {
+                                        transform: translateY(-20px)
+                                    }
+                                }
+                            </style>
+                                 <div id="step-3">
+                                <h2 class="StepTitle">Step 3 Content</h2><br>
+                                     <main>
+                                         <section id="order-list">
+<!--                                             <h2>Order(s)</h2>-->
+                                             <div class="waviy" style="text-align: center; justify-content: center; color: black;">
+                                                 <span style="--i:1;color: black;">O</span>
+                                                 <span style="--i:2;color: black;">r</span>
+                                                 <span style="--i:3;color: black;">d</span>
+                                                 <span style="--i:4;color: black;">e</span>
+                                                                                                  <span style="--i:5; color: black;">r</span>
+                                                                                                  <span style="--i:6;color: black;">s</span>
+<!--                                                                                                  <span style="&#45;&#45;i:7">s</span>-->
+<!--                                                                                                  <span style="&#45;&#45;i:8">)</span>-->
+                                                 <!--                                                 <span style="&#45;&#45;i:9">I</span>-->
+                                                 <!--                                                 <span style="&#45;&#45;i:10">N</span>-->
+                                             </div>
+                                             <table id="order-tbl">
+                                             </table>
+                                         </section>
+                                         <section id="menu" style="overflow-y: auto;
+                                             height: 610px;">
+<!--                                             <div style="height: 300px;"><img src="images/foodMenu.gif" height="80px;"></div>-->
+                                             <div class="waviy" style="text-align: center; justify-content: center; color: black;">
+                                                 <span style="--i:1;color: black;">M</span>
+                                                 <span style="--i:2;color: black;">e</span>
+                                                 <span style="--i:3;color: black;">n</span>
+                                                 <span style="--i:4;color: black;">u</span>
+<!--                                                 <span style="&#45;&#45;i:5">V</span>-->
+<!--                                                 <span style="&#45;&#45;i:6">U</span>-->
+<!--                                                 <span style="&#45;&#45;i:7">D</span>-->
+<!--                                                 <span style="&#45;&#45;i:8">D</span>-->
+<!--                                                 <span style="&#45;&#45;i:9">I</span>-->
+<!--                                                 <span style="&#45;&#45;i:10">N</span>-->
+                                             </div>
+                                            </section>
+                                     </main>
+
+                                     <style>
+
+                                         #order-list th{
+                                             font-size: 20px;
+                                         }
+                                         #order-list td{
+                                             font-size: 20px;
+                                         }
+                                         *, *::before, *::after {
+                                             box-sizing: border-box;
+                                         }
+
+                                         *::-webkit-scrollbar {
+                                             width: 5px;
+                                         }
+
+                                         *::-webkit-scrollbar-track {
+                                             background: rgba(0,0,0,.1);
+                                         }
+
+                                         *::-webkit-scrollbar-thumb {
+                                             background: #bbb;
+                                             border-radius: 9em;
+                                         }
+
+                                         *::-webkit-scrollbar-thumb:hover {
+                                             background: #aaa;
+                                         }
+
+                                         /*body {*/
+                                         /*    margin: 0;*/
+                                         /*    background: #eee url("http://source.unsplash.com/U9-D7wwurT8/1080x1920") 50% 35%/cover no-repeat padding-box padding-box local;*/
+                                         /*    font-family: 'Open Sans', sans-serif;*/
+                                         /*    font-size: 14px;*/
+                                         /*    line-height: 21px;*/
+                                         /*}*/
+
+                                         h1 {
+                                             margin: 0;
+                                             padding: 21px;
+                                             background: #eb4d4b;
+                                             color: #fff;
+                                             font-family: 'Dancing Script', cursive;
+                                             font-size: 59px;
+                                             line-height: 63px;
+                                             text-align: center;
+                                         }
+
+                                         h2 {
+                                             font-family: 'Dancing Script', cursive;
+                                             font-size: 37px;
+                                             line-height: 42px;
+                                             margin-top: 21px;
+                                             margin-bottom: 21px;
+                                         }
+
+                                         main {
+                                             display: flex;
+                                             /*margin: 21px auto 0 auto;*/
+                                             max-width: 1024px;
+                                             max-height: calc(100vh - 126px);
+                                             flex-direction: row;
+                                         }
+
+                                         /*section {*/
+                                         /*    margin: 21px;*/
+                                         /*    padding: 0 21px 10px 21px;*/
+                                         /*    width: calc(50% - 2px);*/
+                                         /*    background: rgba(255,255,255,.7);*/
+                                         /*    !*border: 1px solid #ddd;*!*/
+                                         /*    !*border-radius: 10px;*!*/
+                                         /*    !*overflow-y: auto;*!*/
+                                         /*    !*height: 1200px;*!*/
+                                         /*}*/
+
+                                         section {
+                                             /*margin: 21px;*/
+                                             padding: 0 21px 10px 21px;
+                                             width: calc(95% - 2px);
+                                             /*background: rgba(255,255,255,.7);*/
+                                             border: 1px solid #ddd;
+                                             border-radius: 10px;
+                                             /*overflow-y: auto;*/
+                                             /*height: 1200px;*/
+                                         }
+
+                                         #order-list {
+                                             display: flex;
+                                             flex-direction: column;
+                                             margin-right: 0;
+                                         }
+
+                                         table {
+                                             margin-bottom: 21px;
+                                             /*width: 100%;*/
+                                             border: none;
+                                         }
+
+                                         table, th, td {
+                                             border-collapse: collapse;
+                                         }
+
+                                         tr:not(:first-child):not(:last-child) {
+                                             border-bottom: 1px solid #ddd;
+                                         }
+
+                                         th, td {
+                                             padding: 4px 6px;
+                                             text-align: left;
+                                         }
+
+                                         th {
+                                             background: #ffbe76;
+                                             color: #fff;
+                                         }
+
+                                         .menu-item {
+                                             display: flex;
+                                             align-items: center;
+                                             border-bottom: 1px solid #ddd;
+                                         }
+
+                                         .menu-item:last-child {
+                                             border-bottom: none;
+                                         }
+
+                                         .menu-item h4, .menu-item p {
+                                             margin: 8px;
+                                         }
+
+                                         .menu-item .price {
+                                             margin-left: auto;
+                                         }
+
+                                         .qty {
+                                             margin-right: 8px;
+                                             padding: 2px 4px;
+                                             width: 40px;
+                                         }
+
+                                         .add-btn {
+                                             padding: 6px 10px;
+                                             background: #6ab04c;
+                                             color: #fff;
+                                             border: none;
+                                             border-radius: 3px;
+                                             cursor: pointer;
+                                         }
+
+                                         .del-btn {
+                                             display: block;
+                                             text-align: center;
+                                         }
+
+                                         .del-btn:hover { opacity: .75 }
+
+                                         .del-btn .fa {
+                                             color: #eb4d4b;
+                                         }
+
+                                         #export {
+                                             margin-top: auto;
+                                             padding: 3px 5px;
+                                             background: #eee;
+                                             border: 1px solid #ddd;
+                                             align-self: flex-end;
+                                             font-size: 12px;
+                                             cursor: pointer;
+                                         }
+                                     </style>
+
+                                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+                                     <script>
+                                         // Declare variables
+                                         const menu_container = document.getElementById('menu');
+                                         const order_tbl = document.getElementById('order-tbl');
+                                         const menu = [
+                                             {
+                                                 name: "Rice with fried fish",
+                                                 price: 72
+                                             },
+                                             {
+                                                 name: "Rice with chicken",
+                                                 price: 68
+                                             },
+                                             {
+                                                 name: "Rice with grill rib",
+                                                 price: 83
+                                             },
+                                             {
+                                                 name: "Rice with Dieu Hong fish",
+                                                 price: 90
+                                             },
+                                             {
+                                                 name: "Rice with cat fish",
+                                                 price: 85
+                                             },
+                                             {
+                                                 name: "Fried rice with sea food",
+                                                 price: 84
+                                             },
+                                             {
+                                                 name: "Fried rice with fried chicken",
+                                                 price: 87
+                                             },
+                                             {
+                                                 name: "Fried rice with boiled chicken",
+                                                 price: 82
+                                             },
+                                             {
+                                                 name: "Noodles with sea food",
+                                                 price: 72
+                                             },
+                                             {
+                                                 name: "Noodles with egg",
+                                                 price: 79
+                                             },
+                                             {
+                                                 name: "Noodles with chicken",
+                                                 price: 81
+                                             },
+                                             {
+                                                 name: "Noodles with lamb",
+                                                 price: 86
+                                             },
+                                             {
+                                                 name: "Noodles with clams",
+                                                 price: 81
+                                             },
+                                             {
+                                                 name: "Coca-Cola",
+                                                 price: 15
+                                             },
+                                             {
+                                                 name: "Apple Juice",
+                                                 price: 25
+                                             },
+                                             {
+                                                 name: "Coffee",
+                                                 price: 29
+                                             },
+                                             {
+                                                 name: "beer(18+)",
+                                                 price: 30
+                                             },
+                                             {
+                                                 name: "Whisky(18+)",
+                                                 price: 39
+                                             }
+                                         ];
+                                         var order_list = []; // Create empty oder_list arr
+
+                                         function updateOrderList() {
+                                             let str = "";
+                                             var export_btn = document.getElementById('export');
+
+                                             if (order_list.length > 0) {
+                                                 // Text align
+                                                 // str += '<colgroup>';
+                                                 // str += '<col style="text-align: center !important;">';
+                                                 // str += '<col span="3">';
+                                                 // str += '</colgroup>';
+
+                                                 str += '<tr>';
+                                                 str += '<th>#</th>';
+                                                 str += '<th>Name</th>';
+                                                 str += '<th>Quantity</th>';
+                                                 str += '<th>Action</th>';
+                                                 str += '</tr>';
+
+                                                 order_list.forEach((item, index) => {
+                                                     str += '<tr>';
+                                                     str += '<td>' + (index + 1) + '</td>';
+                                                     str += '<td>' + menu[item.id].name + '</td>';
+                                                     str += '<td>' + item.quantity + '</td>';
+                                                     str += '<td><a class="del-btn" href="javascript:void(0)" onclick="deleteItem(' + index + ')"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>';
+                                                     str += '</tr>';
+                                                 });
+                                                 // Create export btn if not exist
+                                                 if (!export_btn) {
+                                                     order_tbl.insertAdjacentHTML('afterend', '<button id="export" onclick="exportPDF()">Export PDF <i class="fa fa-file-pdf-o" aria-hidden="true"></i></button>');
+                                                 }
+                                             }
+                                             else {
+                                                 str += '<tr">';
+                                                 str += '<td>Your order list is empty</td>';
+                                                 str += '</tr>';
+                                                 if (export_btn) {
+                                                     export_btn.remove();
+                                                 }
+                                             }
+
+                                             order_tbl.innerHTML = str;
+                                         }
+
+                                         function addItem(id) {
+                                             let qty = document.getElementsByClassName('qty')[id];
+                                             let qty_val = Number(qty.value); // Cast to Interger
+                                             // If already exist then increase qty
+                                             for (let i = 0; i < order_list.length; i++) {
+                                                 if (order_list[i].id == id) {
+                                                     order_list[i].quantity =  order_list[i].quantity + qty_val;
+                                                     updateOrderList();
+                                                     return;
+                                                 }
+                                             }
+                                             // If not add new item to the arr
+                                             order_list.push({id: id, quantity: qty_val});
+                                             updateOrderList();
+                                         }
+
+                                         function deleteItem(id) {
+                                             order_list.splice(id, 1); // Remove 1 item at 'id' position
+                                             updateOrderList();
+                                         }
+
+                                         function exportPDF() {
+                                             let doc = new jsPDF();
+                                             doc.text(order_tbl.innerText, 20, 20);
+                                             doc.save('test.pdf');
+                                         }
+
+                                         // Initialize
+                                         function initApp() {
+                                             for (let i = 0; i < menu.length; i++) {
+                                                 let str = '';
+                                                 if (menu[i].name === "Rice with fried fish"){
+                                                     str += '<div style="margin-top: 50px;"><h4>Rice</h4>' +
+                                                         '</div>';
+                                                 }else if (menu[i].name === "Noodles with sea food"){
+                                                     str += '<div><h4>Noodle</h4></div>';
+                                                 }else if (menu[i].name === "Coca-Cola"){
+                                                     str += '<div><h4>Drink</h4></div>';
+                                                 }
+                                                 str += '<div class="menu-item">';
+                                                 str += '<p class="food-name">' + menu[i].name + '</p>';
+                                                 if (menu[i].name === "Rice with fried fish"){
+                                                     str += '<div> <a class="Your_class" href="#" title="I ❤ " data-image="images/Ricewithfriedfish.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Rice with chicken"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Ricewithchicken.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Rice with grill rib"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Ricewithgrillrib.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Rice with Dieu Hong fish"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/RicewithDieuHongfish.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Rice with cat fish"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Ricewithcatfish.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Fried rice with sea food"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Friedricewithseafood.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Fried rice with fried chicken"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Friedricewithfriedchicken.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Fried rice with boiled chicken"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Friedricewithboiledchicken.png">口</a> </div>';
+                                                 }
+
+                                                 // noodle
+                                                 else if(menu[i].name === "Noodles with sea food"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Noodleswithseafood.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Noodles with egg"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Noodleswithegg.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Noodles with chicken"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Noodleswithchicken.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Noodles with lamb"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Noodleswithlamb.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Noodles with clams"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Noodleswithclams.png">口</a> </div>';
+                                                 }
+
+
+
+                                                 else if(menu[i].name === "Hu tieu with sea food"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Friedricewithboiledchicken.png">口</a> </div>';
+                                                 }else if(menu[i].name === "Chilli"){
+                                                     str += '<div> <a class="Your_class" href="#" data-image="images/Friedricewithboiledchicken.png">口</a> </div>';
+                                                 }
+
+                                                 // str += '<div> <a class="Your_class" href="#" data-image="https://i.stack.imgur.com/q1b4w.jpg?s=64&g=1">口</a> </div>';
+                                                 str += '<p class="price">' + (menu[i].price == 0 ? 'Free' : '$'+ menu[i].price ) + '</p>';
+                                                 str += '<input class="qty" type="number" name="qty" value="1" min="1" max="100" >';
+                                                 str += '<button class="add-btn" type="button" value="' + i + '" onclick="addItem(' + i +')">ADD</button>';
+                                                 str += '</div>';
+                                                 menu_container.insertAdjacentHTML('beforeend', str);
+                                             }
+                                             updateOrderList();
+                                         }
+
+                                         initApp();
+
+
+                                         $(".Your_class").mouseenter(function(){
+                                             if ($(this).parent('div').children('div.image').length) {
+                                                 $(this).parent('div').children('div.image').show();
+                                             } else {
+                                                 var image_name=$(this).data('image');
+                                                 var imageTag='<div class="image" style="position:absolute;">'+'<img src="'+image_name+'" alt="image" height="100" />'+'</div>';
+                                                 $(this).parent('div').append(imageTag);
+                                             }
+                                         });
+
+                                         $(".Your_class").mouseleave(function(){
+                                             $(this).parent('div').children('div.image').hide();
+                                         });
+                                     </script>
+
+                                     <style>
+                                         #order-tbl{
+                                             text-align: center; margin-top: 50px; border-top: 50px; padding-top: 50px;
+                                         }
+
+
+
+                                     </style>
+
+
+
+                                </div>
+
+
+<!--                                <p class="text" style="visibility: hidden;">-->
+<!--                                    You have selected <span id="count">0</span> seat for a price of RS.<span-->
+<!--                                        id="total"-->
+<!--                                >0</span-->
+<!--                                >-->
+<!--                                </p>-->
+
+
+
+
+
+
+
+                                <div id="step-4">
+                                    <h2 class="StepTitle">Step 3 Content</h2>
+
+                                    <div id="tabs-4" style=" font-family: Arial, Helvetica, sans-serif;">
+                                        <table class="good-to-know-table">
+                                            <tbody>
+                                            <tr>
+                                                <th>
+                                                    <p>Check in</p>
+                                                </th>
+                                                <td>
+                                                    <p>From 15:00 hours</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Check out</p>
+                                                </th>
+                                                <td>
+                                                    <p>Until 11:00 hours</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Cancellation / prepayment</p>
+                                                </th>
+                                                <td>
+                                                    <p>Cancellation and prepayment policies vary according to room type. Please check the room conditions when selecting your room above.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Children and extra beds</p>
+                                                </th>
+                                                <td>
+                                                    <p>The maximum number of children’s cots/cribs in a room is 1.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Internet</p>
+                                                </th>
+                                                <td>
+                                                    <p>free! WiFi is available in all areas and is free of charge.</p>
+                                                    <p><span class="light">Free</span>children under 2 years stay free of charge when using existing beds.</p>
+                                                    <p><span class="light">Free</span>children under 2 years stay free of charge when using existing beds.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Pets</p>
+                                                </th>
+                                                <td>
+                                                    <p>Pets are allowed. Charges may be applicable.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Groups</p>
+                                                </th>
+                                                <td>
+                                                    <p>When booking for more than 11 persons, different policies and additional supplements may apply.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Accepted cards for payment</p>
+                                                </th>
+                                                <td>
+                                                    <p><img src="images/paypal2.png" alt=""></p>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        <!-- End SmartWizard Content 1 -->
+                        <br />  &nbsp;
+                    </td></tr>
+                </table>
+
+
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="product-tabs tabs">
+                            <ul>
+                                <li>
+                                    <a href="#tabs-1">Initiative</a>
+                                </li>
+                                <li>
+                                    <a href="#tabs-2">Services on-flight</a>
+                                </li>
+                                <li>
+                                    <a href="#tabs-3">Good to know</a>
+                                </li>
+                                <li>
+                                    <a href="#tabs-4">Review &amp; rating</a>
+                                </li>
+                            </ul>
+                            <div class="product-tabs__content">
+                                <div id="tabs-1">
+                                    <div class="initiative">
+
+
+
+<!--                                        &lt;!&ndash; ITEM &ndash;&gt;-->
+<!--                                        <div class="initiative__item">-->
+<!--                                            <div class="initiative-top">-->
+<!--                                                <div class="title">-->
+<!--                                                    <div class="from-to">-->
+<!--                                                        <span class="from">Ha Noi</span>-->
+<!--                                                        <i class="awe-icon awe-icon-arrow-right"></i>-->
+<!--                                                        <span class="to">New York</span>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="time">Thursday 12 Feb 2015 | Total time: 33h 30m</div>-->
+<!--                                                </div>-->
+<!--                                                <div class="price">-->
+<!--                                                    <span class="amount">$1200</span>-->
+<!--                                                    <a href="sale-flight-popup.html" class="initiative-choose-other-open">Choose other</a>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <table class="initiative-table">-->
+<!--                                                <tbody>-->
+<!--                                                    <tr>-->
+<!--                                                        <th>-->
+<!--                                                            <div class="item-thumb">-->
+<!--                                                                <div class="image-thumb">-->
+<!--                                                                    <img src="images/flight/4.jpg" alt="">-->
+<!--                                                                </div>-->
+<!--                                                                <div class="text">-->
+<!--                                                                    <span>Quatar Airway</span>-->
+<!--                                                                    <p>QR-829</p>-->
+<!--                                                                    <span>Economy</span>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </th>-->
+<!--                                                        <td>-->
+<!--                                                            <div class="item-body">-->
+<!--                                                                <div class="item-from">-->
+<!--                                                                    <h3>HAN</h3>-->
+<!--                                                                    <span class="time">14:15</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">John F Kennedy, New York</p>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-time">-->
+<!--                                                                    <i class="fa fa-clock-o"></i>-->
+<!--                                                                    <span>10h 25m</span>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-to">-->
+<!--                                                                    <h3>DOH</h3>-->
+<!--                                                                    <span class="time">23:10</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">Doha, Doha</p>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                    <tr>-->
+<!--                                                        <th>-->
+<!--                                                            <div class="item-thumb">-->
+<!--                                                                <div class="image-thumb">-->
+<!--                                                                    <img src="images/flight/4.jpg" alt="">-->
+<!--                                                                </div>-->
+<!--                                                                <div class="text">-->
+<!--                                                                    <span>Quatar Airway</span>-->
+<!--                                                                    <p>QR-829</p>-->
+<!--                                                                    <span>Economy</span>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </th>-->
+<!--                                                        <td>-->
+<!--                                                            <div class="item-body">-->
+<!--                                                                <div class="item-from">-->
+<!--                                                                    <h3>HAN</h3>-->
+<!--                                                                    <span class="time">14:15</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">John F Kennedy, New York</p>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-time">-->
+<!--                                                                    <i class="fa fa-clock-o"></i>-->
+<!--                                                                    <span>10h 25m</span>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-to">-->
+<!--                                                                    <h3>DOH</h3>-->
+<!--                                                                    <span class="time">23:10</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">Doha, Doha</p>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </tbody>-->
+<!--                                            </table>-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash; END / ITEM &ndash;&gt;-->
+
+
+
+
+<!--                                        &lt;!&ndash; ITEM &ndash;&gt;-->
+<!--                                        <div class="initiative__item">-->
+<!--                                            <div class="initiative-top">-->
+<!--                                                <div class="title">-->
+<!--                                                    <div class="from-to">-->
+<!--                                                        <span class="from">Ha Noi</span>-->
+<!--                                                        <i class="awe-icon awe-icon-arrow-right"></i>-->
+<!--                                                        <span class="to">New York</span>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="time">Thursday 12 Feb 2015 | Total time: 33h 30m</div>-->
+<!--                                                </div>-->
+<!--                                                <div class="price">-->
+<!--                                                    <span class="amount">$1200</span>-->
+<!--                                                    <a href="sale-flight-popup.html" class="initiative-choose-other-open">Choose other</a>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                            <table class="initiative-table">-->
+<!--                                                <tbody>-->
+<!--                                                    <tr>-->
+<!--                                                        <th>-->
+<!--                                                            <div class="item-thumb">-->
+<!--                                                                <div class="image-thumb">-->
+<!--                                                                    <img src="images/flight/4.jpg" alt="">-->
+<!--                                                                </div>-->
+<!--                                                                <div class="text">-->
+<!--                                                                    <span>Quatar Airway</span>-->
+<!--                                                                    <p>QR-829</p>-->
+<!--                                                                    <span>Economy</span>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </th>-->
+<!--                                                        <td>-->
+<!--                                                            <div class="item-body">-->
+<!--                                                                <div class="item-from">-->
+<!--                                                                    <h3>HAN</h3>-->
+<!--                                                                    <span class="time">14:15</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">John F Kennedy, New York</p>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-time">-->
+<!--                                                                    <i class="fa fa-clock-o"></i>-->
+<!--                                                                    <span>10h 25m</span>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-to">-->
+<!--                                                                    <h3>DOH</h3>-->
+<!--                                                                    <span class="time">23:10</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">Doha, Doha</p>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                    <tr>-->
+<!--                                                        <th>-->
+<!--                                                            <div class="item-thumb">-->
+<!--                                                                <div class="image-thumb">-->
+<!--                                                                    <img src="images/flight/4.jpg" alt="">-->
+<!--                                                                </div>-->
+<!--                                                                <div class="text">-->
+<!--                                                                    <span>Quatar Airway</span>-->
+<!--                                                                    <p>QR-829</p>-->
+<!--                                                                    <span>Economy</span>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </th>-->
+<!--                                                        <td>-->
+<!--                                                            <div class="item-body">-->
+<!--                                                                <div class="item-from">-->
+<!--                                                                    <h3>HAN</h3>-->
+<!--                                                                    <span class="time">14:15</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">John F Kennedy, New York</p>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-time">-->
+<!--                                                                    <i class="fa fa-clock-o"></i>-->
+<!--                                                                    <span>10h 25m</span>-->
+<!--                                                                </div>-->
+<!--                                                                <div class="item-to">-->
+<!--                                                                    <h3>DOH</h3>-->
+<!--                                                                    <span class="time">23:10</span>-->
+<!--                                                                    <span class="date">Thu, 12 Feb, 2015</span>-->
+<!--                                                                    <p class="desc">Doha, Doha</p>-->
+<!--                                                                </div>-->
+<!--                                                            </div>-->
+<!--                                                        </td>-->
+<!--                                                    </tr>-->
+<!--                                                </tbody>-->
+<!--                                            </table>-->
+<!--                                        </div>-->
+<!--                                        &lt;!&ndash; END / ITEM &ndash;&gt;-->
+                                    </div>
+                                </div>
+                                <div id="tabs-2">
+                                    <div class="services-on-flight">
+                                        <div class="item">
+                                            <label>
+                                                <input type="checkbox" name="serviceitem">
+                                                <i class="awe-icon awe-icon-check"></i>
+                                                <span>Entertainment</span>
+                                            </label>
+                                        </div>
+                                        <div class="item">
+                                            <label>
+                                                <input type="checkbox" name="serviceitem">
+                                                <i class="awe-icon awe-icon-check"></i>
+                                                <span>Communication</span>
+                                            </label>
+                                        </div>
+                                        <div class="item">
+                                            <label>
+                                                <input type="checkbox" name="serviceitem">
+                                                <i class="awe-icon awe-icon-check"></i>
+                                                <span>Inflight Magazine</span>
+                                            </label>
+                                        </div>
+                                        <div class="item">
+                                            <label>
+                                                <input type="checkbox" name="serviceitem">
+                                                <i class="awe-icon awe-icon-check"></i>
+                                                <span>Inflight Cuisine & Beverages</span>
+                                            </label>
+                                        </div>
+                                        <div class="item">
+                                            <label>
+                                                <input type="checkbox" name="serviceitem">
+                                                <i class="awe-icon awe-icon-check"></i>
+                                                <span>Your Health Inflight</span>
+                                            </label>
+                                        </div>
+                                        <div class="item">
+                                            <label>
+                                                <input type="checkbox" name="serviceitem">
+                                                <i class="awe-icon awe-icon-check"></i>
+                                                <span>Inflight Duty Free</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tabs-3">
+                                    <table class="good-to-know-table">
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <p>Check in</p>
+                                                </th>
+                                                <td>
+                                                    <p>From 15:00 hours</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Check out</p>
+                                                </th>
+                                                <td>
+                                                    <p>Until 11:00 hours</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Cancellation / prepayment</p>
+                                                </th>
+                                                <td>
+                                                    <p>Cancellation and prepayment policies vary according to room type. Please check the room conditions when selecting your room above.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Children and extra beds</p>
+                                                </th>
+                                                <td>
+                                                    <p>The maximum number of children’s cots/cribs in a room is 1.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Internet</p>
+                                                </th>
+                                                <td>
+                                                    <p>free! WiFi is available in all areas and is free of charge.</p>
+                                                    <p><span class="light">Free</span>children under 2 years stay free of charge when using existing beds.</p>
+                                                    <p><span class="light">Free</span>children under 2 years stay free of charge when using existing beds.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Pets</p>
+                                                </th>
+                                                <td>
+                                                    <p>Pets are allowed. Charges may be applicable.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Groups</p>
+                                                </th>
+                                                <td>
+                                                    <p>When booking for more than 11 persons, different policies and additional supplements may apply.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <p>Accepted cards for payment</p>
+                                                </th>
+                                                <td>
+                                                    <p><img src="images/paypal2.png" alt=""></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div id="tabs-4">
+                                    <div id="reviews">
+                                        <div class="rating-info">
+                                            <div class="average-rating-review good">
+                                                <span class="count">7.5</span>
+                                                <em>Average rating</em>
+                                                <span>Good</span>
+                                            </div>
+                                            <ul class="rating-review">
+                                                <li>
+                                                    <em>Facility</em>
+                                                    <span>7.5</span>
+                                                </li>
+                                                <li>
+                                                    <em>Human</em>
+                                                    <span>9.0</span>
+                                                </li>
+                                                <li>
+                                                    <em>Service</em>
+                                                    <span>9.5</span>
+                                                </li>
+                                                <li>
+                                                    <em>Interesting</em>
+                                                    <span>8.7</span>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="write-review">Write a review</a>
+                                        </div>
+                                        <div id="add_review">
+                                            <h3 class="comment-reply-title">Add a review</h3>
+                                            <form>
+                                                <div class="comment-form-author">
+                                                    <label for="author">Name <span class="required">*</span></label>
+                                                    <input id="author" type="text">
+                                                </div>
+                                                <div class="comment-form-email">
+                                                    <label for="email">Email <span class="required">*</span></label>
+                                                    <input id="email" type="text">
+                                                </div>
+                                                <div class="comment-form-rating">
+                                                    <h4>Your Rating</h4>
+                                                    <div class="comment-form-rating__content">
+                                                        <div class="item facility">
+                                                            <label>Facility</label>
+                                                            <select class="awe-select">
+                                                                <option>5.0</option>
+                                                                <option>6.5</option>
+                                                                <option>7.5</option>
+                                                                <option>8.5</option>
+                                                                <option>9.0</option>
+                                                                <option>10</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item human">
+                                                            <label>Human</label>
+                                                            <select class="awe-select">
+                                                                <option>5.0</option>
+                                                                <option>6.5</option>
+                                                                <option>7.5</option>
+                                                                <option>8.5</option>
+                                                                <option>9.0</option>
+                                                                <option>10</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item service">
+                                                            <label>Service</label>
+                                                            <select class="awe-select">
+                                                                <option>5.0</option>
+                                                                <option>6.5</option>
+                                                                <option>7.5</option>
+                                                                <option>8.5</option>
+                                                                <option>9.0</option>
+                                                                <option>10</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="item interesting">
+                                                            <label>Interesting</label>
+                                                            <select class="awe-select">
+                                                                <option>5.0</option>
+                                                                <option>6.5</option>
+                                                                <option>7.5</option>
+                                                                <option>8.5</option>
+                                                                <option>9.0</option>
+                                                                <option>10</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="comment-form-comment">
+                                                    <label for="comment">Your Review</label>
+                                                    <textarea id="comment"></textarea>
+                                                </div>
+                                                <div class="form-submit">
+                                                    <input type="submit" class="submit" value="Submit">
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div id="comments">
+                                            <ol class="commentlist">
+                                                <li>
+                                                    <div class="comment-box">
+                                                        <div class="avatar">
+                                                            <img src="images/img/demo-thumb.jpg" alt="">
+                                                        </div>
+                                                        <div class="comment-body">
+                                                            <p class="meta">
+                                                                <strong>Nguyen Gallahendahry</strong>
+                                                                <span class="time">December 10, 2012</span>
+                                                            </p>
+                                                            <div class="description">
+                                                                <p>Takes me back to my youth. I love the design of this soda machine. A bit pricy though..!</p>
+                                                            </div>
+
+                                                            <div class="rating-info">
+                                                                <div class="average-rating-review good">
+                                                                    <span class="count">7.5</span>
+                                                                    <em>Average rating</em>
+                                                                    <span>Good</span>
+                                                                </div>
+                                                                <ul class="rating-review">
+                                                                    <li>
+                                                                        <em>Facility</em>
+                                                                        <span>7.5</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Human</em>
+                                                                        <span>9.0</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Service</em>
+                                                                        <span>9.5</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Interesting</em>
+                                                                        <span>8.7</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="comment-box">
+                                                        <div class="avatar">
+                                                            <img src="images/img/demo-thumb.jpg" alt="">
+                                                        </div>
+                                                        <div class="comment-body">
+                                                            <p class="meta">
+                                                                <strong>James Bond not 007</strong>
+                                                                <span class="time">December 10, 2012</span>
+                                                            </p>
+                                                            <div class="description">
+                                                                <p>Takes me back to my youth. I love the design of this soda machine. A bit pricy though..!</p>
+                                                            </div>
+
+                                                            <div class="rating-info">
+                                                                <div class="average-rating-review good">
+                                                                    <span class="count">7.5</span>
+                                                                    <em>Average rating</em>
+                                                                    <span>Good</span>
+                                                                </div>
+                                                                <ul class="rating-review">
+                                                                    <li>
+                                                                        <em>Facility</em>
+                                                                        <span>7.5</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Human</em>
+                                                                        <span>9.0</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Service</em>
+                                                                        <span>9.5</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Interesting</em>
+                                                                        <span>8.7</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="comment-box">
+                                                        <div class="avatar">
+                                                            <img src="images/img/demo-thumb.jpg" alt="">
+                                                        </div>
+                                                        <div class="comment-body">
+                                                            <p class="meta">
+                                                                <strong>Bratt not Pitt</strong>
+                                                                <span class="time">December 10, 2012</span>
+                                                            </p>
+                                                            <div class="description">
+                                                                <p>Takes me back to my youth. I love the design of this soda machine. A bit pricy though..!</p>
+                                                            </div>
+
+                                                            <div class="rating-info">
+                                                                <div class="average-rating-review fine">
+                                                                    <span class="count">5.0</span>
+                                                                    <em>Average rating</em>
+                                                                    <span>Fine</span>
+                                                                </div>
+                                                                <ul class="rating-review">
+                                                                    <li>
+                                                                        <em>Facility</em>
+                                                                        <span>7.5</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Human</em>
+                                                                        <span>9.0</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Service</em>
+                                                                        <span>9.5</span>
+                                                                    </li>
+                                                                    <li>
+                                                                        <em>Interesting</em>
+                                                                        <span>8.7</span>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="detail-sidebar">
+                            <div class="call-to-book">
+                                <i class="awe-icon awe-icon-phone"></i>
+                                <em>Call to book</em>
+                                <span>+1-888-8765-1234</span>
+                            </div>
+                            <div class="booking-info">
+                                <h3>Booking info</h3>
+                                <div class="form-group">
+                                    <div class="form-elements form-adult">
+                                        <label>Adult</label>
+                                        <div class="form-item">
+                                            <select class="awe-select">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                        <span>12 yo and above</span>
+                                    </div>
+                                    <div class="form-elements form-kids">
+                                        <label>Kids</label>
+                                        <div class="form-item">
+                                            <select class="awe-select">
+                                                <option>0</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                        <span>11 and under</span>
+                                    </div>
+                                </div>
+                                <div class="form-baggage-weight">
+                                    <label>Extra baggage weight / person</label>
+                                    <div class="form-item">
+                                        <select class="awe-select">
+                                            <option>15 kg - $20</option>
+                                            <option>15 kg - $20</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-item">
+                                        <select class="awe-select">
+                                            <option>25 kg - $40</option>
+                                            <option>25 kg - $40</option>
+                                        </select>
+                                    </div>
+                                    <span>Cabin 7kg/person for free</span>
+                                </div>
+                                <div class="price">
+                                    <em>Total for this booking</em>
+                                    <span class="amount">$5,923</span>
+                                </div>
+                                <div class="form-submit">
+                                    <div class="add-to-cart">
+                                        <button type="submit">
+                                            <i class="awe-icon awe-icon-cart"></i>Add this to Cart
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER PAGE -->
+        <footer id="footer-page">
+            <div class="container">
+                <div class="row">
+                    <!-- WIDGET -->
+                    <div class="col-md-3">
+                        <div class="widget widget_contact_info">
+                            <div class="widget_background">
+                                <div class="widget_background__half">
+                                    <div class="bg"></div>
+                                </div>
+                                <div class="widget_background__half">
+                                    <div class="bg"></div>
+                                </div>
+                            </div>
+                            <div class="logo">
+                                <img src="images/logo-footer.png" alt="">
+                            </div>
+                            <div class="widget_content">
+                                <p>25 California Avenue, Santa Monica, California. USA</p>
+                                <p>+1-888-8765-1234</p>
+                                <a href="#">contact@gofar.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-2">
+                        <div class="widget widget_about_us">
+                            <h3>About Us</h3>
+                            <div class="widget_content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vel dignissim dolor. Ut risus orci, aliquam sit amet semper eget, egestas aliquam felis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-2">
+                        <div class="widget widget_categories">
+                            <h3>Categiries</h3>
+                            <ul>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Regions</a></li>
+                                <li><a href="#">Cities</a></li>
+                                <li><a href="#">Districts</a></li>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Airports</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Places of interest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-2">
+                        <div class="widget widget_recent_entries">
+                            <h3>Recent Blog</h3>
+                            <ul>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Regions</a></li>
+                                <li><a href="#">Cities</a></li>
+                                <li><a href="#">Districts</a></li>
+                                <li><a href="#">Countries</a></li>
+                                <li><a href="#">Airports</a></li>
+                                <li><a href="#">Hotels</a></li>
+                                <li><a href="#">Places of interest</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+
+                    <!-- WIDGET -->
+                    <div class="col-md-3">
+                        <div class="widget widget_follow_us">
+                            <div class="widget_content">
+                                <p>For Special booking request, please call</p>
+                                <span class="phone">099-099-000</span>
+                                <div class="awe-social">
+                                    <a href="#"><i class="fa fa-twitter"></i></a>
+                                    <a href="#"><i class="fa fa-pinterest"></i></a>
+                                    <a href="#"><i class="fa fa-facebook"></i></a>
+                                    <a href="#"><i class="fa fa-youtube-play"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END / WIDGET -->
+                </div>
+                <div class="copyright">
+                    <p>©2015 GOFAR travel™ All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- END / FOOTER PAGE -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/lib/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.owl.carousel.js"></script>
+    <script type="text/javascript" src="js/lib/theia-sticky-sidebar.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
+    <script type='text/javascript' src="js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+
+</body>
+</html>
+
+<link href="styles/demo_style.css" rel="stylesheet" type="text/css">
+<link href="styles/smart_wizard.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-2.0.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+<style>
+
+    /**{*/
+    /*    transform: scaleY(1);*/
+    /*}*/
+
+</style>
+<!--<script src="flightseat.js"></script>-->
+<!--<link rel="stylesheet" href="flightseat.css" />-->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        //  Wizard 1
+        $('#wizard1').smartWizard({
+            transitionEffect:'fade',
+            onFinish:onFinishCallback,
+            onLeaveStep  : leaveAStepCallback,
+        });
+        function leaveAStepCallback(obj, context){
+            // To check and enable finish button if needed
+            if (context.fromStep >= 3) {
+                $('#wizard1').smartWizard('enableFinish', true);
+            }
+            return true;
+        }
+        //  Wizard 2
+        $('#wizard2').smartWizard({transitionEffect:'slide',onFinish:onFinishCallback});
+        function onFinishCallback(){
+            alert('Finish Called');
+        }
+    });
+</script>
+
+
+<style>
+
+    input[type="search"], input[type="text"], input[type="url"], input[type="number"], input[type="password"], input[type="email"], input[type="file"] {
+        margin-top: 3%;
+        /*padding-left: 5%;*/
+    }
+
+    td, th{
+        padding: 0px;
+    }
+
+</style>
+
+
+<script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $("#newID").html('Add to Cart');
+
+        $("#newID").click(function() {
+            window.location("myCart.html");
+        });
+    });
+
+</script>
+
+
+
+<!--<script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>-->
+<script src="js/jquery.seat-charts.js"></script>
+<script>
+    var firstSeatLabel = 1;
+
+    $(document).ready(function() {
+        var $cart = $('#selected-seats'),
+            $counter = $('#counter'),
+            $total = $('#total'),
+            sc = $('#seat-map').seatCharts({
+                map: [
+                    '__f_f__',
+                    '_ff_ff_',
+                    'fff_fff',
+                    'fff_fff',
+                    'fff_fff',
+                    '_______',
+                    'eee_eee',
+                    'eee_eee',
+                    'eee_eee',
+                    'eee_eee',
+                    'eee_eee',
+                    'eee_eee',
+                    'eee_eee',
+                    'eee_eee',
+                    '_ee_ee_',
+                    '__e_e__'
+
+                ],
+                seats: {
+                    f: {
+                        price   : 6923,
+                        classes : 'first-class', //your custom CSS class
+                        category: 'First Class'
+                    },
+                    e: {
+                        price   : 3252,
+                        classes : 'economy-class', //your custom CSS class
+                        category: 'Economy Class'
+                    }
+
+                },
+                naming : {
+                    top : false,
+                    getLabel : function (character, row, column) {
+                        return firstSeatLabel++;
+                    },
+                },
+                legend : {
+                    node : $('#legend'),
+                    items : [
+                        [ 'f', 'available',   'First Class' ],
+                        [ 'e', 'available',   'Economy Class'],
+                        [ 'f', 'unavailable', 'Already Booked']
+                    ]
+                },
+                click: function () {
+                    if (this.status() == 'available') {
+                        //let's create a new <li> which we'll add to the cart items
+                        $('<li>'+this.data().category+' Seat # '+this.settings.label+': <b>$'+this.data().price+'</b> <a href="#" class="cancel-cart-item">[cancel]</a></li>')
+                            .attr('id', 'cart-item-'+this.settings.id)
+                            .data('seatId', this.settings.id)
+                            .appendTo($cart);
+
+                        /*
+                         * Lets update the counter and total
+                         *
+                         * .find function will not find the current seat, because it will change its stauts only after return
+                         * 'selected'. This is why we have to add 1 to the length and the current seat price to the total.
+                         */
+                        $counter.text(sc.find('selected').length+1);
+                        $total.text(recalculateTotal(sc)+this.data().price);
+
+                        return 'selected';
+                    } else if (this.status() == 'selected') {
+                        //update the counter
+                        $counter.text(sc.find('selected').length-1);
+                        //and total
+                        $total.text(recalculateTotal(sc)-this.data().price);
+
+                        //remove the item from our cart
+                        $('#cart-item-'+this.settings.id).remove();
+
+                        //seat has been vacated
+                        return 'available';
+                    } else if (this.status() == 'unavailable') {
+                        //seat has been already booked
+                        return 'unavailable';
+                    } else {
+                        return this.style();
+                    }
+                }
+            });
+
+        //this will handle "[cancel]" link clicks
+        $('#selected-seats').on('click', '.cancel-cart-item', function () {
+            //let's just trigger Click event on the appropriate seat, so we don't have to repeat the logic here
+            sc.get($(this).parents('li:first').data('seatId')).click();
+        });
+
+        //let's pretend some seats have already been booked
+        sc.get(['1_2', '4_1', '7_1', '7_2']).status('unavailable');
+
+    });
+
+    function recalculateTotal(sc) {
+        var total = 0;
+
+        //basically find every selected seat and sum its price
+        sc.find('selected').each(function () {
+            total += this.data().price;
+        });
+
+        return total;
+    }
+
+</script><script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<script src="js/flightseat.js"></script>
+
+<script type="text/javascript" src="js/jquery.smartWizard.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // $("#newID").html('Add to Cart');
+    });
+</script>
+<script type="text/javascript" src="js/login.js"></script>
+
+<style>
+    body{
+        background-color: floralwhite;
+    }
+</style>
+
+<script type="text/javascript" src="js/login.js"></script>
+
+<style>
+    th {
+         background: white;
+        color: #fff;
+    }
+</style>

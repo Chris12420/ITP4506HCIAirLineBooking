@@ -1,0 +1,31 @@
+    [{
+    "staffID": "s00001@ive.airline.staff.hk",
+    "username": "s00001",
+    "fullname": "Chan Siu Kai",
+    "password": "#Sdcpl23",
+    "jobs": "Administrator"
+    },{
+    "staffID": "s00002@ive.airline.staff.hk",
+    "username": "s00002",
+    "fullname": "Wong Chin Wing",
+    "password": "qW2323s*",
+    "jobs": "Administrator"
+    },{
+    "staffID": "s00003@ive.airline.staff.hk",
+    "username": "s00003",
+    "fullname": "Lai Wai Man",
+    "password": "wD23#rv",
+    "jobs": "Operator"
+    },{
+    "staffID": "s00004@ive.airline.staff.hk",
+    "username": "s00004",
+    "fullname": "Lo Ka Hong",
+    "password": "e32dg1*S",
+    "jobs": "Operator"
+    },{
+    "staffID": "s00005@ive.airline.staff.hk",
+    "username": "Mary123",
+    "fullname": "Yu Kwai Shing",
+    "password": "qaZe124#",
+    "jobs": "Operator"
+    }]

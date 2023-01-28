@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!-- TITLE -->
+    <title>IVE airline-Search</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/awe-booking-font.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery-ui.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    
+    <!-- CSS COLOR -->
+    <link id="colorreplace" rel="stylesheet" type="text/css" href="css/colors/blue.css">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+
+
+
+</head>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+        <!-- PRELOADER -->
+<!--        <div class="preloader"></div>-->
+        <!-- END / PRELOADER -->
+
+
+        <!-- HEADER PAGE -->
+        <header id="header-page">
+            <div class="header-page__inner">
+                <div class="container">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <!-- END / LOGO -->
+
+                    <!-- NAVIGATION -->
+                    <nav class="navigation awe-navigation" data-responsive="1200">
+                        <ul class="menu-list">
+                            <li class="menu-item-has-children current-menu-parent">
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="flight.html">Flight</a>
+                                <ul class="sub-menu">
+                                    <li><a href="flight.html">Flight</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="myCart.html">Checkout</a>
+                                <ul class="sub-menu">
+                                    <li><a href="myCart.html">Your cart</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="PaymentReview.html">Review Order</a>
+                                <ul class="sub-menu">
+                                    <li><a href="PaymentReview.html">Review Order</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="luckWheel.html">Lucky Wheel</a>
+                                <ul class="sub-menu">
+                                    <li><a href="luckWheel.html">Lucky Wheel</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="redemption.html">Redemption</a>
+                                <ul class="sub-menu">
+                                    <li><a href="redemption.html">Redemption</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="login.html" id="loginEle">Log In</a>
+                                <ul class="sub-menu">
+                                    <li><a href="login.html">Log In</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        </li>
+
+                        </ul>
+                    </nav>
+                    <!-- END / NAVIGATION -->
+
+
+
+                </div>
+            </div>
+        </header>
+        <!-- END / HEADER PAGE -->
+
+        <!-- HEADING PAGE -->
+        <section class="awe-parallax category-heading-section-demo">
+            <div class="awe-overlay"></div>
+            <div class="container">
+                <div class="category-heading-content category-heading-content__2 text-uppercase">
+                    <!-- BREADCRUMB -->
+                    <div class="breadcrumb">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><span>Flight</span></li>
+                        </ul>
+                    </div>
+
+
+                    <!-- BREADCRUMB -->
+                    <div class="find">
+                        <h2 class="text-center">Find Your Flight</h2>
+                        <form>
+                            <div class="form-group">
+                                <div class="form-elements">
+                                    <label>From</label>
+                                    <div class="form-item">
+                                        <i class="awe-icon awe-icon-marker-1"></i>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="form-elements">
+                                    <label>To</label>
+                                    <div class="form-item">
+                                        <i class="awe-icon awe-icon-marker-1"></i>
+                                        <input type="text">
+                                    </div>
+                                </div>
+                                <div class="form-elements">
+                                    <label>Depart on</label>
+                                    <div class="form-item">
+                                        <i class="awe-icon awe-icon-calendar"></i>
+                                        <input type="text" class="awe-calendar" value="Date">
+                                    </div>
+                                </div>
+                                <div class="form-elements">
+                                    <label>Return on</label>
+                                    <div class="form-item">
+                                        <i class="awe-icon awe-icon-calendar"></i>
+                                        <input type="text" class="awe-calendar" value="Date">
+                                    </div>
+                                </div>
+
+<!--                                <div class="form-actions">-->
+<!--                                    <input type="submit" value="Find My Flight">-->
+<!--                                </div>-->
+                            </div>
+
+
+                            <div class="form-group">
+                                <div class="form-group">
+                                    <div class="form-elements">
+                                        <label>Travel Class</label>
+                                        <div class="form-item">
+                                            <select class="awe-select">
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-elements">
+                                        <label>To</label>
+                                        <div class="form-item">
+                                            <i class="awe-icon awe-icon-marker-1"></i>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                                    <div class="form-elements">
+                                        <label>Depart on</label>
+                                        <div class="form-item">
+                                            <i class="awe-icon awe-icon-calendar"></i>
+                                            <input type="text" class="awe-calendar" value="Date">
+                                        </div>
+                                    </div>
+                                    <div class="form-elements">
+                                        <label>Return on</label>
+                                        <div class="form-item">
+                                            <i class="awe-icon awe-icon-calendar"></i>
+                                            <input type="text" class="awe-calendar" value="Date">
+                                        </div>
+                                    </div>
+
+                                    <div class="form-actions">
+                                        <input type="submit" value="Find My Flight">
+                                    </div>
+                                </div>
+
+
+                            </div>
+                        </form>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        <!-- END / HEADING PAGE -->
+
+
+
+
+
+
+        <section class="filter-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-top">
+                            <select class="awe-select">
+                                <option>Best Match</option>
+                                <option>Best Rate</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-md-push-3">
+                        <div class="filter-page__content">
+                            <div class="filter-item-wrapper">
+                                <!-- ITEM -->
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- ITEM -->
+                                <div class="flight-item">
+                                    <div class="item-media">
+                                        <div class="image-cover">
+                                            <img src="images/2flight.jpg" style="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <h2>
+                                                <a href="flight-detail.html">Shanghai<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""> IATA: PVG, ICAO: ZSPD</a>
+                                            </h2>
+                                        </div>
+                                        <table class="item-table">
+                                            <thead>
+                                            <tr>
+                                                <th class="route">Route</th>
+                                                <th class="depart">Depart</th>
+                                                <th class="arrive">Arrive</th>
+                                                <th class="duration">Duration</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">TPE<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""></span>
+                                                        <span class="to">HKG</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 29 Sep 2022</span>
+                                                    <!--                                                    <span class="date">14 Feb</span>-->
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>02:25</span>
+                                                </td>
+                                                <td class="duration">
+                                                    <span>05:35</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">HKG <img src="images/arrowLeft.png" alt=""></span>
+                                                        <span class="to">TPE</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 6 Oct 2022</span>
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>04:35</span>
+                                                    <!--                                                    <span class="date">15 MAr</span>-->
+                                                </td>
+                                                <td class="duration">
+                                                    <span>07:45</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="item-price-more">
+                                        <div class="price">
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <div class="item-footer">
+                                                <div class="item-rate">
+                                                    <span>9.7 Good</span>
+                                                </div>
+                                            </div>
+                                            <span class="amount">$4</span>
+                                            exclude Fare
+                                        </div>
+                                        <a href="hotel-detail.html" class="awe-btn">Book now</a>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+
+
+
+
+
+
+
+
+
+                                <!-- ITEM -->
+                                <div class="flight-item">
+                                    <div class="item-media">
+                                        <div class="image-cover">
+                                            <img src="images/2flight.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <h2>
+                                                <a href="flight-detail.html">Kansai<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""> IATA: KIX, ICAO: RJBB</a>
+                                            </h2>
+                                        </div>
+                                        <table class="item-table">
+                                            <thead>
+                                            <tr>
+                                                <th class="route">Route</th>
+                                                <th class="depart">Depart</th>
+                                                <th class="arrive">Arrive</th>
+                                                <th class="duration">Duration</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">TPE<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""></span>
+                                                        <span class="to">HKG</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 29 Sep 2022</span>
+                                                    <!--                                                        <span class="date">14 Feb</span>-->
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>02:25</span>
+                                                </td>
+                                                <td class="duration">
+                                                    <span>05:35</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">HKG <img src="images/arrowLeft.png" alt=""></span>
+                                                        <span class="to">TPE</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 6 Oct 2022</span>
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>04:35</span>
+                                                    <!--                                                        <span class="date">15 MAr</span>-->
+                                                </td>
+                                                <td class="duration">
+                                                    <span>07:45</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="item-price-more">
+                                        <div class="price">
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <div class="item-footer">
+                                                <div class="item-rate">
+                                                    <span>6.1 Good</span>
+                                                </div>
+                                            </div>
+                                            <span class="amount">$5</span>
+                                            exclude Fare
+                                        </div>
+                                        <a href="hotel-detail.html" class="awe-btn">Book now</a>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <!-- ITEM -->
+                                <div class="flight-item">
+                                    <div class="item-media">
+                                        <div class="image-cover">
+                                            <img src="images/2flight.jpg" style="" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <h2>
+                                                <a href="flight-detail.html">Shanghai<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""> IATA: PVG, ICAO: ZSPD</a>
+                                            </h2>
+                                        </div>
+                                        <table class="item-table">
+                                            <thead>
+                                            <tr>
+                                                <th class="route">Route</th>
+                                                <th class="depart">Depart</th>
+                                                <th class="arrive">Arrive</th>
+                                                <th class="duration">Duration</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">TPE<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""></span>
+                                                        <span class="to">HKG</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 29 Sep 2022</span>
+<!--                                                    <span class="date">14 Feb</span>-->
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>02:25</span>
+                                                </td>
+                                                <td class="duration">
+                                                    <span>05:35</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">HKG <img src="images/arrowLeft.png" alt=""></span>
+                                                        <span class="to">TPE</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 6 Oct 2022</span>
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>04:35</span>
+<!--                                                    <span class="date">15 MAr</span>-->
+                                                </td>
+                                                <td class="duration">
+                                                    <span>07:45</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="item-price-more">
+                                        <div class="price">
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <div class="item-footer">
+                                                <div class="item-rate">
+                                                    <span>7.7 Good</span>
+                                                </div>
+                                            </div>
+                                            <span class="amount">$4</span>
+                                            exclude Fare
+                                        </div>
+                                        <a href="hotel-detail.html" class="awe-btn">Book now</a>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+
+
+
+
+
+
+
+
+
+                                <!-- ITEM -->
+                                <div class="flight-item">
+                                    <div class="item-media">
+                                        <div class="image-cover">
+                                            <img src="images/2flight.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <h2>
+                                                <a href="flight-detail.html">Kansai<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""> IATA: KIX, ICAO: RJBB</a>
+                                            </h2>
+                                        </div>
+                                        <table class="item-table">
+                                            <thead>
+                                            <tr>
+                                                <th class="route">Route</th>
+                                                <th class="depart">Depart</th>
+                                                <th class="arrive">Arrive</th>
+                                                <th class="duration">Duration</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">TPE<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""></span>
+                                                        <span class="to">HKG</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 29 Sep 2022</span>
+                                                    <!--                                                        <span class="date">14 Feb</span>-->
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>02:25</span>
+                                                </td>
+                                                <td class="duration">
+                                                    <span>05:35</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="route">
+                                                    <ul>
+                                                        <span class="from">HKG <img src="images/arrowLeft.png" alt=""></span>
+                                                        <span class="to">TPE</span>
+                                                    </ul>
+                                                </td>
+                                                <td class="depart">
+                                                    <span>Thu, 6 Oct 2022</span>
+                                                </td>
+                                                <td class="arrive">
+                                                    <span>04:35</span>
+                                                    <!--                                                        <span class="date">15 MAr</span>-->
+                                                </td>
+                                                <td class="duration">
+                                                    <span>07:45</span>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="item-price-more">
+                                        <div class="price">
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <div class="item-footer">
+                                                <div class="item-rate">
+                                                    <span>6.9 Good</span>
+                                                </div>
+                                            </div>
+                                            <span class="amount">$5</span>
+                                            exclude Fare
+                                        </div>
+                                        <a href="hotel-detail.html" class="awe-btn">Book now</a>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                <div class="flight-item">
+                                    <div class="item-media">
+                                        <div class="image-cover">
+                                            <img src="images/2flight.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="item-body">
+                                        <div class="item-title">
+                                            <h2>
+                                                <a href="flight-detail.html">Taoyuan<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""> IATA: TPE, ICAO: RCTP</a>
+                                            </h2>
+                                        </div>
+                                        <table class="item-table">
+                                            <thead>
+                                                <tr>
+                                                    <th class="route">Route</th>
+                                                    <th class="depart">Depart</th>
+                                                    <th class="arrive">Arrive</th>
+                                                    <th class="duration">Duration</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="route">
+                                                        <ul>
+                                                            <span class="from">TPE<img src="images/arrowRight.png" style="margin-left: 8px;" alt=""></span>
+                                                            <span class="to">HKG</span>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="depart">
+                                                        <span>Thu, 29 Sep 2022</span>
+<!--                                                        <span class="date">14 Feb</span>-->
+                                                    </td>
+                                                    <td class="arrive">
+                                                        <span>02:25</span>
+                                                    </td>
+                                                    <td class="duration">
+                                                        <span>05:35</span>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="route">
+                                                        <ul>
+                                                            <span class="from">HKG <img src="images/arrowLeft.png" alt=""></span>
+                                                            <span class="to">TPE</span>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="depart">
+                                                        <span>Thu, 6 Oct 2022</span>
+                                                    </td>
+                                                    <td class="arrive">
+                                                        <span>04:35</span>
+<!--                                                        <span class="date">15 MAr</span>-->
+                                                    </td>
+                                                    <td class="duration">
+                                                        <span>07:45</span>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="item-price-more">
+                                        <div class="price">
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <div class="item-footer">
+                                                <div class="item-rate">
+                                                    <span>8.7 Good</span>
+                                                </div>
+                                            </div>
+                                            <span class="amount">$6</span>
+                                            exclude Fare
+                                        </div>
+                                        <a href="hotel-detail.html" class="awe-btn">Book now</a>
+                                    </div>
+                                </div>
+                                <!-- END / ITEM -->
+                            </div>
+
+
+                            <!-- PAGINATION -->
+                            <div class="page__pagination">
+                                <span class="pagination-prev"><i class="fa fa-caret-left"></i></span>
+                                <a href="flight.html">1</a>
+                                <span class="current">2</span>
+                                <a href="#">3</a>
+                                <a href="#">4</a>
+                                <a href="#" class="pagination-next"><i class="fa fa-caret-right"></i></a>
+                            </div>
+                            <!-- END / PAGINATION -->
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-pull-9">
+                        <div class="page-sidebar">
+                            <div class="sidebar-title">
+                                <h2>Flight</h2>
+                                <div class="clear-filter">
+                                    <a href="#">Clear all</a>
+                                </div>
+                            </div>
+                            <!-- WIDGET -->
+                            <div class="widget widget_has_radio_checkbox_text">
+                                <h3>Flight Type</h3>
+                                <div class="widget_content">
+                                    <label>
+                                        <input type="checkbox">
+                                        <i class="awe-icon awe-icon-check"></i>
+                                        Oneway
+                                    </label>
+                                    <label>
+                                        <input type="checkbox">
+                                        <i class="awe-icon awe-icon-check"></i>
+                                        Turn-around
+                                    </label>
+                                    <label class="from">
+                                        From
+                                        <span class="form-item db">
+                                            <i class="awe-icon awe-icon-marker-1"></i>
+                                            <div class="form-item">
+                                            <select class="awe-select" style="width: 262.5px;">
+                                                <option>Shanghai</option>
+                                                <option>Kansai</option>
+                                                <option>Taoyuan</option>
+                                            </select>
+                                        </div>
+                                        </span>
+                                    </label>
+                                    <label class="to">
+                                        To
+                                        <div class="form-item">
+                                            <select class="awe-select" style="width: 262.5px;">
+                                                <option>Shanghai</option>
+                                                <option>Kansai</option>
+                                                <option>Taoyuan</option>
+                                            </select>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <!-- END / WIDGET -->
+
+                            <!-- WIDGET -->
+                            <div class="widget widget_price_filter">
+                                <h3>Price Range</h3>
+                                <div class="price-slider-wrapper">
+                                    <div class="price-slider"></div>
+                                    <div class="price_slider_amount">
+                                        <div class="price_label">
+                                            <span class="from" id="priceChange"></span> - <span class="to" id="priceChange2"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+<!--                            time slider-->
+                            <div class="widget widget_price_filter">
+                                <h3>Depart Time</h3>
+
+<!--                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+<!--                            <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>-->
+                            <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+                            <div id="time-range">
+                                <div class="sliders_step1">
+                                    <div id="slider-range"></div>
+                                </div>
+                                <b><p class="price_label">Time Range: <span class="slider-time " >00:00</span> - <span class="slider-time">23:99</span></p></b>
+                            </div>
+                            </div>
+
+
+                            <div class="widget widget_price_filter">
+                                <h3>Arrive Time</h3>
+
+                                <!--                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+                                <!--                            <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>-->
+                                <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+                                <div id="time-range2">
+                                    <div class="sliders_step2">
+                                        <div id="slider-range2"></div>
+                                    </div>
+                                    <b><p class="price_label2">Time Range: <span class="slider-time2 " >00:00</span> - <span class="slider-time2">23:99</span></p></b>
+                                </div>
+                            </div>
+
+
+                            <!-- END / WIDGET -->
+
+                            <!-- WIDGET -->
+                            <div class="widget widget_has_radio_checkbox">
+                                <h3>Star Rating</h3>
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <i class="awe-icon awe-icon-check"></i>
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <i class="awe-icon awe-icon-check"></i>
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <i class="awe-icon awe-icon-check"></i>
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <i class="awe-icon awe-icon-check"></i>
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="checkbox">
+                                            <i class="awe-icon awe-icon-check"></i>
+                                            <span class="rating">
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- END / WIDGET -->
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER PAGE -->
+        <link rel="stylesheet" href="css/footer.css">
+
+        <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+
+
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© flight Inc.. 202 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p><i class="icon_heart"></i>Welcome</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END / FOOTER PAGE -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/lib/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.owl.carousel.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+    <script type="text/javascript" src="js/lib/md-map-extend.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="js/lib/perfect-scrollbar.min.js"></script>
+    <script type='text/javascript' src="js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
+
+
+<script>
+
+    $("#slider-range").slider({
+        range: true,
+        min: 0,
+        max: 1440,
+        step: 15,
+        values: [0, 1440],
+        slide: function(e, ui) {
+            $('.slider-time').each(function(i) {
+                var hours = ("00" + Math.floor(ui.values[i] / 60)).slice(-2);
+                var mins = ("00" + (ui.values[i] - (hours * 60))).slice(-2);
+                $(this).html(hours + ':' + mins);
+            });
+        }
+    });
+
+
+    $("#slider-range2").slider({
+        range: true,
+        min: 0,
+        max: 1440,
+        step: 15,
+        values: [0, 1440],
+        slide: function(e, ui) {
+            $('.slider-time2').each(function(i) {
+                var hours = ("00" + Math.floor(ui.values[i] / 60)).slice(-2);
+                var mins = ("00" + (ui.values[i] - (hours * 60))).slice(-2);
+                $(this).html(hours + ':' + mins);
+            });
+        }
+    });
+</script>
+
+<script>
+
+    $(document).ready(function(){
+        // $("#hi").hide();
+
+        $("#priceChange2").on('DOMSubtreeModified',function(){
+            $("#hi").hide();
+        })
+
+        // $("#priceChange2").on('change',function(){
+        //     //Do calculation and change value of other span2,span3 here
+        //     $("#hi").hide();
+        // });
+        });
+
+
+    //     $("#priceChange2").change(function(){
+    //         $("#hi").hide();
+    //         });
+    // });
+
+</script>
+<script type="text/javascript" src="js/login.js"></script>

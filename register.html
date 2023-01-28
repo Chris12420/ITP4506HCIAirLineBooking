@@ -1,0 +1,1554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!-- TITLE -->
+    <title>IVE airline-Register</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/awe-booking-font.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery-ui.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    
+    <!-- CSS COLOR -->
+    <link id="colorreplace" rel="stylesheet" type="text/css" href="css/colors/blue.css">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+
+
+<!--    registor-->
+    <link rel="stylesheet" type="text/css" href="css/registorStyles.css">
+<!--    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>-->
+    <script src="css/registorScripts.js"></script>
+    <script src="js/jquery/jquery-3.6.0.min.js"></script>
+<!--    <script src="../../Validate-Password-Meets-Requirements-jQuery-PassRequirements/js/PassRequirements.js"></script>-->
+
+<!--    registor bootstrap-->
+<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">-->
+</head>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+        <!-- PRELOADER -->
+<!--        <div class="preloader"></div>-->
+        <!-- END / PRELOADER -->
+
+
+        <!-- HEADER PAGE -->
+        <header id="header-page">
+            <div class="header-page__inner">
+                <div class="container">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <!-- END / LOGO -->
+
+                    <!-- NAVIGATION -->
+                    <nav class="navigation awe-navigation" data-responsive="1200">
+                        <ul class="menu-list">
+                            <li class="menu-item-has-children current-menu-parent">
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="flight.html">Flight</a>
+                                <ul class="sub-menu">
+                                    <li><a href="flight.html">Flight</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="myCart.html">Checkout</a>
+                                <ul class="sub-menu">
+                                    <li><a href="myCart.html">Your cart</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="PaymentReview.html">Review Order</a>
+                                <ul class="sub-menu">
+                                    <li><a href="PaymentReview.html">Review Order</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="luckWheel.html">Lucky Wheel</a>
+                                <ul class="sub-menu">
+                                    <li><a href="luckWheel.html">Lucky Wheel</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="redemption.html">Redemption</a>
+                                <ul class="sub-menu">
+                                    <li><a href="redemption.html">Redemption</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="login.html" id="loginEle">Log In</a>
+                                <ul class="sub-menu">
+                                    <li><a href="login.html">Log In</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        </li>
+
+                        </ul>
+                    </nav>
+                    <!-- END / NAVIGATION -->
+
+
+
+                </div>
+            </div>
+        </header>
+        <!-- END / HEADER PAGE -->
+
+        <section class="awe-parallax register-page-demo">
+            <div class="awe-overlay"></div>
+            <div class="container">
+<!--                <div class="content-title">-->
+<!--                    <span>Ne restez pas chez vous</span>-->
+<!--                    <h2>REJOIGNEZ NOUS !</h2>-->
+<!--                </div>-->
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-9">
+                        <!-- Download Text -->
+                        <div class="download-text text-center">
+                            <!--                            <h2 class="text-white">Let's start booking our flight </h2>-->
+
+                            <div class="container rounded shadow-sm card p-4 mt-0">
+
+                                <div class="wrapper">
+                                    <div class="header">
+                                        <ul>
+                                            <li class="active form_1_progessbar">
+                                                <div>
+                                                    <p>1</p>
+                                                </div>
+                                            </li>
+                                            <li class="form_2_progessbar">
+                                                <div>
+                                                    <p>2</p>
+                                                </div>
+                                            </li>
+                                            <li class="form_3_progessbar">
+                                                <div>
+                                                    <p>3</p>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="form_wrap">
+                                        <div class="form_1 data_info">
+                                            <h2>Signup Info</h2>
+                                            <form>
+                                                <div class="form_container">
+
+
+
+                                                    <div class="input_wrap">
+                                                        <label for="email">Email Address</label>
+                                                        <input type="text" name="Email Address" class="input" id="email">
+                                                        <span id="valemail" class="text-danger font-weight-bold"> </span>
+                                                    </div>
+
+                                                    <div class="input_wrap">
+
+                                                        <div id="pswd_info">
+                                                            <h4>Password must meet the following requirements:</h4>
+                                                            <ul>
+                                                                <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+                                                                <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+                                                                <li id="number" class="invalid">At least <strong>one number</strong></li>
+                                                                <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+                                                            </ul>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <!--                                                   // password old-->
+                                                    <!--                                                    <div class="input_wrap">-->
+                                                    <!--                                                        <label for="password">Password</label>-->
+                                                    <!--                                                        <input type="password" name="password" class="input" id="password">-->
+                                                    <!--                                                        <span id="valepass1" class="text-danger font-weight-bold"> </span>-->
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                   // password end-->
+
+
+                                                    <!--                                                    // password new-->
+                                                    <label for="pswd">Password</label>
+                                                    <div class="input_wrap">
+                                                        <span ><input id="password" class="input_wrap" style="border: 2px solid var(--secondary); height: 48px;" id="pswd" type="password" name="pswd"  /></span>
+                                                        <span id="valepass1" class="text-danger font-weight-bold"> </span>
+                                                    </div>
+                                                    <!--                                                    // password new end-->
+
+                                                    <!--                                                    // password new-->
+                                                    <label for="pswd">Password</label>
+                                                    <div class="input_wrap">
+                                                        <span ><input id="confirm_password" class="input_wrap" style="border: 2px solid var(--secondary); height: 48px;" id="pswd" type="password" name="pswd"  /></span>
+                                                        <span id="valepass2" class="text-danger font-weight-bold"> </span>
+                                                    </div>
+                                                    <!--                                                    // password new end-->
+
+
+                                                    <!--                                                     // password old-->
+                                                    <!--                                                    <div class="input_wrap">-->
+                                                    <!--                                                        <label for="confirm_password">Confirm Password</label>-->
+                                                    <!--                                                        <input   type="password" name="confirm password" class="input" id="confirm_password">-->
+                                                    <!--                                                        <span id="valepass2" class="text-danger font-weight-bold"> </span>-->
+                                                    <!--                                                    </div>-->
+
+                                                    <!--                                                     // password old end-->
+
+
+                                                    <style>
+
+                                                        body {
+                                                            background:#edf1f4 url(bg.jpg);
+                                                            font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans serif;
+                                                            font-size:16px;
+                                                            color:#444;
+                                                        }
+                                                        ul, li {
+                                                            margin:0;
+                                                            padding:0;
+                                                            list-style-type:none;
+                                                        }
+                                                        /*#container {*/
+                                                        /*    width:500px;*/
+                                                        /*    padding:0px;*/
+                                                        /*    background:#fefefe;*/
+                                                        /*    margin:0 auto;*/
+                                                        /*    border:1px solid #c4cddb;*/
+                                                        /*    border-top-color:#d3dbde;*/
+                                                        /*    border-bottom-color:#bfc9dc;*/
+                                                        /*    box-shadow:0 1px 1px #ccc;*/
+                                                        /*    border-radius:5px;*/
+                                                        /*    position:relative;*/
+                                                        /*}*/
+                                                        /*h1 {*/
+                                                        /*    margin:0;*/
+                                                        /*    padding:10px 0;*/
+                                                        /*    font-size:24px;*/
+                                                        /*    text-align:center;*/
+                                                        /*    background:#eff4f7;*/
+                                                        /*    border-bottom:1px solid #dde0e7;*/
+                                                        /*    box-shadow:0 -1px 0 #fff inset;*/
+                                                        /*    border-radius:5px 5px 0 0; !* otherwise we get some uncut corners with container div *!*/
+                                                        /*    text-shadow:1px 1px 0 #fff;*/
+                                                        /*}*/
+
+                                                        form ul li {
+                                                            margin:10px 20px;
+
+                                                        }
+                                                        form ul li:last-child {
+                                                            text-align:center;
+                                                            margin:20px 0 25px 0;}
+
+                                                        input {
+                                                            padding:10px 10px;
+                                                            border:1px solid #d5d9da;
+                                                            border-radius:5px;
+                                                            box-shadow: 0 0 5px #e8e9eb inset;
+                                                            width:328px; /* 400 (#container) - 40 (li margins) -  10 (span paddings) - 20 (input paddings) - 2 (input borders) */
+                                                            font-size:1em;
+                                                            outline:0; /* remove webkit focus styles */
+                                                        }
+                                                        input:focus {
+                                                            border:1px solid #b9d4e9;
+                                                            border-top-color:#b6d5ea;
+                                                            border-bottom-color:#b8d4ea;
+                                                            box-shadow:0 0 5px #b9d4e9;}
+
+                                                        label {
+                                                            color:#555;
+                                                        }
+                                                        /*#container span {*/
+                                                        /*    background:#f6f6f6;*/
+                                                        /*    padding:3px 5px;*/
+                                                        /*    display:block;*/
+                                                        /*    border-radius:5px;*/
+                                                        /*    margin-top:5px;*/
+                                                        /*}*/
+
+
+                                                        button {
+                                                            background: #57a9eb; /* Old browsers */
+                                                            background: -moz-linear-gradient(top, #57a9eb 0%, #3a76c4 100%); /* FF3.6+ */
+                                                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#57a9eb), color-stop(100%,#3a76c4)); /* Chrome,Safari4+ */
+                                                            background: -webkit-linear-gradient(top, #57a9eb 0%,#3a76c4 100%); /* Chrome10+,Safari5.1+ */
+                                                            background: -o-linear-gradient(top, #57a9eb 0%,#3a76c4 100%); /* Opera 11.10+ */
+                                                            background: -ms-linear-gradient(top, #57a9eb 0%,#3a76c4 100%); /* IE10+ */
+                                                            background: linear-gradient(top, #57a9eb 0%,#3a76c4 100%); /* W3C */
+                                                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#57a9eb', endColorstr='#3a76c4',GradientType=0 ); /* IE6-9 */
+                                                            border:1px solid #326fa9;
+                                                            border-top-color:#3e80b1;
+                                                            border-bottom-color:#1e549d;
+                                                            color:#fff;
+                                                            text-shadow:0 1px 0 #1e3c5e;
+                                                            font-size:.875em;
+                                                            padding:8px 15px;
+                                                            width:150px;
+                                                            border-radius:20px;
+                                                            box-shadow:0 1px 0 #bbb, 0 1px 0 #9cccf3 inset;
+                                                        }
+                                                        button:active {
+                                                            background: #3a76c4; /* Old browsers */
+                                                            background: -moz-linear-gradient(top, #3a76c4 0%, #57a9eb 100%); /* FF3.6+ */
+                                                            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3a76c4), color-stop(100%,#57a9eb)); /* Chrome,Safari4+ */
+                                                            background: -webkit-linear-gradient(top, #3a76c4 0%,#57a9eb 100%); /* Chrome10+,Safari5.1+ */
+                                                            background: -o-linear-gradient(top, #3a76c4 0%,#57a9eb 100%); /* Opera 11.10+ */
+                                                            background: -ms-linear-gradient(top, #3a76c4 0%,#57a9eb 100%); /* IE10+ */
+                                                            background: linear-gradient(top, #3a76c4 0%,#57a9eb 100%); /* W3C */
+                                                            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a76c4', endColorstr='#57a9eb',GradientType=0 ); /* IE6-9 */
+                                                            box-shadow:none;
+                                                            text-shadow:0 -1px 0 #1e3c5e;
+                                                        }
+
+                                                        #pswd_info {
+                                                            /*position:absolute;*/
+                                                            /*bottom:-60px;*/
+                                                            bottom: -130px\9; /* IE Specific */
+                                                            right:300px;
+                                                            width:350px;
+                                                            padding:15px;
+                                                            background:#fefefe;
+                                                            font-size:.875em;
+                                                            border-radius:5px;
+                                                            box-shadow:0 1px 3px #ccc;
+                                                            border:1px solid #ddd;
+                                                        }
+
+                                                        /*#pswd_info h4 {*/
+                                                        /*    margin:0 0 10px 0;*/
+                                                        /*    padding:0;*/
+                                                        /*    font-weight:normal;*/
+                                                        /*}*/
+
+                                                        #pswd_info::before {
+                                                            content: "\25B2";
+                                                            position:absolute;
+                                                            top:-12px;
+                                                            left:45%;
+                                                            font-size:14px;
+                                                            line-height:14px;
+                                                            color:#ddd;
+                                                            text-shadow:none;
+                                                            display:block;
+                                                        }
+
+                                                        .invalid {
+                                                            background:url(images/invalid.png) no-repeat 0 50%;
+                                                            padding-left:22px;
+                                                            line-height:24px;
+                                                            color:#ec3f41;
+                                                        }
+                                                        .valid {
+                                                            background:url(images/valid.png) no-repeat 0 50%;
+                                                            padding-left:22px;
+                                                            line-height:24px;
+                                                            color:#3a7d34;
+                                                        }
+
+                                                        #pswd_info {
+                                                            display:none;
+                                                        }
+
+                                                        /*#Next1 {*/
+                                                        /*    width: 130px;*/
+                                                        /*    height: 35px;*/
+                                                        /*    background: #333;*/
+                                                        /*    border: none;*/
+                                                        /*    vertical-align: top;*/
+                                                        /*    margin-left: 35px;*/
+                                                        /*    cursor: pointer;*/
+                                                        /*    color: #fff;*/
+                                                        /*}*/
+
+                                                        #Next1:disabled {
+                                                            background: #999;
+                                                            color: #555;
+                                                            cursor: not-allowed;
+                                                        }
+
+                                                        #Next2:disabled {
+                                                            background: #999;
+                                                            color: #555;
+                                                            cursor: not-allowed;
+                                                        }
+
+                                                        #Next3:disabled {
+                                                            background: #999;
+                                                            color: #555;
+                                                            cursor: not-allowed;
+                                                        }
+
+
+                                                        .wrapper {
+                                                            width: 750px;
+                                                            max-width: 100%;
+                                                            background: var(--white);
+                                                            margin: 100px auto 0;
+                                                            padding: 50px;
+                                                            border-radius: 5px;
+                                                            margin-bottom: 100px;
+                                                        }
+
+                                                    </style>
+
+
+
+                                                    <script>
+
+                                                        oneLetter = false;
+                                                        oneCapital = false;
+                                                        oneNumber = false;
+                                                        length8 = false;
+
+                                                        $(document).ready(function() {
+                                                            //code here
+                                                            $('input[type=password]').keyup(function() {
+                                                                // keyup event code here
+
+                                                                // set password variable
+                                                                var pswd = $(this).val();
+
+                                                                //validate the length
+                                                                if ( pswd.length < 8 ) {
+                                                                    $('#length').removeClass('valid').addClass('invalid');
+                                                                    length8 = false;
+                                                                } else {
+                                                                    $('#length').removeClass('invalid').addClass('valid');
+                                                                    length8 = true;
+                                                                }
+
+                                                                //validate letter
+                                                                if ( pswd.match(/[A-z]/) ) {
+                                                                    $('#letter').removeClass('invalid').addClass('valid');
+                                                                    oneLetter = true;
+                                                                } else {
+                                                                    $('#letter').removeClass('valid').addClass('invalid');
+                                                                    oneLetter = false;
+                                                                }
+
+//validate capital letter
+                                                                if ( pswd.match(/[A-Z]/) ) {
+                                                                    $('#capital').removeClass('invalid').addClass('valid');
+                                                                    oneCapital = true;
+                                                                } else {
+                                                                    $('#capital').removeClass('valid').addClass('invalid');
+                                                                    oneCapital = false;
+                                                                }
+
+//validate number
+                                                                if ( pswd.match(/\d/) ) {
+                                                                    $('#number').removeClass('invalid').addClass('valid');
+                                                                    oneNumber = true;
+                                                                } else {
+                                                                    $('#number').removeClass('valid').addClass('invalid');
+                                                                    oneNumber = false;
+                                                                }
+
+
+                                                                if(oneLetter === false ||
+                                                                    oneCapital === false ||
+                                                                    oneNumber === false ||
+                                                                    length8 === false){
+                                                                    Next1.disabled = true;
+                                                                }
+                                                                // else {
+                                                                //     Next1.disabled = false;
+                                                                // }
+
+                                                            }).focus(function() {
+                                                                $('#pswd_info').show();
+                                                            }).blur(function() {
+                                                                $('#pswd_info').hide();
+                                                            });
+                                                        });
+
+
+
+
+                                                        //     $('input[type=password]').focus(function() {
+                                                        //         // focus code here
+                                                        //     });
+                                                        //     $('input[type=password]').blur(function() {
+                                                        //         // blur code here
+                                                        //     });
+                                                        //
+                                                        //     $('input[type=password]').keyup(function() {
+                                                        //         // keyup code here
+                                                        //     }).focus(function() {
+                                                        //         // focus code here
+                                                        //     }).blur(function() {
+                                                        //         // blur code here
+                                                        //     });
+                                                        //
+                                                        //
+                                                        //     $('input[type=password]').keyup(function() {
+                                                        //         // keyup code here
+                                                        //     }).focus(function() {
+                                                        //         $('#pswd_info').show();
+                                                        //     }).blur(function() {
+                                                        //         $('#pswd_info').hide();
+                                                        //     });
+                                                        // });
+
+                                                    </script>
+
+
+                                                    <!--                                                     // password new end-->
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="form_2 data_info" style="display: none;">
+                                            <h2>Personal Info</h2>
+                                            <form>
+                                                <div class="form_container">
+
+
+                                                    <div class="input_wrap">
+                                                        <label for="user_name">User Name</label>
+                                                        <input type="text" name="User Name" class="input" id="user_name" >
+                                                        <span id="valeuser_name" class="text-danger font-weight-bold"> </span>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <label for="first_name">First Name</label>
+                                                        <input type="text" name="First Name" class="input" id="first_name" >
+                                                        <span id="valefirst_name" class="text-danger font-weight-bold"> </span>
+                                                    </div>
+                                                    <div class="input_wrap">
+                                                        <label for="last_name1">Last Name</label>
+                                                        <input type="text" name="Last Name" class="input" id="last_name1" >
+                                                        <span id="valelast_name1" class="text-danger font-weight-bold"> </span>
+                                                    </div>
+
+                                                    <!--                                                    Gender-->
+                                                    <div class="input_wrap">
+                                                        <label for="user_name">Gender</label>
+                                                        <div style="border: 2px solid var(--secondary);">
+
+                                                            <section class="radioBtn">
+                                                                <input type="radio" name="styles" class="radioBtn" id="default" checked>
+                                                                <label for="default">Male</label>
+                                                                <!--                                                        </section>-->
+                                                                <!--                                                        <section>-->
+                                                                <input type="radio" name="styles" id="default" style="margin-left: 100px;" checked>
+                                                                <label for="default">Female</label>
+                                                            </section>
+                                                        </div>
+                                                    </div>
+
+
+
+
+                                                    <!--                                                    <div class="input_wrap" >-->
+                                                    <!--                                                        <label for="last_name">Nationality/Region *</label>-->
+                                                    <!--&lt;!&ndash;                                                        <div style="border: 2px solid var(&#45;&#45;secondary)">&ndash;&gt;-->
+                                                    <!--                                                    <select name="nationality" style="width: 100%; border: 2px solid var(&#45;&#45;secondary); height: 47px; text-align: center;">-->
+                                                    <!--                                                        <option value="">&#45;&#45; select one &#45;&#45;</option>-->
+                                                    <!--                                                        <option value="afghan">Afghan</option>-->
+                                                    <!--                                                        <option value="albanian">Albanian</option>-->
+                                                    <!--                                                        <option value="algerian">Algerian</option>-->
+                                                    <!--                                                        <option value="american">American</option>-->
+                                                    <!--                                                        <option value="andorran">Andorran</option>-->
+                                                    <!--                                                        <option value="angolan">Angolan</option>-->
+                                                    <!--                                                        <option value="antiguans">Antiguans</option>-->
+                                                    <!--                                                        <option value="argentinean">Argentinean</option>-->
+                                                    <!--                                                        <option value="armenian">Armenian</option>-->
+                                                    <!--                                                        <option value="australian">Australian</option>-->
+                                                    <!--                                                        <option value="austrian">Austrian</option>-->
+                                                    <!--                                                        <option value="azerbaijani">Azerbaijani</option>-->
+                                                    <!--                                                        <option value="bahamian">Bahamian</option>-->
+                                                    <!--                                                        <option value="bahraini">Bahraini</option>-->
+                                                    <!--                                                        <option value="bangladeshi">Bangladeshi</option>-->
+                                                    <!--                                                        <option value="barbadian">Barbadian</option>-->
+                                                    <!--                                                        <option value="barbudans">Barbudans</option>-->
+                                                    <!--                                                        <option value="batswana">Batswana</option>-->
+                                                    <!--                                                        <option value="belarusian">Belarusian</option>-->
+                                                    <!--                                                        <option value="belgian">Belgian</option>-->
+                                                    <!--                                                        <option value="belizean">Belizean</option>-->
+                                                    <!--                                                        <option value="beninese">Beninese</option>-->
+                                                    <!--                                                        <option value="bhutanese">Bhutanese</option>-->
+                                                    <!--                                                        <option value="bolivian">Bolivian</option>-->
+                                                    <!--                                                        <option value="bosnian">Bosnian</option>-->
+                                                    <!--                                                        <option value="brazilian">Brazilian</option>-->
+                                                    <!--                                                        <option value="british">British</option>-->
+                                                    <!--                                                        <option value="bruneian">Bruneian</option>-->
+                                                    <!--                                                        <option value="bulgarian">Bulgarian</option>-->
+                                                    <!--                                                        <option value="burkinabe">Burkinabe</option>-->
+                                                    <!--                                                        <option value="burmese">Burmese</option>-->
+                                                    <!--                                                        <option value="burundian">Burundian</option>-->
+                                                    <!--                                                        <option value="cambodian">Cambodian</option>-->
+                                                    <!--                                                        <option value="cameroonian">Cameroonian</option>-->
+                                                    <!--                                                        <option value="canadian">Canadian</option>-->
+                                                    <!--                                                        <option value="cape verdean">Cape Verdean</option>-->
+                                                    <!--                                                        <option value="central african">Central African</option>-->
+                                                    <!--                                                        <option value="chadian">Chadian</option>-->
+                                                    <!--                                                        <option value="chilean">Chilean</option>-->
+                                                    <!--                                                        <option value="chinese">Chinese</option>-->
+                                                    <!--                                                        <option value="colombian">Colombian</option>-->
+                                                    <!--                                                        <option value="comoran">Comoran</option>-->
+                                                    <!--                                                        <option value="congolese">Congolese</option>-->
+                                                    <!--                                                        <option value="costa rican">Costa Rican</option>-->
+                                                    <!--                                                        <option value="croatian">Croatian</option>-->
+                                                    <!--                                                        <option value="cuban">Cuban</option>-->
+                                                    <!--                                                        <option value="cypriot">Cypriot</option>-->
+                                                    <!--                                                        <option value="czech">Czech</option>-->
+                                                    <!--                                                        <option value="danish">Danish</option>-->
+                                                    <!--                                                        <option value="djibouti">Djibouti</option>-->
+                                                    <!--                                                        <option value="dominican">Dominican</option>-->
+                                                    <!--                                                        <option value="dutch">Dutch</option>-->
+                                                    <!--                                                        <option value="east timorese">East Timorese</option>-->
+                                                    <!--                                                        <option value="ecuadorean">Ecuadorean</option>-->
+                                                    <!--                                                        <option value="egyptian">Egyptian</option>-->
+                                                    <!--                                                        <option value="emirian">Emirian</option>-->
+                                                    <!--                                                        <option value="equatorial guinean">Equatorial Guinean</option>-->
+                                                    <!--                                                        <option value="eritrean">Eritrean</option>-->
+                                                    <!--                                                        <option value="estonian">Estonian</option>-->
+                                                    <!--                                                        <option value="ethiopian">Ethiopian</option>-->
+                                                    <!--                                                        <option value="fijian">Fijian</option>-->
+                                                    <!--                                                        <option value="filipino">Filipino</option>-->
+                                                    <!--                                                        <option value="finnish">Finnish</option>-->
+                                                    <!--                                                        <option value="french">French</option>-->
+                                                    <!--                                                        <option value="gabonese">Gabonese</option>-->
+                                                    <!--                                                        <option value="gambian">Gambian</option>-->
+                                                    <!--                                                        <option value="georgian">Georgian</option>-->
+                                                    <!--                                                        <option value="german">German</option>-->
+                                                    <!--                                                        <option value="ghanaian">Ghanaian</option>-->
+                                                    <!--                                                        <option value="greek">Greek</option>-->
+                                                    <!--                                                        <option value="grenadian">Grenadian</option>-->
+                                                    <!--                                                        <option value="guatemalan">Guatemalan</option>-->
+                                                    <!--                                                        <option value="guinea-bissauan">Guinea-Bissauan</option>-->
+                                                    <!--                                                        <option value="guinean">Guinean</option>-->
+                                                    <!--                                                        <option value="guyanese">Guyanese</option>-->
+                                                    <!--                                                        <option value="haitian">Haitian</option>-->
+                                                    <!--                                                        <option value="herzegovinian">Herzegovinian</option>-->
+                                                    <!--                                                        <option value="honduran">Honduran</option>-->
+                                                    <!--                                                        <option value="hungarian">Hungarian</option>-->
+                                                    <!--                                                        <option value="icelander">Icelander</option>-->
+                                                    <!--                                                        <option value="indian">Indian</option>-->
+                                                    <!--                                                        <option value="indonesian">Indonesian</option>-->
+                                                    <!--                                                        <option value="iranian">Iranian</option>-->
+                                                    <!--                                                        <option value="iraqi">Iraqi</option>-->
+                                                    <!--                                                        <option value="irish">Irish</option>-->
+                                                    <!--                                                        <option value="israeli">Israeli</option>-->
+                                                    <!--                                                        <option value="italian">Italian</option>-->
+                                                    <!--                                                        <option value="ivorian">Ivorian</option>-->
+                                                    <!--                                                        <option value="jamaican">Jamaican</option>-->
+                                                    <!--                                                        <option value="japanese">Japanese</option>-->
+                                                    <!--                                                        <option value="jordanian">Jordanian</option>-->
+                                                    <!--                                                        <option value="kazakhstani">Kazakhstani</option>-->
+                                                    <!--                                                        <option value="kenyan">Kenyan</option>-->
+                                                    <!--                                                        <option value="kittian and nevisian">Kittian and Nevisian</option>-->
+                                                    <!--                                                        <option value="kuwaiti">Kuwaiti</option>-->
+                                                    <!--                                                        <option value="kyrgyz">Kyrgyz</option>-->
+                                                    <!--                                                        <option value="laotian">Laotian</option>-->
+                                                    <!--                                                        <option value="latvian">Latvian</option>-->
+                                                    <!--                                                        <option value="lebanese">Lebanese</option>-->
+                                                    <!--                                                        <option value="liberian">Liberian</option>-->
+                                                    <!--                                                        <option value="libyan">Libyan</option>-->
+                                                    <!--                                                        <option value="liechtensteiner">Liechtensteiner</option>-->
+                                                    <!--                                                        <option value="lithuanian">Lithuanian</option>-->
+                                                    <!--                                                        <option value="luxembourger">Luxembourger</option>-->
+                                                    <!--                                                        <option value="macedonian">Macedonian</option>-->
+                                                    <!--                                                        <option value="malagasy">Malagasy</option>-->
+                                                    <!--                                                        <option value="malawian">Malawian</option>-->
+                                                    <!--                                                        <option value="malaysian">Malaysian</option>-->
+                                                    <!--                                                        <option value="maldivan">Maldivan</option>-->
+                                                    <!--                                                        <option value="malian">Malian</option>-->
+                                                    <!--                                                        <option value="maltese">Maltese</option>-->
+                                                    <!--                                                        <option value="marshallese">Marshallese</option>-->
+                                                    <!--                                                        <option value="mauritanian">Mauritanian</option>-->
+                                                    <!--                                                        <option value="mauritian">Mauritian</option>-->
+                                                    <!--                                                        <option value="mexican">Mexican</option>-->
+                                                    <!--                                                        <option value="micronesian">Micronesian</option>-->
+                                                    <!--                                                        <option value="moldovan">Moldovan</option>-->
+                                                    <!--                                                        <option value="monacan">Monacan</option>-->
+                                                    <!--                                                        <option value="mongolian">Mongolian</option>-->
+                                                    <!--                                                        <option value="moroccan">Moroccan</option>-->
+                                                    <!--                                                        <option value="mosotho">Mosotho</option>-->
+                                                    <!--                                                        <option value="motswana">Motswana</option>-->
+                                                    <!--                                                        <option value="mozambican">Mozambican</option>-->
+                                                    <!--                                                        <option value="namibian">Namibian</option>-->
+                                                    <!--                                                        <option value="nauruan">Nauruan</option>-->
+                                                    <!--                                                        <option value="nepalese">Nepalese</option>-->
+                                                    <!--                                                        <option value="new zealander">New Zealander</option>-->
+                                                    <!--                                                        <option value="ni-vanuatu">Ni-Vanuatu</option>-->
+                                                    <!--                                                        <option value="nicaraguan">Nicaraguan</option>-->
+                                                    <!--                                                        <option value="nigerien">Nigerien</option>-->
+                                                    <!--                                                        <option value="north korean">North Korean</option>-->
+                                                    <!--                                                        <option value="northern irish">Northern Irish</option>-->
+                                                    <!--                                                        <option value="norwegian">Norwegian</option>-->
+                                                    <!--                                                        <option value="omani">Omani</option>-->
+                                                    <!--                                                        <option value="pakistani">Pakistani</option>-->
+                                                    <!--                                                        <option value="palauan">Palauan</option>-->
+                                                    <!--                                                        <option value="panamanian">Panamanian</option>-->
+                                                    <!--                                                        <option value="papua new guinean">Papua New Guinean</option>-->
+                                                    <!--                                                        <option value="paraguayan">Paraguayan</option>-->
+                                                    <!--                                                        <option value="peruvian">Peruvian</option>-->
+                                                    <!--                                                        <option value="polish">Polish</option>-->
+                                                    <!--                                                        <option value="portuguese">Portuguese</option>-->
+                                                    <!--                                                        <option value="qatari">Qatari</option>-->
+                                                    <!--                                                        <option value="romanian">Romanian</option>-->
+                                                    <!--                                                        <option value="russian">Russian</option>-->
+                                                    <!--                                                        <option value="rwandan">Rwandan</option>-->
+                                                    <!--                                                        <option value="saint lucian">Saint Lucian</option>-->
+                                                    <!--                                                        <option value="salvadoran">Salvadoran</option>-->
+                                                    <!--                                                        <option value="samoan">Samoan</option>-->
+                                                    <!--                                                        <option value="san marinese">San Marinese</option>-->
+                                                    <!--                                                        <option value="sao tomean">Sao Tomean</option>-->
+                                                    <!--                                                        <option value="saudi">Saudi</option>-->
+                                                    <!--                                                        <option value="scottish">Scottish</option>-->
+                                                    <!--                                                        <option value="senegalese">Senegalese</option>-->
+                                                    <!--                                                        <option value="serbian">Serbian</option>-->
+                                                    <!--                                                        <option value="seychellois">Seychellois</option>-->
+                                                    <!--                                                        <option value="sierra leonean">Sierra Leonean</option>-->
+                                                    <!--                                                        <option value="singaporean">Singaporean</option>-->
+                                                    <!--                                                        <option value="slovakian">Slovakian</option>-->
+                                                    <!--                                                        <option value="slovenian">Slovenian</option>-->
+                                                    <!--                                                        <option value="solomon islander">Solomon Islander</option>-->
+                                                    <!--                                                        <option value="somali">Somali</option>-->
+                                                    <!--                                                        <option value="south african">South African</option>-->
+                                                    <!--                                                        <option value="south korean">South Korean</option>-->
+                                                    <!--                                                        <option value="spanish">Spanish</option>-->
+                                                    <!--                                                        <option value="sri lankan">Sri Lankan</option>-->
+                                                    <!--                                                        <option value="sudanese">Sudanese</option>-->
+                                                    <!--                                                        <option value="surinamer">Surinamer</option>-->
+                                                    <!--                                                        <option value="swazi">Swazi</option>-->
+                                                    <!--                                                        <option value="swedish">Swedish</option>-->
+                                                    <!--                                                        <option value="swiss">Swiss</option>-->
+                                                    <!--                                                        <option value="syrian">Syrian</option>-->
+                                                    <!--                                                        <option value="taiwanese">Taiwanese</option>-->
+                                                    <!--                                                        <option value="tajik">Tajik</option>-->
+                                                    <!--                                                        <option value="tanzanian">Tanzanian</option>-->
+                                                    <!--                                                        <option value="thai">Thai</option>-->
+                                                    <!--                                                        <option value="togolese">Togolese</option>-->
+                                                    <!--                                                        <option value="tongan">Tongan</option>-->
+                                                    <!--                                                        <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>-->
+                                                    <!--                                                        <option value="tunisian">Tunisian</option>-->
+                                                    <!--                                                        <option value="turkish">Turkish</option>-->
+                                                    <!--                                                        <option value="tuvaluan">Tuvaluan</option>-->
+                                                    <!--                                                        <option value="ugandan">Ugandan</option>-->
+                                                    <!--                                                        <option value="ukrainian">Ukrainian</option>-->
+                                                    <!--                                                        <option value="uruguayan">Uruguayan</option>-->
+                                                    <!--                                                        <option value="uzbekistani">Uzbekistani</option>-->
+                                                    <!--                                                        <option value="venezuelan">Venezuelan</option>-->
+                                                    <!--                                                        <option value="vietnamese">Vietnamese</option>-->
+                                                    <!--                                                        <option value="welsh">Welsh</option>-->
+                                                    <!--                                                        <option value="yemenite">Yemenite</option>-->
+                                                    <!--                                                        <option value="zambian">Zambian</option>-->
+                                                    <!--                                                        <option value="zimbabwean">Zimbabwean</option>-->
+                                                    <!--                                                    </select>-->
+
+                                                    <!--                                                        </div>-->
+
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                <br>-->
+                                                    <!--                                                    <div class="input_wrap">-->
+                                                    <!--                                                        <label for="last_name">ID Number *</label>-->
+                                                    <!--                                                        <input type="text" name="Last Name" class="input" id="last_name">-->
+                                                    <!--                                                    </div>-->
+                                                    <!--                                                    <div class="input_wrap">-->
+                                                    <!--                                                        <label for="last_name">Date of Birth *</label>-->
+                                                    <!--                                                        <input type="date" name="Last Name" class="input" id="last_name" style="text-align: center;">-->
+                                                    <!--                                                    </div>-->
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="form_3 data_info" style="display: none;">
+                                            <h2>Professional Info</h2>
+                                            <form>
+                                                <div class="form_container">
+
+                                                    <div class="input_wrap" >
+                                                        <label for="Nationality">Nationality/Region</label>
+                                                        <!--                                                        <div style="border: 2px solid var(&#45;&#45;secondary)">-->
+                                                        <select name="nationality" style="width: 100%; border: 2px solid var(--secondary); height: 47px; text-align: center;" id="Nationality">
+                                                            <option value="">-- select one --</option>
+                                                            <option value="afghan">Afghan</option>
+                                                            <option value="albanian">Albanian</option>
+                                                            <option value="algerian">Algerian</option>
+                                                            <option value="american">American</option>
+                                                            <option value="andorran">Andorran</option>
+                                                            <option value="angolan">Angolan</option>
+                                                            <option value="antiguans">Antiguans</option>
+                                                            <option value="argentinean">Argentinean</option>
+                                                            <option value="armenian">Armenian</option>
+                                                            <option value="australian">Australian</option>
+                                                            <option value="austrian">Austrian</option>
+                                                            <option value="azerbaijani">Azerbaijani</option>
+                                                            <option value="bahamian">Bahamian</option>
+                                                            <option value="bahraini">Bahraini</option>
+                                                            <option value="bangladeshi">Bangladeshi</option>
+                                                            <option value="barbadian">Barbadian</option>
+                                                            <option value="barbudans">Barbudans</option>
+                                                            <option value="batswana">Batswana</option>
+                                                            <option value="belarusian">Belarusian</option>
+                                                            <option value="belgian">Belgian</option>
+                                                            <option value="belizean">Belizean</option>
+                                                            <option value="beninese">Beninese</option>
+                                                            <option value="bhutanese">Bhutanese</option>
+                                                            <option value="bolivian">Bolivian</option>
+                                                            <option value="bosnian">Bosnian</option>
+                                                            <option value="brazilian">Brazilian</option>
+                                                            <option value="british">British</option>
+                                                            <option value="bruneian">Bruneian</option>
+                                                            <option value="bulgarian">Bulgarian</option>
+                                                            <option value="burkinabe">Burkinabe</option>
+                                                            <option value="burmese">Burmese</option>
+                                                            <option value="burundian">Burundian</option>
+                                                            <option value="cambodian">Cambodian</option>
+                                                            <option value="cameroonian">Cameroonian</option>
+                                                            <option value="canadian">Canadian</option>
+                                                            <option value="cape verdean">Cape Verdean</option>
+                                                            <option value="central african">Central African</option>
+                                                            <option value="chadian">Chadian</option>
+                                                            <option value="chilean">Chilean</option>
+                                                            <option value="chinese">Chinese</option>
+                                                            <option value="colombian">Colombian</option>
+                                                            <option value="comoran">Comoran</option>
+                                                            <option value="congolese">Congolese</option>
+                                                            <option value="costa rican">Costa Rican</option>
+                                                            <option value="croatian">Croatian</option>
+                                                            <option value="cuban">Cuban</option>
+                                                            <option value="cypriot">Cypriot</option>
+                                                            <option value="czech">Czech</option>
+                                                            <option value="danish">Danish</option>
+                                                            <option value="djibouti">Djibouti</option>
+                                                            <option value="dominican">Dominican</option>
+                                                            <option value="dutch">Dutch</option>
+                                                            <option value="east timorese">East Timorese</option>
+                                                            <option value="ecuadorean">Ecuadorean</option>
+                                                            <option value="egyptian">Egyptian</option>
+                                                            <option value="emirian">Emirian</option>
+                                                            <option value="equatorial guinean">Equatorial Guinean</option>
+                                                            <option value="eritrean">Eritrean</option>
+                                                            <option value="estonian">Estonian</option>
+                                                            <option value="ethiopian">Ethiopian</option>
+                                                            <option value="fijian">Fijian</option>
+                                                            <option value="filipino">Filipino</option>
+                                                            <option value="finnish">Finnish</option>
+                                                            <option value="french">French</option>
+                                                            <option value="gabonese">Gabonese</option>
+                                                            <option value="gambian">Gambian</option>
+                                                            <option value="georgian">Georgian</option>
+                                                            <option value="german">German</option>
+                                                            <option value="ghanaian">Ghanaian</option>
+                                                            <option value="greek">Greek</option>
+                                                            <option value="grenadian">Grenadian</option>
+                                                            <option value="guatemalan">Guatemalan</option>
+                                                            <option value="guinea-bissauan">Guinea-Bissauan</option>
+                                                            <option value="guinean">Guinean</option>
+                                                            <option value="guyanese">Guyanese</option>
+                                                            <option value="haitian">Haitian</option>
+                                                            <option value="herzegovinian">Herzegovinian</option>
+                                                            <option value="honduran">Honduran</option>
+                                                            <option value="hungarian">Hungarian</option>
+                                                            <option value="icelander">Icelander</option>
+                                                            <option value="indian">Indian</option>
+                                                            <option value="indonesian">Indonesian</option>
+                                                            <option value="iranian">Iranian</option>
+                                                            <option value="iraqi">Iraqi</option>
+                                                            <option value="irish">Irish</option>
+                                                            <option value="israeli">Israeli</option>
+                                                            <option value="italian">Italian</option>
+                                                            <option value="ivorian">Ivorian</option>
+                                                            <option value="jamaican">Jamaican</option>
+                                                            <option value="japanese">Japanese</option>
+                                                            <option value="jordanian">Jordanian</option>
+                                                            <option value="kazakhstani">Kazakhstani</option>
+                                                            <option value="kenyan">Kenyan</option>
+                                                            <option value="kittian and nevisian">Kittian and Nevisian</option>
+                                                            <option value="kuwaiti">Kuwaiti</option>
+                                                            <option value="kyrgyz">Kyrgyz</option>
+                                                            <option value="laotian">Laotian</option>
+                                                            <option value="latvian">Latvian</option>
+                                                            <option value="lebanese">Lebanese</option>
+                                                            <option value="liberian">Liberian</option>
+                                                            <option value="libyan">Libyan</option>
+                                                            <option value="liechtensteiner">Liechtensteiner</option>
+                                                            <option value="lithuanian">Lithuanian</option>
+                                                            <option value="luxembourger">Luxembourger</option>
+                                                            <option value="macedonian">Macedonian</option>
+                                                            <option value="malagasy">Malagasy</option>
+                                                            <option value="malawian">Malawian</option>
+                                                            <option value="malaysian">Malaysian</option>
+                                                            <option value="maldivan">Maldivan</option>
+                                                            <option value="malian">Malian</option>
+                                                            <option value="maltese">Maltese</option>
+                                                            <option value="marshallese">Marshallese</option>
+                                                            <option value="mauritanian">Mauritanian</option>
+                                                            <option value="mauritian">Mauritian</option>
+                                                            <option value="mexican">Mexican</option>
+                                                            <option value="micronesian">Micronesian</option>
+                                                            <option value="moldovan">Moldovan</option>
+                                                            <option value="monacan">Monacan</option>
+                                                            <option value="mongolian">Mongolian</option>
+                                                            <option value="moroccan">Moroccan</option>
+                                                            <option value="mosotho">Mosotho</option>
+                                                            <option value="motswana">Motswana</option>
+                                                            <option value="mozambican">Mozambican</option>
+                                                            <option value="namibian">Namibian</option>
+                                                            <option value="nauruan">Nauruan</option>
+                                                            <option value="nepalese">Nepalese</option>
+                                                            <option value="new zealander">New Zealander</option>
+                                                            <option value="ni-vanuatu">Ni-Vanuatu</option>
+                                                            <option value="nicaraguan">Nicaraguan</option>
+                                                            <option value="nigerien">Nigerien</option>
+                                                            <option value="north korean">North Korean</option>
+                                                            <option value="northern irish">Northern Irish</option>
+                                                            <option value="norwegian">Norwegian</option>
+                                                            <option value="omani">Omani</option>
+                                                            <option value="pakistani">Pakistani</option>
+                                                            <option value="palauan">Palauan</option>
+                                                            <option value="panamanian">Panamanian</option>
+                                                            <option value="papua new guinean">Papua New Guinean</option>
+                                                            <option value="paraguayan">Paraguayan</option>
+                                                            <option value="peruvian">Peruvian</option>
+                                                            <option value="polish">Polish</option>
+                                                            <option value="portuguese">Portuguese</option>
+                                                            <option value="qatari">Qatari</option>
+                                                            <option value="romanian">Romanian</option>
+                                                            <option value="russian">Russian</option>
+                                                            <option value="rwandan">Rwandan</option>
+                                                            <option value="saint lucian">Saint Lucian</option>
+                                                            <option value="salvadoran">Salvadoran</option>
+                                                            <option value="samoan">Samoan</option>
+                                                            <option value="san marinese">San Marinese</option>
+                                                            <option value="sao tomean">Sao Tomean</option>
+                                                            <option value="saudi">Saudi</option>
+                                                            <option value="scottish">Scottish</option>
+                                                            <option value="senegalese">Senegalese</option>
+                                                            <option value="serbian">Serbian</option>
+                                                            <option value="seychellois">Seychellois</option>
+                                                            <option value="sierra leonean">Sierra Leonean</option>
+                                                            <option value="singaporean">Singaporean</option>
+                                                            <option value="slovakian">Slovakian</option>
+                                                            <option value="slovenian">Slovenian</option>
+                                                            <option value="solomon islander">Solomon Islander</option>
+                                                            <option value="somali">Somali</option>
+                                                            <option value="south african">South African</option>
+                                                            <option value="south korean">South Korean</option>
+                                                            <option value="spanish">Spanish</option>
+                                                            <option value="sri lankan">Sri Lankan</option>
+                                                            <option value="sudanese">Sudanese</option>
+                                                            <option value="surinamer">Surinamer</option>
+                                                            <option value="swazi">Swazi</option>
+                                                            <option value="swedish">Swedish</option>
+                                                            <option value="swiss">Swiss</option>
+                                                            <option value="syrian">Syrian</option>
+                                                            <option value="taiwanese">Taiwanese</option>
+                                                            <option value="tajik">Tajik</option>
+                                                            <option value="tanzanian">Tanzanian</option>
+                                                            <option value="thai">Thai</option>
+                                                            <option value="togolese">Togolese</option>
+                                                            <option value="tongan">Tongan</option>
+                                                            <option value="trinidadian or tobagonian">Trinidadian or Tobagonian</option>
+                                                            <option value="tunisian">Tunisian</option>
+                                                            <option value="turkish">Turkish</option>
+                                                            <option value="tuvaluan">Tuvaluan</option>
+                                                            <option value="ugandan">Ugandan</option>
+                                                            <option value="ukrainian">Ukrainian</option>
+                                                            <option value="uruguayan">Uruguayan</option>
+                                                            <option value="uzbekistani">Uzbekistani</option>
+                                                            <option value="venezuelan">Venezuelan</option>
+                                                            <option value="vietnamese">Vietnamese</option>
+                                                            <option value="welsh">Welsh</option>
+                                                            <option value="yemenite">Yemenite</option>
+                                                            <option value="zambian">Zambian</option>
+                                                            <option value="zimbabwean">Zimbabwean</option>
+                                                        </select>
+
+                                                    </div>
+
+                                                </div>
+                                                <br>
+                                                <div class="input_wrap" >
+                                                    <label for="ID">ID Number</label>
+                                                    <input type="text" name="Last Name" class="input" id="ID">
+                                                </div>
+                                                <div class="input_wrap">
+                                                    <label for="Datetime">Date of Birth</label>
+                                                    <input type="date" name="Last Name" class="input" id="Datetime" style="text-align: center; color: black;">
+
+
+                                                    <br><div class="input_wrap">
+                                                    <div class="tacbox">
+                                                        <label for="checkbox"></label><input id="Agreecheckbox" type="checkbox" style="width: 15px;color: black; height: 15px;"/><a href="#"> I have read and agree to Privacy Policy</a>
+                                                    </div>
+                                                </div>
+
+
+
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <div class="btns_wrap">
+                                        <div class="common_btns form_1_btns">
+                                            <button type="button" class="btn_next" id="Next1">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+                                        </div>
+                                        <div class="common_btns form_2_btns" style="display: none;">
+                                            <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                                            <button type="button" class="btn_next" id="Next2">Next <span class="icon"><ion-icon name="arrow-forward-sharp"></ion-icon></span></button>
+                                        </div>
+                                        <div class="common_btns form_3_btns" style="display: none;">
+                                            <button type="button" class="btn_back"><span class="icon"><ion-icon name="arrow-back-sharp"></ion-icon></span>Back</button>
+                                            <button type="button" class="btn_done" id="Next3" onclick="finishRegistor();">Done</button>
+
+                                            <script>
+
+                                                function sleep(ms) {
+                                                    return new Promise(resolve => setTimeout(resolve, ms));
+                                                }
+
+                                                async function demo() {
+                                                    await sleep(5000);
+                                                    location.href = "./login.html";
+                                                }
+
+                                                function finishRegistor(){
+                                                    demo();
+                                                }
+
+
+                                            </script>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal_wrapper">
+                                    <div class="shadow"></div>
+                                    <div class="success_wrap">
+                                        <span class="modal_icon"><ion-icon name="checkmark-sharp"></ion-icon></span>
+                                        <p style="color: black;">You have successfully completed the process.
+                                            <br><small>redirecting to login page in 5 seconds...</small></p>
+                                    </div>
+                                </div>
+
+                                <script type="text/javascript" src="css/registorScripts.js"></script>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!--            <div><p>123</p></div>-->
+<!--            <div><br></div>-->
+<!--            <div><br></div>-->
+        </section>
+
+
+<!--        registor javascript-->
+        <script>
+
+            var userName = false;
+            var firstName = false;
+            var lastName = false;
+
+            var Next2 = document.getElementById("Next2");
+            var user_name = document.getElementById("user_name");
+            user_name.onchange = function () {
+
+                var user_name2 = document.getElementById("user_name").value;
+                if (user_name2 === "") {
+                    document.getElementById("valeuser_name").innerHTML = "**Please enter the User Name";
+                    // Next2.disabled = true;
+                    userName = false;
+                }
+                if(user_name2 !== ""){
+                    document.getElementById("valeuser_name").innerHTML = "";
+                    // Next2.disabled = false;
+                    userName = true;
+                }
+
+            }
+
+            var first_name = document.getElementById("first_name");
+            first_name.onchange = function () {
+
+                if(userName === false|| firstName === false || lastName === false){
+                    Next2.disabled = true;
+                }else {
+                    Next2.disabled = false;
+                }
+
+
+                var first_name2 = document.getElementById("first_name").value;
+                if (first_name2 === "") {
+                    document.getElementById("valefirst_name").innerHTML = "**Please enter the First_Name";
+                    // Next2.disabled = true;
+                    firstName = false;
+                }
+                if(first_name2 !== "") {
+                    document.getElementById("valefirst_name").innerHTML = "";
+                    // Next2.disabled = false;
+                    firstName = true;
+                }
+
+                if(userName === false|| firstName === false || lastName === false){
+                    Next2.disabled = true;
+                }if(userName === true && firstName === true && lastName === true){
+                    Next2.disabled = false;
+                }
+            }
+
+            var last_name1 = document.getElementById("last_name1");
+            last_name1.onchange = function () {
+
+                if(userName === false|| firstName === false || lastName === false){
+                    Next2.disabled = true;
+                }else {
+                    Next2.disabled = false;
+                }
+
+
+                var last_name12 = document.getElementById("last_name1").value;
+                if (last_name12 === "") {
+                    document.getElementById("valelast_name1").innerHTML = "**Please enter the Last Name";
+                    // Next2.disabled = true;
+                    lastName = false;
+                }
+                if(last_name12 !== "") {
+                    document.getElementById("valelast_name1").innerHTML = "";
+                    // Next2.disabled = false;
+                    lastName = true;
+                }
+
+                if(userName === false|| firstName === false || lastName === false){
+                    Next2.disabled = true;
+                }if(userName === true && firstName === true && lastName === true){
+                    Next2.disabled = false;
+                }
+            }
+
+
+
+            var NationalityTF = false;
+            var  IDTF = false;
+            var  DatetimeTF = false;
+
+            var Next3 = document.getElementById("Next3");
+
+            var Nationality = document.getElementById("Nationality");
+            var ID = document.getElementById("ID");
+            var Datetime = document.getElementById("Datetime");
+            var ACheck = document.getElementById("Agreecheckbox");
+
+            Nationality.onchange = function () {
+                var Nationality2 = document.getElementById("Nationality").value;
+                var AgreementCheck = document.getElementById("Agreecheckbox").checked;
+
+                if (Nationality2 === "") {
+                    // document.getElementById("valeuser_name").innerHTML = "**Please enter the User Name";
+                    // Next3.disabled = true;
+                    NationalityTF = false;
+                }
+                if(Nationality2 !== "") {
+                    // document.getElementById("valeuser_name").innerHTML = "";
+                    // Next3.disabled = false;
+                    NationalityTF = true;
+                }
+
+                if(NationalityTF === false|| IDTF === false || DatetimeTF === false || AgreementCheck === false){
+                    Next3.disabled = true;
+                }if(NationalityTF === true && IDTF === true && DatetimeTF === true && AgreementCheck === true){
+                    Next3.disabled = false;
+                }
+            }
+
+
+            ID.onchange = function () {
+                var ID2 = document.getElementById("ID").value;
+                var AgreementCheck = document.getElementById("Agreecheckbox").checked;
+
+                if (ID2 === "") {
+                    // document.getElementById("valefirst_name").innerHTML = "**Please enter the First_Name";
+                    // Next3.disabled = true;
+                    IDTF = false;
+                }
+                if(ID2 !== "") {
+                    // document.getElementById("valefirst_name").innerHTML = "";
+                    // Next3.disabled = false;
+                    IDTF = true;
+                }
+
+                if(NationalityTF === false|| IDTF === false || DatetimeTF === false || AgreementCheck === false){
+                    Next3.disabled = true;
+                }if(NationalityTF === true && IDTF === true && DatetimeTF === true && AgreementCheck === true){
+                    Next3.disabled = false;
+                }
+            }
+
+
+            Datetime.onchange = function () {
+                var Datetime2 = document.getElementById("Datetime").value;
+                var AgreementCheck = document.getElementById("Agreecheckbox").checked;
+
+                if (Datetime2 === "") {
+                    // document.getElementById("valelast_name1").innerHTML = "**Please enter the Last Name";
+                    // Next3.disabled = true;
+                    DatetimeTF = false;
+                }
+                if(Datetime2 !== "") {
+                    // document.getElementById("valelast_name1").innerHTML = "";
+                    // Next3.disabled = false;
+                    DatetimeTF = true;
+                }
+                if(NationalityTF === false|| IDTF === false || DatetimeTF === false || AgreementCheck === false){
+                    Next3.disabled = true;
+                }if(NationalityTF === true && IDTF === true && DatetimeTF === true && AgreementCheck === true){
+                    Next3.disabled = false;
+                }
+            }
+
+            ACheck.onchange = function () {
+                var AgreementCheck = document.getElementById("Agreecheckbox").checked;
+
+                if(NationalityTF === false|| IDTF === false || DatetimeTF === false || AgreementCheck === false){
+                    Next3.disabled = true;
+                }if(NationalityTF === true && IDTF === true && DatetimeTF === true && AgreementCheck === true){
+                    Next3.disabled = false;
+                }
+            }
+
+
+
+
+            // var Form1 = document.getElementById("Form1");
+            // var Form2 = document.getElementById("Form2");
+            // var Form3 = document.getElementById("Form3");
+            //
+            var Next1 = document.getElementById("Next1");
+
+
+            $(document).ready(function(){
+                $("#Next1").prop("disabled",true);
+                if(userName === false|| firstName === false || lastName === false){
+                    Next2.disabled = true;
+                }else {
+                    Next2.disabled = false;
+                }
+                if(NationalityTF === false|| IDTF === false || DatetimeTF === false){
+                    Next3.disabled = true;
+                }else {
+                    Next3.disabled = false;
+                }
+            });
+
+
+            // var Back1 = document.getElementById("Back1");
+            // var Back2 = document.getElementById("Back2");
+            // var submit = document.getElementById("submit")
+            //
+            // var progress = document.getElementById("progress");
+
+            var email = document.getElementById("email");
+            var pass1 = document.getElementById("password");
+            var pass2 = document.getElementById("confirm_password");
+
+            // Next1.click = function () {
+            //     var vEmail = document.getElementById("email").value;
+            //     if (vEmail == "") {
+            //         document.getElementById("valemail").innerHTML = "**Please enter the email id";
+            //         Next1.disabled = true;
+            //     }
+            // }
+
+
+
+            email.onchange = function () {
+                var vEmail = document.getElementById("email").value;
+                if (vEmail == "") {
+                    document.getElementById("valemail").innerHTML = "**Please enter the email id";
+                    Next1.disabled = true;
+                }
+                else if (!(vEmail.match(/^\S+@\S+\.\S+$/))) {
+                    document.getElementById("valemail").innerHTML = "**Please enter the validate email id";
+                    Next1.disabled = true;
+                }
+                else if (vEmail.match(/^\S+@\S+\.\S+$/)) {
+                    document.getElementById("valemail").innerHTML = "";
+                    Next1.disabled = false;
+                }
+                if(oneLetter === false ||
+                    oneCapital === false ||
+                    oneNumber === false ||
+                    length8 === false){
+                    Next1.disabled = true;
+                }
+            }
+
+
+
+
+
+            pass1.onchange = function (){
+                if(vPass !== "" && vConPass !== ""){
+                    var vPass = document.getElementById("password").value;
+                    var vEmail = document.getElementById("email").value;
+                    var vConPass = document.getElementById("confirm_password").value;
+                    if (vPass == "") {
+                        document.getElementById("password").innerHTML = " **Please enter the Password";
+                    }
+
+                    if (vConPass == "") {
+                        document.getElementById("password").innerHTML = " **Please enter the Password";
+                        document.getElementById("confirm_password").innerHTML = " **Please enter the Password";
+                    }
+
+                    if (vConPass !== vPass) {
+                        document.getElementById("valepass1").innerHTML = " **Password is not match";
+                        document.getElementById("valepass2").innerHTML = " **Password is not match";
+                        Next1.disabled = true;
+                    }
+                    if (vConPass === vPass) {
+                        document.getElementById("valepass1").innerHTML = "";
+                        document.getElementById("valepass2").innerHTML = "";
+                    }
+
+                    if (vConPass === vPass && (oneLetter === true &&
+                        oneCapital === true &&
+                        oneNumber === true &&
+                        length8 === true && vEmail!=="**Please enter the validate email id")) {
+                        Next1.disabled = false;
+                    }
+                }
+            }
+
+            pass2.onchange = function (){
+                if(vPass !== "" && vConPass !== ""){
+                    var vPass = document.getElementById("password").value;
+                    var vEmail = document.getElementById("email").value;
+                    var vConPass = document.getElementById("confirm_password").value;
+                    if (vPass == "") {
+                        document.getElementById("password").innerHTML = " **Please enter the Password";
+                    }
+
+                    if (vConPass == "") {
+                        document.getElementById("password").innerHTML = " **Please enter the Password";
+                        document.getElementById("confirm_password").innerHTML = " **Please enter the Password";
+                    }
+
+                    if (vConPass !== vPass) {
+                        document.getElementById("valepass1").innerHTML = " **Password is not match";
+                        document.getElementById("valepass2").innerHTML = " **Password is not match";
+                        Next1.disabled = true;
+                    }
+                    if (vConPass == vPass) {
+                        document.getElementById("valepass1").innerHTML = "";
+                        document.getElementById("valepass2").innerHTML = "";
+                    }
+                    if (vConPass === vPass && (oneLetter === true &&
+                        oneCapital === true &&
+                        oneNumber === true &&
+                        length8 === true && vEmail!=="**Please enter the validate email id")) {
+                        Next1.disabled = false;
+                    }
+                }
+            }
+
+
+
+            // Back1.onclick = function () {
+            //     Form1.style.left = "40px";
+            //     Form2.style.left = "450px";
+            //     progress.style.width = "120px";
+            // }
+
+            Next2.onclick = function () {
+                var firstname = document.getElementById("fname").value;
+                var lastname = document.getElementById("lname").value;
+                var Mnumber = document.getElementById("Mnum").value;
+
+                if (firstname == "") {
+                    document.getElementById("valfname").innerHTML = " **please first name";
+                }
+                else if (lastname == "") {
+                    document.getElementById("vallname").innerHTML = " **please last name";
+                }
+                else if (Mnumber == "") {
+                    document.getElementById("valMnum").innerHTML = " **please enter mobile number";
+                }
+            }
+            // Back2.onclick = function () {
+            //     Form2.style.left = "40px";
+            //     Form3.style.left = "450px";
+            //     progress.style.width = "240px";
+            // }
+
+            // submit.onclick = function () {
+            //     var scllg = document.getElementById("cllg").value;
+            //     var scourse = document.getElementById("course").value;
+            //     var fyear = document.getElementById("year").value;
+            //
+            //     if (scllg == "") {
+            //         document.getElementById("valcllg").innerHTML = " **please fill";
+            //     } else if (scourse == "") {
+            //         document.getElementById("valcourse").innerHTML = " **please fill";
+            //     } else if (fyear == "") {
+            //         document.getElementById("valyear").innerHTML = " **please fill";
+            //     } else {
+            //         alert("scuess");
+            //     }
+            // }
+
+
+
+
+            // if next1 is clicked
+            // $("#Next1").onclick(function() {
+            //     alert("scuess");
+            // });
+
+
+
+            // Next1.onclick = function () {
+            //     alert("hi");
+            // }
+
+            //                 // $('#pswd_info').show();
+            //
+            //                 oneLetter = false;
+            //                 oneCapital = false;
+            //                 oneNumber = false;
+            //                 length8 = false;
+            //
+            //                 // set password variable
+            //                 var pswd = $(this).val();
+            //
+            //                 //validate the length
+            //                 if (pswd.length < 8) {
+            //                     // $('#length8').removeClass('valid').addClass('invalid');
+            //                     length = true;
+            //                 } else {
+            //                     // $('#length8').removeClass('invalid').addClass('valid');
+            //                     length = false;
+            //                 }
+            //
+            //                 //validate letter
+            //                 if (pswd.match(/[A-z]/)) {
+            //                     // $('#letter').removeClass('invalid').addClass('valid');
+            //                     oneLetter = true;
+            //                 } else {
+            //                     // $('#letter').removeClass('valid').addClass('invalid');
+            //                     oneLetter = false;
+            //                 }
+            //
+            // //validate capital letter
+            //                 if (pswd.match(/[A-Z]/)) {
+            //                     // $('#capital').removeClass('invalid').addClass('valid');
+            //                     oneCapital = true;
+            //                 } else {
+            //                     // $('#capital').removeClass('valid').addClass('invalid');
+            //                     oneCapital = false;
+            //                 }
+            //
+            // //validate number
+            //                 if (pswd.match(/\d/)) {
+            //                     // $('#number').removeClass('invalid').addClass('valid');
+            //                     oneNumber = true;
+            //                 } else {
+            //                     // $('#number').removeClass('valid').addClass('invalid');
+            //                     oneNumber = false;
+            //                 }
+            //
+            //                 if(oneLetter === false ||
+            //                 oneCapital === false ||
+            //                 oneNumber === false ||
+            //                 length8 === false){
+            //                     $('#pswd_info').show();
+            //                     Next1.disabled = true;
+            //                 }
+            //
+            //
+            // }
+
+        </script>
+
+
+        <!-- FOOTER PAGE -->
+        <link rel="stylesheet" href="css/footer.css">
+
+        <footer class="new_footer_area bg_color">
+            <div class="new_footer_top">
+                <div class="container">
+                    <div class="row">
+
+
+                    </div>
+                </div>
+                <div class="footer_bg">
+                    <div class="footer_bg_one"></div>
+                    <div class="footer_bg_two"></div>
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6 col-sm-7">
+                            <p class="mb-0 f_400">© flight Inc.. 202 All rights reserved.</p>
+                        </div>
+                        <div class="col-lg-6 col-sm-5 text-right">
+                            <p><i class="icon_heart"></i>Welcome</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- END / FOOTER PAGE -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/lib/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.owl.carousel.js"></script>
+    <script type="text/javascript" src="js/lib/theia-sticky-sidebar.js"></script>
+    <script type='text/javascript' src="js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
+
+<script type="text/javascript" src="js/login.js"></script>

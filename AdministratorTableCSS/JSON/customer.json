@@ -1,0 +1,46 @@
+var tableData = [{
+  "email": "Mary312321@gmail.com",
+  "username": "Mary123",
+  "password": "Qdad#1234",
+  "firstname": "Chi Man",
+  "lastname": "Chan",
+  "gender": "Female",
+  "nationality": "Polish",
+  "birth": "10/12/2002"
+},{
+  "email": "Ivanqwe123@gmail.com",
+  "username": "Ivan123",
+  "password": "asdS*Q123",
+  "firstname": "Tai Wan",
+  "lastname": "CHEUNG",
+  "gender": "Male",
+  "nationality": "Chinese",
+  "birth": "22/06/1991"
+} ,{
+  "email": "Chris12334@gmail.com",
+  "username": "Chris123",
+  "password": "DSAwds123#",
+  "firstname": "Chi Sing",
+  "lastname": "TANG",
+  "gender": "Female",
+  "nationality": "American",
+  "birth": "16/01/1988"
+} ,{
+  "email": "Arise3wes@gmail.com",
+  "username": "AriseWWW",
+  "password": "dsa1dWWee",
+  "firstname": "Zhi Yu",
+  "lastname": "MAK",
+  "gender": "Female",
+  "nationality": "Chinese",
+  "birth": "02/12/1956"
+} ,{
+  "email": "Lorry3qweqwe@gmail.com",
+  "username": "Lorry333",
+  "password": "Q*ws213",
+  "firstname": "Zhi Man",
+  "lastname": "Lee",
+  "gender": "Male",
+  "nationality": "Chinese",
+  "birth": "07/07/1977"
+}]

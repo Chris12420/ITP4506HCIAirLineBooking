@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <!-- TITLE -->
+    <title>IVE airline-Rating</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/awe-booking-font.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/magnific-popup.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery-ui.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+
+    <!-- CSS COLOR -->
+    <link id="colorreplace" rel="stylesheet" type="text/css" href="css/colors/blue.css">
+
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+
+
+<!-- PAGE WRAP -->
+<div id="page-wrap">
+    <!-- PRELOADER -->
+    <!--        <div class="preloader"></div>-->
+    <!-- END / PRELOADER -->
+
+
+    <!-- HEADER PAGE -->
+    <header id="header-page">
+        <div class="header-page__inner">
+            <div class="container">
+                <!-- LOGO -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo.png" alt=""></a>
+                </div>
+                <!-- END / LOGO -->
+
+                <!-- NAVIGATION -->
+                <nav class="navigation awe-navigation" data-responsive="1200">
+                    <ul class="menu-list">
+                        <li class="menu-item-has-children current-menu-parent">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="flight.html">Flight</a>
+                            <ul class="sub-menu">
+                                <li><a href="flight.html">Flight</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="myCart.html">Checkout</a>
+                            <ul class="sub-menu">
+                                <li><a href="myCart.html">Your cart</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="PaymentReview.html">Review Order</a>
+                            <ul class="sub-menu">
+                                <li><a href="PaymentReview.html">Review Order</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="luckWheel.html">Lucky Wheel</a>
+                            <ul class="sub-menu">
+                                <li><a href="luckWheel.html">Lucky Wheel</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="redemption.html">Redemption</a>
+                            <ul class="sub-menu">
+                                <li><a href="redemption.html">Redemption</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item-has-children">
+                            <a href="login.html" id="loginEle">Log In</a>
+                            <ul class="sub-menu">
+                                <li><a href="login.html">Log In</a></li>
+                                <li><a href="register.html">Register</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                    </li>
+
+                    </ul>
+                </nav>
+                <!-- END / NAVIGATION -->
+
+
+
+            </div>
+        </div>
+    </header>
+    <!-- END / HEADER PAGE -->
+
+
+    <section class="product-detail">
+
+
+        <div><br><br><br><br><br><br><br><br></div>
+
+
+        <body>
+        <div class="galaxy">
+            <div class="sky"></div>
+            <span class="moon"></span>
+        </div>
+        </body>
+
+        <style>
+            .galaxy{
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100vw;
+                height: 100vh;
+            }
+
+            .sky{
+                width: 100%w;
+                height: 100%;
+                background: rgb(16,21,29);
+                background: linear-gradient(180deg, rgb(8, 10, 26) 0%, rgb(40, 43, 71) 100%);
+            }
+
+            i {
+                position: absolute;
+                background: linear-gradient(
+                        0deg,
+                        rgba(255, 255, 255, 1) 0%,
+                        transparent
+                );
+                height: 300px;
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                animation: starDrop 5s infinite linear;
+                filter: blur(0.8px);
+            }
+
+            i:nth-child(4n + 1) {
+                background: linear-gradient(
+                        0deg,
+                        rgb(253, 242, 191) 0%,
+                        transparent
+                );
+            }
+
+            i:nth-child(4n + 2) {
+                background: linear-gradient(
+                        0deg,
+                        rgb(210, 228, 255) 0%,
+                        transparent
+                );
+            }
+
+            i:nth-child(4n + 3) {
+                background-color: rgb(250, 210, 191);
+                background: linear-gradient(
+                        0deg,
+                        rgba(2250, 210, 191, 1) 0%,
+                        transparent
+                );
+            }
+
+            @keyframes starDrop {
+                0% {
+                    transform: rotate(45deg) translate(0px, -2000px);
+                }
+
+                100% {
+                    transform: rotate(45deg) translate(0px, calc(100vh + 200px));
+                }
+            }
+
+            j{
+                display: inline-block;
+                position: absolute;
+                background-color: white;
+                border-radius: 50%;
+                animation: starMove 1s linear infinite;
+            }
+
+            j:nth-child(3n+1){
+                background-color: rgb(248, 193, 167);
+            }
+
+            j:nth-child(3n+2){
+                background-color: rgb(207, 199, 253);
+            }
+
+            @keyframes starMove {
+                0% {
+                    transform: translateX(-100vw);
+                }
+
+                100% {
+                    transform: translateX(100vw);
+                }
+            }
+
+
+
+            .moon{
+                position: absolute;
+                top: 20%;
+                right: 15%;
+                content: '';
+                width: 110px;
+                height: 110px;
+                border-radius: 50%;
+                z-index: 1;
+                background: rgb(253, 248, 221);
+                filter: blur(1px);
+                box-shadow: 0px 0px 5px 5px rgba(253, 248, 221, 0.5);
+                transition: 250ms;
+                cursor: pointer;
+            }
+
+            .moon:hover{
+                transform: scale(1.05);
+            }
+        </style>
+
+
+        <script>
+            const area = document.querySelector(".galaxy");
+
+            let amountMeteor = 15;
+            let amountStar = 200;
+            let i = 0;
+            let j = 0;
+            let k = 0;
+
+            function galaxy() {
+
+                while(i < amountMeteor){ // meteor from top
+                    let drop = document.createElement('i');
+                    let size = Math.random() * 2 + 0.5;
+                    let posX = Math.floor(Math.random() * area.offsetWidth);
+                    let delay = Math.random() * - 20;
+                    let duration = Math.random() * 20 + 3;
+
+                    drop.style.width = size + 'px';
+                    drop.style.left = posX + 'px';
+                    drop.style.top = 0;
+                    drop.style.animationDelay = delay + 's';
+                    drop.style.animationDuration = duration + 's';
+                    area.appendChild(drop);
+                    i++;
+                }
+
+                while(k < amountMeteor*2){ // meteor from right
+                    let drop = document.createElement('i');
+                    let size = Math.random() * 2 + 0.5;
+                    let posY = Math.floor(Math.random() * area.offsetHeight);
+                    let delay = Math.random() * -20;
+                    let duration = Math.random() * 30 + 3;
+
+                    drop.style.width = size + 'px';
+                    drop.style.right = 0;
+                    drop.style.top = posY + 'px';
+                    drop.style.animationDelay = delay + 's';
+                    drop.style.animationDuration = duration + 's';
+                    area.appendChild(drop);
+                    k++;
+                }
+
+                while(j < amountStar){
+                    let star = document.createElement('j');
+                    let size = Math.random() * 5;
+                    let posX = Math.floor(Math.random() * area.offsetWidth * 2);
+                    let posY = Math.floor(Math.random() * area.offsetHeight);
+                    let delay = Math.random() * 100 + 50;
+                    let duration = Math.random() * 300 + 15;
+
+                    star.style.width = size + 'px';
+                    star.style.height = size + 'px';
+                    star.style.left = posX + 'px';
+                    star.style.top =  posY + 'px';
+                    star.style.animationDuration = duration + 's';
+
+                    area.appendChild(star);
+                    j++;
+                }
+            }
+
+            galaxy();
+
+        </script>
+
+
+
+
+
+        <span>
+            <div class="ticket">
+                <div id="banner">
+                    <div id="topbanner"></div>
+                    <span id="mainbanner">
+			<img src="https://lukw4l.de/utils/media/assets/flightticket/plane_logo.png">
+			LUKW4L Airlines
+		</span>
+                    <span id="tearoffbanner">
+			<img src="https://lukw4l.de/utils/media/assets/flightticket/plane_logo.png">
+			LUKW4L Airlines
+		</span>
+                </div>
+                <div id="barcode">
+                    XYZASDASDXYZ
+                </div>
+                <div id="data">
+                    <div id="maindata">
+                        <div class="box">
+				<span class="header">
+					Passenger Name
+				</span>
+                            <span class="body">
+					Mr. Lorem Ipsum
+				</span>
+                        </div>
+                        <div class="box">
+				<span class="header">
+					Flight Number
+				</span>
+                            <span class="body">
+					LUKW4L 3345
+				</span>
+                        </div>
+                        <div class="box">
+				<span class="header">
+					From
+				</span>
+                            <span class="body">
+					CGN (Germany)
+				</span>
+                        </div>
+                        <div class="box">
+				<span class="header">
+					Date
+				</span>
+                            <span class="body">
+					11 AUG 2021
+				</span>
+                        </div>
+                        <div class="box">
+				<span class="header">
+					To
+				</span>
+                            <span class="body">
+					SYD (Australia)
+				</span>
+                        </div>
+                        <div class="box">
+                        </div>
+                        <div class="box">
+				<span class="header">
+					Gate
+				</span>
+                            <span class="body">
+					B-10
+				</span>
+                        </div>
+                        <div class="box boarding">
+				<span class="header">
+					Boarding Time
+				</span>
+                            <span class="body">
+					12:00
+				</span>
+                        </div>
+
+                        <div id="tearoffdata">
+                            <div class="box">
+					<span class="header">
+						Passenger Name
+					</span>
+                                <span class="body">
+						Mr. Lorem Ipsum
+					</span>
+                            </div>
+                            <div class="box">
+					<span class="header">
+						Flight Number
+					</span>
+                                <span class="body">
+						LUKW4L 3345
+					</span>
+                            </div>
+                            <div class="box">
+					<span class="header">
+						Date
+					</span>
+                                <span class="body">
+						11 AUG 2021
+					</span>
+                            </div>
+                            <div class="box">
+					<span class="header">
+						Gate
+					</span>
+                                <span class="body">
+						B-10
+					</span>
+                            </div>
+                            <div class="box seat">
+					<span class="header">
+						Seat
+					</span>
+                                <span class="body">
+						<b>23F</b>
+					</span>
+                                <span class="body">
+                                <div class="wrapper">
+    <a class="cta" href="#">
+        <span id="nextBtn">NEXT</span>
+        <span>
+      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+          <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>
+          <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>
+        </g>
+      </svg>
+    </span>
+    </a>
+</div>
+                                    </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="holes">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                </div>
+                </div>
+
+            <!--            <div><br><br><br><br><br><br><br></div>-->
+
+            <!--            <div class="ticket">-->
+            <!--                <div id="banner">-->
+            <!--                    <div id="topbanner"></div>-->
+            <!--                    <span id="mainbanner">-->
+            <!--			<img src="https://lukw4l.de/utils/media/assets/flightticket/plane_logo.png">-->
+            <!--			LUKW4L Airlines-->
+            <!--		</span>-->
+            <!--                    <span id="tearoffbanner">-->
+            <!--			<img src="https://lukw4l.de/utils/media/assets/flightticket/plane_logo.png">-->
+            <!--			LUKW4L Airlines-->
+            <!--		</span>-->
+            <!--                </div>-->
+            <!--                <div id="barcode">-->
+            <!--                    XYZASDASDXYZ-->
+            <!--                </div>-->
+            <!--                <div id="data">-->
+            <!--                    <div id="maindata">-->
+            <!--                        <div class="box">-->
+            <!--				<span class="header">-->
+            <!--					Passenger Name-->
+            <!--				</span>-->
+            <!--                            <span class="body">-->
+            <!--					Mr. Lorem Ipsum-->
+            <!--				</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="box">-->
+            <!--				<span class="header">-->
+            <!--					Flight Number-->
+            <!--				</span>-->
+            <!--                            <span class="body">-->
+            <!--					LUKW4L 3345-->
+            <!--				</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="box">-->
+            <!--				<span class="header">-->
+            <!--					From-->
+            <!--				</span>-->
+            <!--                            <span class="body">-->
+            <!--					CGN (Germany)-->
+            <!--				</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="box">-->
+            <!--				<span class="header">-->
+            <!--					Date-->
+            <!--				</span>-->
+            <!--                            <span class="body">-->
+            <!--					11 AUG 2021-->
+            <!--				</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="box">-->
+            <!--				<span class="header">-->
+            <!--					To-->
+            <!--				</span>-->
+            <!--                            <span class="body">-->
+            <!--					SYD (Australia)-->
+            <!--				</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="box">-->
+            <!--                        </div>-->
+            <!--                        <div class="box">-->
+            <!--				<span class="header">-->
+            <!--					Gate-->
+            <!--				</span>-->
+            <!--                            <span class="body">-->
+            <!--					B-10-->
+            <!--				</span>-->
+            <!--                        </div>-->
+            <!--                        <div class="box boarding">-->
+            <!--				<span class="header">-->
+            <!--					Boarding Time-->
+            <!--				</span>-->
+            <!--                            <span class="body">-->
+            <!--					12:00-->
+            <!--				</span>-->
+            <!--                        </div>-->
+
+            <!--                        <div id="tearoffdata">-->
+            <!--                            <div class="box">-->
+            <!--					<span class="header">-->
+            <!--						Passenger Name-->
+            <!--					</span>-->
+            <!--                                <span class="body">-->
+            <!--						Mr. Lorem Ipsum-->
+            <!--					</span>-->
+            <!--                            </div>-->
+            <!--                            <div class="box">-->
+            <!--					<span class="header">-->
+            <!--						Flight Number-->
+            <!--					</span>-->
+            <!--                                <span class="body">-->
+            <!--						LUKW4L 3345-->
+            <!--					</span>-->
+            <!--                            </div>-->
+            <!--                            <div class="box">-->
+            <!--					<span class="header">-->
+            <!--						Date-->
+            <!--					</span>-->
+            <!--                                <span class="body">-->
+            <!--						11 AUG 2021-->
+            <!--					</span>-->
+            <!--                            </div>-->
+            <!--                            <div class="box">-->
+            <!--					<span class="header">-->
+            <!--						Gate-->
+            <!--					</span>-->
+            <!--                                <span class="body">-->
+            <!--						B-10-->
+            <!--					</span>-->
+            <!--                            </div>-->
+            <!--                            <div class="box seat">-->
+            <!--					<span class="header">-->
+            <!--						Seat-->
+            <!--					</span>-->
+            <!--                                <span class="body">-->
+            <!--						<b>23F</b>-->
+            <!--					</span>-->
+
+            <!--                                <span class="body">-->
+            <!--						&lt;!&ndash; designed by me... enjoy! &ndash;&gt;-->
+            <!--<div class="wrapper">-->
+            <!--    <a class="cta" href="#">-->
+            <!--        <span>NEXT</span>-->
+            <!--        <span>-->
+            <!--      <svg width="66px" height="43px" viewBox="0 0 66 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">-->
+            <!--        <g id="arrow" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">-->
+            <!--          <path class="one" d="M40.1543933,3.89485454 L43.9763149,0.139296592 C44.1708311,-0.0518420739 44.4826329,-0.0518571125 44.6771675,0.139262789 L65.6916134,20.7848311 C66.0855801,21.1718824 66.0911863,21.8050225 65.704135,22.1989893 C65.7000188,22.2031791 65.6958657,22.2073326 65.6916762,22.2114492 L44.677098,42.8607841 C44.4825957,43.0519059 44.1708242,43.0519358 43.9762853,42.8608513 L40.1545186,39.1069479 C39.9575152,38.9134427 39.9546793,38.5968729 40.1481845,38.3998695 C40.1502893,38.3977268 40.1524132,38.395603 40.1545562,38.3934985 L56.9937789,21.8567812 C57.1908028,21.6632968 57.193672,21.3467273 57.0001876,21.1497035 C56.9980647,21.1475418 56.9959223,21.1453995 56.9937605,21.1432767 L40.1545208,4.60825197 C39.9574869,4.41477773 39.9546013,4.09820839 40.1480756,3.90117456 C40.1501626,3.89904911 40.1522686,3.89694235 40.1543933,3.89485454 Z" fill="#FFFFFF"></path>-->
+            <!--          <path class="two" d="M20.1543933,3.89485454 L23.9763149,0.139296592 C24.1708311,-0.0518420739 24.4826329,-0.0518571125 24.6771675,0.139262789 L45.6916134,20.7848311 C46.0855801,21.1718824 46.0911863,21.8050225 45.704135,22.1989893 C45.7000188,22.2031791 45.6958657,22.2073326 45.6916762,22.2114492 L24.677098,42.8607841 C24.4825957,43.0519059 24.1708242,43.0519358 23.9762853,42.8608513 L20.1545186,39.1069479 C19.9575152,38.9134427 19.9546793,38.5968729 20.1481845,38.3998695 C20.1502893,38.3977268 20.1524132,38.395603 20.1545562,38.3934985 L36.9937789,21.8567812 C37.1908028,21.6632968 37.193672,21.3467273 37.0001876,21.1497035 C36.9980647,21.1475418 36.9959223,21.1453995 36.9937605,21.1432767 L20.1545208,4.60825197 C19.9574869,4.41477773 19.9546013,4.09820839 20.1480756,3.90117456 C20.1501626,3.89904911 20.1522686,3.89694235 20.1543933,3.89485454 Z" fill="#FFFFFF"></path>-->
+            <!--          <path class="three" d="M0.154393339,3.89485454 L3.97631488,0.139296592 C4.17083111,-0.0518420739 4.48263286,-0.0518571125 4.67716753,0.139262789 L25.6916134,20.7848311 C26.0855801,21.1718824 26.0911863,21.8050225 25.704135,22.1989893 C25.7000188,22.2031791 25.6958657,22.2073326 25.6916762,22.2114492 L4.67709797,42.8607841 C4.48259567,43.0519059 4.17082418,43.0519358 3.97628526,42.8608513 L0.154518591,39.1069479 C-0.0424848215,38.9134427 -0.0453206733,38.5968729 0.148184538,38.3998695 C0.150289256,38.3977268 0.152413239,38.395603 0.154556228,38.3934985 L16.9937789,21.8567812 C17.1908028,21.6632968 17.193672,21.3467273 17.0001876,21.1497035 C16.9980647,21.1475418 16.9959223,21.1453995 16.9937605,21.1432767 L0.15452076,4.60825197 C-0.0425130651,4.41477773 -0.0453986756,4.09820839 0.148075568,3.90117456 C0.150162624,3.89904911 0.152268631,3.89694235 0.154393339,3.89485454 Z" fill="#FFFFFF"></path>-->
+            <!--        </g>-->
+            <!--      </svg>-->
+            <!--    </span>-->
+            <!--    </a>-->
+            <!--</div>-->
+            <!--					</span>-->
+            <!--                            </div>-->
+            <!--                        </div>-->
+            <!--                    </div>-->
+
+            <!--                    <div id="holes">-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                        <div></div>-->
+            <!--                    </div>-->
+            <!--                </div>-->
+            <!--                </div>-->
+            <!--&lt;!&ndash;                <input type="button" style="width: 120px; height: 40px;">&ndash;&gt;-->
+            <!--              </span>-->
+
+
+    </section>
+
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Libre+Barcode+39");
+        @import url("https://fonts.googleapis.com/css?family=Open+Sans");
+        @import url("https://fonts.googleapis.com/css?family=Merienda");
+
+        /*body,*/
+        /*html {*/
+        /*    background: #bbbbbb;*/
+        /*    height: 100%;*/
+        /*    display: grid;*/
+        /*}*/
+
+        .ticket {
+            height: 20vw;
+            width: 60vw;
+            margin: auto;
+            border-radius: 2vw;
+            position: relative;
+            background: white;
+        }
+
+        #banner {
+            height: 20vw;
+            border-radius: 2vw;
+            border-top: 4vw solid #3399ff;
+            font-family: "Merienda";
+            color: white;
+        }
+
+        #mainbanner {
+            position: absolute;
+            top: -0.4vw;
+            left: 4.5vw;
+            font-size: 3vw;
+        }
+
+        #mainbanner img {
+            vertical-align: middle;
+            height: 4vw;
+            width: 4vw;
+        }
+
+        #tearoffbanner {
+            position: absolute;
+            top: 1vw;
+            left: 46.7vw;
+            font-size: 1.2vw;
+        }
+
+        #tearoffbanner img {
+            vertical-align: middle;
+            height: 2vw;
+            width: 2vw;
+        }
+
+        #barcode {
+            overflow: hidden;
+            height: 3vw;
+            width: 13vw;
+            position: absolute;
+            top: 10vw;
+            left: -2vw;
+            font-size: 4em;
+            font-family: "Libre Barcode 39";
+            transform: rotate(-90deg) scale(1, 2.5);
+        }
+
+        #holes {
+            height: 100%;
+            position: absolute;
+            top: -1.8vw;
+            left: 44vw;
+        }
+
+        #holes div {
+            width: 1.8vw;
+            height: 1.8vw;
+            border-radius: 100%;
+            background: #bbbbbb;
+            margin-top: 0.5vw;
+        }
+
+        #data {
+            text-transform: uppercase;
+            font-size: 0.8vw;
+            font-family: "Open Sans";
+        }
+
+        #maindata {
+            margin: 0.5vw;
+            position: absolute;
+            width: 35vw;
+            height: 16vw;
+            top: 4vw;
+            left: 9vw;
+        }
+
+        #data .box {
+            width: 17vw;
+            display: inline-block;
+        }
+
+        #data .box .header {
+            display: block;
+        }
+
+        #data .box .body {
+            font-size: 1.7vw;
+        }
+
+        #data .box.boarding {
+            width: 17vw;
+            bottom: 3vw;
+            left: 9.3vw;
+            position: absolute;
+            text-align: center;
+            border: 2px solid black;
+            margin-top: 0.3vw;
+            margin-left: 6vw;
+        }
+        #data .box.boarding .header {
+            font-size: 1.8vw;
+        }
+
+        #data .box.boarding .body {
+            font-size: 1.5vw;
+        }
+
+        #tearoffdata {
+            position: absolute;
+            width: 13vw;
+            height: 16vw;
+            top: 0vw;
+            left: 37vw;
+            font-size: 0.8vw;
+        }
+
+        #tearoffdata .box {
+            width: 13vw;
+            display: block;
+        }
+
+        #tearoffdata .box .header {
+            text-decoration: none;
+        }
+        #tearoffdata .box .body {
+            margin-left: 1vw;
+            font-size: 1.2vw;
+        }
+
+        #tearoffdata .box.seat {
+            margin-top: 0vw;
+        }
+        #tearoffdata .box.seat .body {
+            font-size: 2vw;
+        }
+
+
+    </style>
+
+    <!-- FOOTER PAGE -->
+    <link rel="stylesheet" href="css/footer.css">
+
+    <footer class="new_footer_area bg_color">
+        <div class="new_footer_top">
+            <div class="container">
+                <div class="row">
+
+
+                </div>
+            </div>
+            <div class="footer_bg">
+                <div class="footer_bg_one"></div>
+                <div class="footer_bg_two"></div>
+            </div>
+        </div>
+        <div class="footer_bottom">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-sm-7">
+                        <p class="mb-0 f_400">© flight Inc.. 202 All rights reserved.</p>
+                    </div>
+                    <div class="col-lg-6 col-sm-5 text-right">
+                        <p><i class="icon_heart"></i>Welcome</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END / FOOTER PAGE -->
+
+</div>
+<!-- END / PAGE WRAP -->
+
+<!-- LOAD JQUERY -->
+<script type="text/javascript" src="js/lib/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/lib/masonry.pkgd.min.js"></script>
+<script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="js/lib/jquery.owl.carousel.js"></script>
+<script type="text/javascript" src="js/lib/theia-sticky-sidebar.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3"></script>
+<script type="text/javascript" src="js/lib/md-map-extend.js"></script>
+<script type="text/javascript" src="js/lib/jquery.magnific-popup.min.js"></script>
+<script type='text/javascript' src="js/lib/jquery-ui.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
+
+
+<script>
+    $("#ToBeHidden").hide()
+    $(document).ready(function(){
+        $("#Sub").click(function(){
+            $("#ToBeHidden").show();
+            $(".commentlist").append($("" ));
+        });
+    });
+
+
+</script>
+<script type="text/javascript" src="js/login.js"></script>
+
+
+<style>
+
+    @import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    /*body {*/
+    /*    height: 100vh;*/
+    /*    display: flex;*/
+    /*    justify-content: center;*/
+    /*    align-items: center;*/
+    /*}*/
+
+    .wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .cta {
+        display: flex;
+        padding: 10px 45px;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-size: 40px;
+        color: white;
+        background: #6225E6;
+        transition: 1s;
+        box-shadow: 6px 6px 0 black;
+        transform: skewX(-15deg);
+    }
+
+    .cta:focus {
+        outline: none;
+    }
+
+    .cta:hover {
+        transition: 0.5s;
+        box-shadow: 10px 10px 0 #FBC638;
+    }
+
+    .cta span:nth-child(2) {
+        transition: 0.5s;
+        margin-right: 0px;
+    }
+
+    .cta:hover  span:nth-child(2) {
+        transition: 0.5s;
+        margin-right: 45px;
+    }
+
+    span {
+        transform: skewX(15deg)
+    }
+
+    span:nth-child(2) {
+        width: 20px;
+        margin-left: 30px;
+        position: relative;
+        top: 12%;
+    }
+
+    /**************SVG****************/
+
+    path.one {
+        transition: 0.4s;
+        transform: translateX(-60%);
+    }
+
+    path.two {
+        transition: 0.5s;
+        transform: translateX(-30%);
+    }
+
+    .cta:hover path.three {
+        animation: color_anim 1s infinite 0.2s;
+    }
+
+    .cta:hover path.one {
+        transform: translateX(0%);
+        animation: color_anim 1s infinite 0.6s;
+    }
+
+    .cta:hover path.two {
+        transform: translateX(0%);
+        animation: color_anim 1s infinite 0.4s;
+    }
+
+    /* SVG animations */
+
+    @keyframes color_anim {
+        0% {
+            fill: white;
+        }
+        50% {
+            fill: #FBC638;
+        }
+        100% {
+            fill: white;
+        }
+    }
+</style>
+
+<script>
+    $("#nextBtn").click(function(){
+        window.location = "editPayment.html";
+        // window.location("checkout-yourcart.html")
+    });
+</script>
+
+<script type="text/javascript" src="js/login.js"></script>

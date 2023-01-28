@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    
+    <!-- TITLE -->
+    <title>IVE airline-Checkout</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,600,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- CSS LIBRARY -->
+    <link rel="stylesheet" type="text/css" href="css/lib/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/awe-booking-font.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="css/lib/jquery-ui.css">
+
+    <!-- MAIN STYLE -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/demo.css">
+    
+    <!-- CSS COLOR -->
+    <link id="colorreplace" rel="stylesheet" type="text/css" href="css/colors/blue.css">
+    
+    <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+    <![endif]-->
+</head>
+
+<!--[if IE 7]> <body class="ie7 lt-ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 8]> <body class="ie8 lt-ie9 lt-ie10"> <![endif]-->
+<!--[if IE 9]> <body class="ie9 lt-ie10"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <body> <!--<![endif]-->
+
+
+
+    <!-- PAGE WRAP -->
+    <div id="page-wrap">
+
+        <!-- PRELOADER -->
+<!--        <div class="preloader"></div>-->
+        <!-- END / PRELOADER -->
+
+        
+        <!-- HEADER PAGE -->
+        <header id="header-page">
+            <div class="header-page__inner">
+                <div class="container">
+                    <!-- LOGO -->
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <!-- END / LOGO -->
+
+                    <!-- NAVIGATION -->
+                    <nav class="navigation awe-navigation" data-responsive="1200">
+                        <ul class="menu-list">
+                            <li class="menu-item-has-children current-menu-parent">
+                                <a href="index.html">Home</a>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="flight.html">Flight</a>
+                                <ul class="sub-menu">
+                                    <li><a href="flight.html">Flight</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="myCart.html">Checkout</a>
+                                <ul class="sub-menu">
+                                    <li><a href="myCart.html">Your cart</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="PaymentReview.html">Review Order</a>
+                                <ul class="sub-menu">
+                                    <li><a href="PaymentReview.html">Review Order</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="luckWheel.html">Lucky Wheel</a>
+                                <ul class="sub-menu">
+                                    <li><a href="luckWheel.html">Lucky Wheel</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="redemption.html">Redemption</a>
+                                <ul class="sub-menu">
+                                    <li><a href="redemption.html">Redemption</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="menu-item-has-children">
+                                <a href="login.html" id="loginEle">Log In</a>
+                                <ul class="sub-menu">
+                                    <li><a href="login.html">Log In</a></li>
+                                    <li><a href="register.html">Register</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        </li>
+
+                        </ul>
+                    </nav>
+                    <!-- END / NAVIGATION -->
+
+
+
+                </div>
+            </div>
+        </header>
+        <!-- END / HEADER PAGE -->
+
+        <footer id="footer-page">
+
+            <footer>
+                <svg viewBox="0 0 120 28">
+                    <defs>
+                        <mask id="xxx">
+                            <circle cx="7" cy="12" r="40" fill="#fff" />
+                        </mask>
+
+                        <filter id="goo">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+                            <feColorMatrix in="blur" mode="matrix" values="
+           1 0 0 0 0
+           0 1 0 0 0
+           0 0 1 0 0
+           0 0 0 13 -9" result="goo" />
+                            <feBlend in="SourceGraphic" in2="goo" />
+                        </filter>
+
+                        <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
+                    </defs>
+
+                    <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use>
+                    <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>
+
+                    <div class="topball">
+                        <img class="ball" src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/arrow_up_alt1-512.png" width="50"/>
+                    </div>
+
+                    <circle class="drop drop1" cx="20" cy="2" r="1.8"  />
+                    <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />
+                    <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />
+
+                    <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />
+                </svg>
+
+            </footer>
+
+
+        </footer>
+
+        
+        <section class="checkout-section-demo" style="width: 1000px;">
+            <div class="container">
+
+<!--                <link rel="stylesheet" href="css/checkoutForm.css">-->
+                <div class="react-home react-checkout" style="width: 1872px;">
+                    <div class="react-input-box">
+
+                        <div class="container"><!-- step wizard -->
+                            <div class="stepwizard col-md-offset-3 col-sm-offset-1 col-xs-offset-1">
+                                <div class="step-row setup-panel" id="wizardControl">
+                                    <div class="step">
+                                        <a href="#step-1" type="button" class="btn btn-primary button-no-gradient btn-circle btn-step">1</a>
+                                        <p>Details</p>
+                                    </div>
+                                    <div class="step">
+                                        <a href="#step-2" type="button" class="btn btn-default button-no-gradient btn-circle" disabled="disabled">2</a>
+                                        <p>Summary</p>
+                                    </div>
+                                    <div class="step">
+                                        <a href="#step-3" type="button" class="btn btn-default button-no-gradient btn-circle" disabled="disabled">3</a>
+                                        <p>Approval</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- end step wizard -->
+
+                        <div class="frame">
+
+                        </div>
+                        <div class="clouds">
+
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                                 height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud big front slowest">
+<path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+</svg>
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                                 height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant smaller">
+<path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+</svg>
+
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                                 height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud small slow">
+<path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+</svg>
+
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                                 height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud distant super-slow massive">
+<path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+</svg>
+
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="762px"
+                                 height="331px" viewBox="0 0 762 331" enable-background="new 0 0 762 331" xml:space="preserve" class="cloud slower">
+<path fill="#FFFFFF" d="M715.394,228h-16.595c0.79-5.219,1.201-10.562,1.201-16c0-58.542-47.458-106-106-106
+c-8.198,0-16.178,0.932-23.841,2.693C548.279,45.434,488.199,0,417.5,0c-84.827,0-154.374,65.401-160.98,148.529
+C245.15,143.684,232.639,141,219.5,141c-49.667,0-90.381,38.315-94.204,87H46.607C20.866,228,0,251.058,0,279.5
+S20.866,331,46.607,331h668.787C741.133,331,762,307.942,762,279.5S741.133,228,715.394,228z"/>
+</svg>
+
+                        </div>
+
+                        <style>
+
+                            html,
+                            body {
+                                background-color: #85b9dd;
+                                margin: 0;
+                                padding: 0;
+                                width: 100%;
+                                height: 100%;
+                            }
+
+                            * {
+                                position: relative;
+                            }
+
+                            .frame {
+                                width: 500px;
+                                height: auto;
+                                margin: 15% auto 0;
+                                position: absolute;
+                                width: 100%;
+                            }
+
+                            svg {
+                                max-width: 100%;
+                                height: auto;
+                                display: block;
+                            }
+
+                            /**
+                             * Paper Plane
+                             */
+                            /*Paper Plane: Container*/
+                            .plane-container {
+                                width: 200px;
+                                margin: 0px auto;
+                                z-index: 3;
+                            }
+                            /*Paper Plane: Image*/
+                            .plane {
+                                width: 100%;
+                                height: 60px;
+                            }
+
+                            /*Paper Plane: Animation*/
+                            .plane-container {
+                                -webkit-animation: paper-plane-scoping 2s alternate infinite;
+                                -moz-animation: paper-plane-scoping 2s alternate infinite;
+                                animation: paper-plane-scoping 2s alternate infinite;
+
+                                -webkit-animation-timing-function: linear;
+                                -moz-animation-timing-function: linear;
+                                animation-timing-function: linear;
+                            }
+
+                            @-webkit-keyframes paper-plane-scoping {
+                                0% {
+                                    -webkit-transform: translateY(0px);
+                                    -moz-transform: translateY(0px);
+                                    transform: translateY(0px);
+                                }
+                                100% {
+                                    -webkit-transform: translateY(100px);
+                                    -moz-transform: translateY(100px);
+                                    transform: translateY(100px);
+                                }
+                            }
+
+                            .plane {
+                                -webkit-animation-timing-function: ease-in-out;
+                                -moz-animation-timing-function: ease-in-out;
+                                animation-timing-function: ease-in-out;
+
+                                -webkit-animation: paper-plane-soaring 4s forwards infinite;
+                                -moz-animation: paper-plane-soaring 4s forwards infinite;
+                                animation: paper-plane-soaring 4s forwards infinite;
+                            }
+                            @-webkit-keyframes paper-plane-soaring {
+                                0% {
+                                    -webkit-transform: rotate(0deg);
+                                    -moz-transform: rotate(0deg);
+                                    transform: rotate(0deg);
+                                }
+                                40% {
+                                    -webkit-transform: rotate(15deg);
+                                    -moz-transform: rotate(15deg);
+                                    transform: rotate(15deg);
+                                }
+                                50% {
+                                    -webkit-transform: rotate(15deg);
+                                    -moz-transform: rotate(15deg);
+                                    transform: rotate(15deg);
+                                }
+                                60% {
+                                    -webkit-transform: rotate(-10deg);
+                                    -moz-transform: rotate(-10deg);
+                                    transform: rotate(-10deg);
+                                }
+                                70% {
+                                    -webkit-transform: rotate(-10deg);
+                                    -moz-transform: rotate(-10deg);
+                                    transform: rotate(-10deg);
+                                }
+                                100% {
+                                    -webkit-transform: rotate(0deg);
+                                    -moz-transform: rotate(0deg);
+                                    transform: rotate(0deg);
+                                }
+                            }
+
+                            /**
+                             * Clouds
+                             */
+                            .clouds {
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                overflow: hidden;
+                                transform: translateZ(0);
+                            }
+
+                            .cloud {
+                                position: absolute;
+                                top: 20%;
+                                width: 300px;
+                                right: 0;
+                                opacity: 1;
+                            }
+
+                            .cloud.front {
+                                z-index: 9;
+                            }
+
+                            .cloud.distant {
+                                z-index: 1;
+                            }
+
+                            .cloud.background {
+                                z-index: 1;
+                            }
+
+                            /*Cloud Sizing*/
+                            .cloud.smaller {
+                                margin-right: 400px;
+                                width: 100px;
+                                margin-top: 50px;
+                            }
+
+                            .cloud.small {
+                                margin-right: 200px;
+                                width: 150px;
+                            }
+
+                            .cloud.big {
+                                width: 500px;
+                                margin-top: 50px;
+                                margin-right: 150px;
+                            }
+
+                            .cloud.massive {
+                                width: 600px;
+                                margin-top: 20px;
+                                margin-right: 0px;
+                            }
+
+
+                            /*Cloud: Animation*/
+                            .cloud {
+                                -webkit-animation-name: cloud-movement;
+                                -webkit-animation-timing-function: linear;
+                                -webkit-animation-direction: forwards;
+                                -webkit-animation-iteration-count: infinite;
+                                -webkit-animation-duration: 8s;
+
+                                -moz-animation-name: cloud-movement;
+                                -moz-animation-timing-function: linear;
+                                -moz-animation-direction: forwards;
+                                -moz-animation-iteration-count: infinite;
+                                -moz-animation-duration: 8s;
+
+                                animation-name: cloud-movement;
+                                animation-timing-function: linear;
+                                animation-direction: forwards;
+                                animation-iteration-count: infinite;
+                                animation-duration: 8s;
+                            }
+
+                            .slow {
+                                -webkit-animation-duration: 9.2s;
+                                -moz-animation-duration: 9.2s;
+                                animation-duration: 9.2s;
+                            }
+
+                            .slower {
+                                -webkit-animation-duration: 11.2s;
+                                -moz-animation-duration: 11.2s;
+                                animation-duration: 11.2s;
+                            }
+
+                            .slowest {
+                                -webkit-animation-duration: 13.5s;
+                                -moz-animation-duration: 13.5s;
+                                animation-duration: 13.5s;
+                            }
+
+                            .super-slow {
+                                -webkit-animation-duration: 20.5s;
+                                -moz-animation-duration: 20.5s;
+                                animation-duration: 20.5s;
+                            }
+
+                            @-webkit-keyframes cloud-movement {
+                                0% {
+                                    opacity: 0.1;
+                                    -webkit-transform: translateX(300px);
+                                    -moz-transform: translateX(300px);
+                                    transform: translateX(300px);
+                                }
+                                10% {
+
+                                    opacity: 0.7;
+                                }
+                                90% {
+                                    opacity: 0;
+                                }
+                                100% {
+                                    opacity: 0;
+                                    -webkit-transform: translateX(-1000px);
+                                    -moz-transform: translateX(-1000px);
+                                    transform: translateX(-1000px);
+                                }
+                            }
+
+                        </style>
+
+                        <div class="container" ><!-- row A-->
+
+
+                            <form role="form" action="finishPayment.html" method="post">
+
+                                <div class="row setup-content well" id="step-1">
+
+                                    <div class="row">
+
+                                        <div class="col-md-3 text-center" id="building-details"><!-- details panel -->
+                                            <div class="panel panel-info" style="background:#fff">
+                                                <div class="panel-heading" style="background:#fff">Review Building Details</div>
+                                                <div class="panel-body" style="background:#fff;">
+                                                    <div class="table-responsive project-list" style="background:#fff;">
+                                                        <table class="table table-striped" style="background:#fff;">
+                                                            <tbody  style="background:#fff!important;outline:none!important;border:none!important;"><tr style="background:#fff!important;outline:none!important;border:none!important;">
+<!--                                                            <td style="background:grey!important;outline:none!important;border:none!important;"><b style="font-size: 22px;">$TOTAL</b></td>-->
+<!--                                                            <td style="background:grey!important;outline:none!important;border:none!important;"><strong style="font-size: 22px;">$11,200.00</strong></td>-->
+<!--                                                        </tr>-->
+                                                        <tr style="background:#fff!important;">
+                                                            <td style="font-size: 18px;">Destination :</td>
+                                                            <td style="color:blue!important;background:#fff!important;"><strong><b style="font-size: 18px;">HKG -> PVG</b></strong></td>
+                                                        </tr></tbody></table>
+                                                    </div>
+                                                </div>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item list-group-item-info">
+                                                        <div class="table-responsive"><table class="table"><thead><tr>
+                                                            <td><b>Date</b></td>
+<!--                                                            <td>Depart</td>-->
+<!--                                                            <td>Arrive</td>-->
+                                                        </tr></thead><tbody>
+                                                        <tr>
+                                                            <td>Thu, 29 Sep 2022</td>
+<!--                                                            <td>02:25</td>-->
+<!--                                                            <td>05:35</td>-->
+                                                        </tr></tbody></table></div>
+                                                    </li>
+                                                    <li class="list-group-item"><b>Depart</b><span class="badge">02:25</span></li>
+                                                    <li class="list-group-item"><b>Arrive</b><span class="badge">05:35</span></li>
+                                                    <li class="list-group-item">Facility <span class="badge user-color" id="color">7.5</span></li>
+                                                    <li class="list-group-item">Human <span class="badge user-color" id="color">9.0</span></li>
+                                                    <li class="list-group-item">Service <span class="badge user-color" id="color">9.5</span></li>
+                                                    <li class="list-group-item">Interesting <span class="badge user-color" id="color">8.7</span></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end details panel -->
+
+                                        <div class="col-md-3 text-center"><!-- building standards panel -->
+                                            <div class="panel panel-info">
+                                                <div class="panel-heading">Flight highlights</div>
+                                                <div class="panel-body text-left">
+                                                    <ul>
+                                                        <b><li style="color: blue;">One-way flight</li></b>
+
+                                                        <li>7kg hand baggage</li>
+
+                                                        <li>Checked baggage</li>
+
+                                                        <li>Flight TV</li>
+
+                                                        <li>Meal</li>
+
+                                                        <li>Economy Seat</li>
+
+<!--                                                        <li>Star : </li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                                    <div class="panel panel-info" id="selected-options">
+                                                        <div class="panel-heading text-center">Selected Meal</div>
+                                                        <div class="panel-body list">
+                                                            <div class="table-responsive project-list">
+                                                                <table class="table table-striped">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td><strong>Main dish</strong><br/>
+                                                                            <small>Rice with fried fish x1</small><br/>
+                                                                            <small>Noodles with clams x1</small>
+                                                                        </td>
+                                                                        <td><strong>$62.5</strong><br/>
+                                                                            <small>$30.0</small><br/>
+                                                                            <small>$32.5</small>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><strong>Drink</strong><br/>
+                                                                            <small>Coca-Cola x1</small><br/>
+                                                                            <small>Coffee x1</small>
+                                                                        </td>
+                                                                        <td><strong>$13.5</strong><br/>
+                                                                            <small>$7.5</small><br/>
+                                                                            <small>$6.0</small>
+                                                                    </tr>
+<!--                                                                    <tr>-->
+<!--                                                                        <td><strong>Gutters/Downspouts</strong>-->
+<!--                                                                        </td>-->
+<!--                                                                        <td>$0.00</td>-->
+<!--                                                                    </tr>-->
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div><!-- end options panel -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                        <div class="col-md-6"><!-- building details section -->
+
+
+                                            <div class="col-lg-12">
+                                                <!--                                        <div class="col-md-3 text-center">&lt;!&ndash; building standards panel &ndash;&gt;-->
+                                                <div class="marquee">
+                                                    <div class="marquee__inner" aria-hidden="true">
+                                                        <span> Amount : $HKD3888 </span>
+                                                        <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                        <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                        <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                        <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                        <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                        <span> Thanks for using our service :D </span>
+<!--                                                        <span> Thanks for using our service :D </span>-->
+<!--                                                        <span> Amount : $HKD3888 </span>-->
+<!--                                                        <span> Thanks for using our service :D </span>-->
+                                                    </div>
+                                                </div>
+
+                                                <style>
+                                                    @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+                                                    .marquee {
+                                                        -webkit-touch-callout: none;
+                                                        -webkit-user-select: none;
+                                                        -moz-user-select: none;
+                                                        -ms-user-select: none;
+                                                        user-select: none;
+                                                        position: relative;
+                                                        overflow: hidden;
+                                                        --offset: 20vw;
+                                                        --item-font-size: 1vw;
+                                                        --move-initial: calc(-25% + var(--offset));
+                                                        --move-final: calc(-50% + var(--offset));
+                                                    }
+
+                                                    .marquee__inner {
+                                                        width: fit-content;
+                                                        display: flex;
+                                                        position: relative;
+                                                        transform: translate3d(var(--move-initial), 0, 0);
+                                                        animation: marquee 20s linear infinite;
+                                                    }
+
+                                                    .marquee span {
+                                                        white-space: nowrap;
+                                                        font-size: 1vw;
+                                                        padding: 0 2vw;
+                                                    }
+
+                                                    @keyframes marquee {
+                                                        0% {
+                                                            transform: translate3d(var(--move-initial), 0, 0);
+                                                        }
+                                                        100% {
+                                                            transform: translate3d(var(--move-final), 0, 0);
+                                                        }
+                                                    }
+                                                </style>
+                                            </div>
+
+
+<!--                                            <div class="col-md-12"><h4>Flight Details</h4></div>-->
+                                            <div class="col-md-12"><h4>Your Information</h4></div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">First Name *</label>
+                                                    <input type="text" class="form-control" placeholder="Enter First Name" required="required" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Last Name *</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Last Name" required="required" id="hi" />
+                                                </div>
+                                            </div>
+
+                                            <script>
+
+                                                document.getElementById('hi').required = true;
+                                            </script>
+
+
+
+
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Date Of Birth *</label>
+                                                    <input type="date" class="form-control" placeholder="Enter Date Of Birth" required/>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">ID Number *</label>
+                                                    <input min="5" type="text" class="form-control" placeholder="Y213125(3)" required="required" />
+<!--                                                    <input type="text">-->
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Email *</label>
+                                                    <input type="email" class="form-control" placeholder="your@email.com" required="required" />
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Phone *</label>
+                                                    <input type="number" name="phone" class="form-control" placeholder="•••• ••••" required="required"  />
+                                                </div>
+                                            </div>
+
+<!--                                            <div class="col-md-6">-->
+<!--                                                <div class="section form-group">-->
+<!--                                                    <label class="control-label">First Name *</label>-->
+<!--                                                    <input type="text" class="form-control" placeholder="Enter First Name" required="required" />-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                            <div class="col-md-6">-->
+<!--                                                <div class="section form-group">-->
+<!--                                                    <label class="field-label control-label">Last Name *</label>-->
+<!--                                                    <input type="text" class="form-control" placeholder="Enter Last Name" required="required" />-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+                                        </div><!-- end building details section -->
+
+                                    </div>
+
+                                    <button class="pull-right btn nextBtn next" aria-label="Right Align" type="button">Next
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<!--                                    <button class="pull-right btn save" type="button">Save</button>-->
+
+                                </div><!-- end of step one -->
+
+                                <div class="row setup-content well" id="step-2">
+
+                                    <div class="row">
+
+
+                                                <div class="col-md-3 text-center" id="building-details"><!-- details panel -->
+                                                    <div class="panel panel-info" style="background:#fff">
+                                                        <div class="panel-heading" style="background:#fff">Review Building Details</div>
+                                                        <div class="panel-body" style="background:#fff;">
+                                                            <div class="table-responsive project-list" style="background:#fff;">
+                                                                <table class="table table-striped" style="background:#fff;">
+                                                                    <tbody  style="background:#fff!important;outline:none!important;border:none!important;"><tr style="background:#fff!important;outline:none!important;border:none!important;">
+                                                                        <!--                                                            <td style="background:grey!important;outline:none!important;border:none!important;"><b style="font-size: 22px;">$TOTAL</b></td>-->
+                                                                        <!--                                                            <td style="background:grey!important;outline:none!important;border:none!important;"><strong style="font-size: 22px;">$11,200.00</strong></td>-->
+                                                                        <!--                                                        </tr>-->
+                                                                    <tr style="background:#fff!important;">
+                                                                        <td style="font-size: 18px;">Destination :</td>
+                                                                        <td style="color:blue!important;background:#fff!important;"><strong><b style="font-size: 18px;">HKG -> PVG</b></strong></td>
+                                                                    </tr></tbody></table>
+                                                            </div>
+                                                        </div>
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item list-group-item-info">
+                                                                <div class="table-responsive"><table class="table"><thead><tr>
+                                                                    <td><b>Date</b></td>
+                                                                    <!--                                                            <td>Depart</td>-->
+                                                                    <!--                                                            <td>Arrive</td>-->
+                                                                </tr></thead><tbody>
+                                                                <tr>
+                                                                    <td>Thu, 29 Sep 2022</td>
+                                                                    <!--                                                            <td>02:25</td>-->
+                                                                    <!--                                                            <td>05:35</td>-->
+                                                                </tr></tbody></table></div>
+                                                            </li>
+                                                            <li class="list-group-item"><b>Depart</b><span class="badge">02:25</span></li>
+                                                            <li class="list-group-item"><b>Arrive</b><span class="badge">05:35</span></li>
+                                                            <li class="list-group-item">Facility <span class="badge user-color" id="color">7.5</span></li>
+                                                            <li class="list-group-item">Human <span class="badge user-color" id="color">9.0</span></li>
+                                                            <li class="list-group-item">Service <span class="badge user-color" id="color">9.5</span></li>
+                                                            <li class="list-group-item">Interesting <span class="badge user-color" id="color">8.7</span></li>
+                                                        </ul>
+                                                    </div>
+                                                </div><!-- end details panel -->
+
+                                                <div class="col-md-3 text-center"><!-- building standards panel -->
+                                                    <div class="panel panel-info">
+                                                        <div class="panel-heading">Flight highlights</div>
+                                                        <div class="panel-body text-left">
+                                                            <ul>
+                                                                <b><li style="color: blue;">One-way flight</li></b>
+
+                                                                <li>7kg hand baggage</li>
+
+                                                                <li>Checked baggage</li>
+
+                                                                <li>Flight TV</li>
+
+                                                                <li>Meal</li>
+
+                                                                <li>Economy Seat</li>
+
+                                                                <!--                                                        <li>Star : </li>-->
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="panel panel-info" id="selected-options">
+                                                        <div class="panel-heading text-center">Selected Meal</div>
+                                                        <div class="panel-body list">
+                                                            <div class="table-responsive project-list">
+                                                                <table class="table table-striped">
+                                                                    <tbody>
+                                                                    <tr>
+                                                                        <td><strong>Main dish</strong><br/>
+                                                                            <small>Rice with fried fish x1</small><br/>
+                                                                            <small>Noodles with clams x1</small>
+                                                                        </td>
+                                                                        <td><strong>$62.5</strong><br/>
+                                                                            <small>$30.0</small><br/>
+                                                                            <small>$32.5</small>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td><strong>Drink</strong><br/>
+                                                                            <small>Coca-Cola x1</small><br/>
+                                                                            <small>Coffee x1</small>
+                                                                        </td>
+                                                                        <td><strong>$13.5</strong><br/>
+                                                                            <small>$7.5</small><br/>
+                                                                            <small>$6.0</small>
+                                                                    </tr>
+                                                                    <!--                                                                    <tr>-->
+                                                                    <!--                                                                        <td><strong>Gutters/Downspouts</strong>-->
+                                                                    <!--                                                                        </td>-->
+                                                                    <!--                                                                        <td>$0.00</td>-->
+                                                                    <!--                                                                    </tr>-->
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- end options panel -->
+
+                                        <div class="col-md-6">
+
+                                            <div class="marquee">
+                                                <div class="marquee__inner" aria-hidden="true">
+                                                    <span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span>
+                                                    <!--                                                        <span> Thanks for using our service :D </span>-->
+                                                    <!--                                                        <span> Amount : $HKD3888 </span>-->
+                                                    <!--                                                        <span> Thanks for using our service :D </span>-->
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12"><h4>Survey</h4></div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Married Status</label>
+                                                    <select  name="cars" id="cars">
+                                                            <option value="volvo">Single</option>
+                                                            <option value="saab">Married</option>
+                                                            <option value="saab">divorced</option>
+<!--                                                        <optgroup label="German Cars">-->
+<!--                                                            <option value="mercedes">Mercedes</option>-->
+<!--                                                            <option value="audi">Audi</option>-->
+<!--                                                        </optgroup>-->
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Monthly Income</label>
+                                                    <select  name="cars" id="cars">
+                                                        <optgroup label="Swedish Cars">
+                                                            <option value="volvo"><15000 HKD</option>
+                                                            <option value="saab">15-30,000 HKD</option>
+                                                            <option value="saab">30-45,000 HKD</option>
+                                                            <option value="saab">45-60,000 HKD</option>
+                                                            <option value="saab">60-75,000 HKD</option>
+                                                            <option value="saab">75-100,000 HKD</option>
+                                                            <option value="saab">100-200,000 HKD</option>
+                                                        </optgroup>
+<!--                                                        <optgroup label="German Cars">-->
+<!--                                                            <option value="mercedes">Mercedes</option>-->
+<!--                                                            <option value="audi">Audi</option>-->
+<!--                                                        </optgroup>-->
+                                                    </select>
+                                                </div>
+                                            </div>
+
+<!--                                            <div class="col-md-12"><h4>Delivery Address</h4></div>-->
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Level of Education</label>
+                                                    <select  name="cars" id="cars">
+                                                        <optgroup label="Swedish Cars">
+                                                            <option value="volvo">Primary School</option>
+                                                            <option value="saab">High school</option>
+                                                            <option value="saab">Associate Degree/HD</option>
+                                                            <option value="saab">Bachelor</option>
+                                                            <option value="saab">Master</option>
+                                                        </optgroup>
+                                                       </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Employment Status</label>
+                                                    <select class="form-control dropdown" id="employment" name="employment">
+                                                        <option value="" selected="selected" disabled="disabled">-- select one --</option>
+                                                        <option value="Employed">Employed</option>
+                                                        <option value="Self-employed">Self-employed</option>
+                                                        <option value="Out of work">Out of work</option>
+                                                        <option value="Homemaker">Homemaker</option>
+                                                        <option value="Student">Student</option>
+                                                        <option value="Retired">Retired</option>
+                                                        <option value="Unable to work">Unable to work</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12"><h4>Customer Satisfaction</h4></div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Overall, how satisfied were you with our booking process? (1-5*)</label>
+                                                    <select class="form-control dropdown" id="employment" name="employment">
+                                                        <option value="" selected="selected" disabled="disabled">-- select one --</option>
+                                                        <option value="Employed">1</option>
+                                                        <option value="Self-employed">2</option>
+                                                        <option value="Out of work">3</option>
+                                                        <option value="Homemaker">4</option>
+                                                        <option value="Student">5</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <div class="section form-group">
+                                                    <label class="field-label control-label">Would you recommend us to your friends? (1-5*)</label>
+                                                    <select class="form-control dropdown" id="employment" name="employment">
+                                                        <option value="" selected="selected" disabled="disabled">-- select one --</option>
+                                                        <option value="Employed">1</option>
+                                                        <option value="Self-employed">2</option>
+                                                        <option value="Out of work">3</option>
+                                                        <option value="Homemaker">4</option>
+                                                        <option value="Student">5</option>
+                                                    </select>
+                                                </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    <button class="pull-right btn nextBtn next" aria-label="Right Align" type="button">Next <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></button>
+<!--                                    <button class="pull-right btn save" type="button">Save</button>-->
+<!--                                    <button class="pull-right btn save" type="button">Edit</button>-->
+                                    <button class="pull-right btn prevBtn prev" aria-label="Left Align" type="button">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+
+                                </div><!-- end step 2 -->
+
+                                <div class="row setup-content well" id="step-3">
+
+                                    <div class="row">
+
+
+                                        <div class="col-md-3 text-center" id="building-details"><!-- details panel -->
+                                            <div class="panel panel-info" style="background:#fff">
+                                                <div class="panel-heading" style="background:#fff">Review Building Details</div>
+                                                <div class="panel-body" style="background:#fff;">
+                                                    <div class="table-responsive project-list" style="background:#fff;">
+                                                        <table class="table table-striped" style="background:#fff;">
+                                                            <tbody  style="background:#fff!important;outline:none!important;border:none!important;"><tr style="background:#fff!important;outline:none!important;border:none!important;">
+                                                                <!--                                                            <td style="background:grey!important;outline:none!important;border:none!important;"><b style="font-size: 22px;">$TOTAL</b></td>-->
+                                                                <!--                                                            <td style="background:grey!important;outline:none!important;border:none!important;"><strong style="font-size: 22px;">$11,200.00</strong></td>-->
+                                                                <!--                                                        </tr>-->
+                                                            <tr style="background:#fff!important;">
+                                                                <td style="font-size: 18px;">Destination :</td>
+                                                                <td style="color:blue!important;background:#fff!important;"><strong><b style="font-size: 18px;">HKG -> PVG</b></strong></td>
+                                                            </tr></tbody></table>
+                                                    </div>
+                                                </div>
+                                                <ul class="list-group">
+                                                    <li class="list-group-item list-group-item-info">
+                                                        <div class="table-responsive"><table class="table"><thead><tr>
+                                                            <td><b>Date</b></td>
+                                                            <!--                                                            <td>Depart</td>-->
+                                                            <!--                                                            <td>Arrive</td>-->
+                                                        </tr></thead><tbody>
+                                                        <tr>
+                                                            <td>Thu, 29 Sep 2022</td>
+                                                            <!--                                                            <td>02:25</td>-->
+                                                            <!--                                                            <td>05:35</td>-->
+                                                        </tr></tbody></table></div>
+                                                    </li>
+                                                    <li class="list-group-item"><b>Depart</b><span class="badge">02:25</span></li>
+                                                    <li class="list-group-item"><b>Arrive</b><span class="badge">05:35</span></li>
+                                                    <li class="list-group-item">Facility <span class="badge user-color" id="color">7.5</span></li>
+                                                    <li class="list-group-item">Human <span class="badge user-color" id="color">9.0</span></li>
+                                                    <li class="list-group-item">Service <span class="badge user-color" id="color">9.5</span></li>
+                                                    <li class="list-group-item">Interesting <span class="badge user-color" id="color">8.7</span></li>
+                                                </ul>
+                                            </div>
+                                        </div><!-- end details panel -->
+
+                                        <div class="col-md-3 text-center"><!-- building standards panel -->
+                                            <div class="panel panel-info">
+                                                <div class="panel-heading">Flight highlights</div>
+                                                <div class="panel-body text-left">
+                                                    <ul>
+                                                        <b><li style="color: blue;">One-way flight</li></b>
+
+                                                        <li>7kg hand baggage</li>
+
+                                                        <li>Checked baggage</li>
+
+                                                        <li>Flight TV</li>
+
+                                                        <li>Meal</li>
+
+                                                        <li>Economy Seat</li>
+
+                                                        <!--                                                        <li>Star : </li>-->
+                                                    </ul>
+                                                </div>
+                                            </div>
+
+                                            <div class="panel panel-info" id="selected-options">
+                                                <div class="panel-heading text-center">Selected Meal</div>
+                                                <div class="panel-body list">
+                                                    <div class="table-responsive project-list">
+                                                        <table class="table table-striped">
+                                                            <tbody>
+                                                            <tr>
+                                                                <td><strong>Main dish</strong><br/>
+                                                                    <small>Rice with fried fish x1</small><br/>
+                                                                    <small>Noodles with clams x1</small>
+                                                                </td>
+                                                                <td><strong>$62.5</strong><br/>
+                                                                    <small>$30.0</small><br/>
+                                                                    <small>$32.5</small>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Drink</strong><br/>
+                                                                    <small>Coca-Cola x1</small><br/>
+                                                                    <small>Coffee x1</small>
+                                                                </td>
+                                                                <td><strong>$13.5</strong><br/>
+                                                                    <small>$7.5</small><br/>
+                                                                    <small>$6.0</small>
+                                                            </tr>
+                                                            <!--                                                                    <tr>-->
+                                                            <!--                                                                        <td><strong>Gutters/Downspouts</strong>-->
+                                                            <!--                                                                        </td>-->
+                                                            <!--                                                                        <td>$0.00</td>-->
+                                                            <!--                                                                    </tr>-->
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- end options panel -->
+
+
+                                        <div class="col-md-6">
+
+                                            <div class="marquee">
+                                                <div class="marquee__inner" aria-hidden="true">
+                                                    <span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span><span> Amount : $HKD3888 </span>
+                                                    <span> Thanks for using our service :D </span>
+                                                    <!--                                                        <span> Thanks for using our service :D </span>-->
+                                                    <!--                                                        <span> Amount : $HKD3888 </span>-->
+                                                    <!--                                                        <span> Thanks for using our service :D </span>-->
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6"><!-- step 3, column 1 -->
+
+
+
+                                                <h4>Review and Submit</h4>
+
+                                                <p>
+                                                    <br>Man Po Tai<br />
+                                                        Birth : 01/01/2000<br />
+                                                        ID Number : Y123456(3)<br />
+                                                        Phone : 69123531<br />
+                                                        Email : Testing@gmail.com<br />
+                                                </p>
+
+                                                <p>
+<!--                                                    <b>Time frame</b>:  1-3 months<br />-->
+                                                    <b>Would you like to receive relevant flight info?</b>: <input type="checkbox" checked>
+                                                </p>
+
+<!--                                                <div>-->
+<!--                                                    <input type="checkbox" checked>-->
+<!--                                                </div>-->
+
+                                            </div><!-- end step 3, column 1 -->
+
+                                            <div class="col-md-6"><!-- step 3, column 2 -->
+
+                                                <h4>Payment Information</h4>
+
+<!--                                                <div class="section form-group">-->
+<!--                                                    <label class="field-label control-label">Credit Card Number *</label>-->
+<!--                                                    <input type="number" class="form-control" placeholder="•••• •••• •••• ••••" required="required"/>-->
+<!--                                                </div>-->
+
+                                                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                                <div class="section form-group">
+
+                                                    <div class="form-group">
+                                                        <label for="rdoBankAccount">
+                                                            <input type="radio"  name="payment" id="rdoBankAccount" data-target="#bank-account" />
+                                                            Bank Account
+                                                        </label>
+                                                    </div>
+                                                    <div id="bank-account" class="payment-type">
+                                                        <div class="form-group">
+                                                            <label for="txtBankName">Bank Name</label><br/>
+                                                            <input type="text" id="txtBankName" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label for="txtBankNumber">Account Number</label><br/>
+                                                            <input type="text" id="txtBankNumber" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <label for="rdoCreditCard">
+                                                            <input type="radio" name="payment" id="rdoCreditCard" data-target="#credit-card" />
+                                                            Credit Card
+                                                        </label>
+                                                    </div>
+                                                    <div id="credit-card" class="payment-type">
+                                                        <div class="section form-group">
+                                                            <label class="field-label control-label">Credit Card Number *</label>
+                                                            <input type="number" class="form-control" placeholder="•••• •••• •••• ••••" required="required" autofocus />
+                                                        </div>
+
+                                                        <div class="section form-group">
+                                                            <label class="field-label control-label">Expiration *</label>
+                                                            <input type="text" class="form-control" placeholder="01/16" required="required" />
+                                                        </div>
+
+                                                        <div class="section form-group">
+                                                            <label class="field-label control-label">CVC *</label>
+                                                            <input type="text" class="form-control" placeholder="123" required="required" />
+                                                        </div>
+                                                    </div>
+
+                                                    <style>
+                                                        .payment-type .form-group {
+                                                            padding-left: 25px;
+                                                        }
+                                                        .payment-type {
+                                                            display: none;
+                                                        }
+                                                        input[type=radio] {
+                                                            border: 0px;
+                                                            width: 10%;
+                                                            height: 0.2em;
+                                                        }
+
+                                                    </style>
+
+                                                    <script>
+                                                        $("[name='payment']").on("change", function() {
+                                                            var selector = $(this).data("target");
+                                                            $(".payment-type").slideUp();
+                                                            $(selector).slideDown();
+                                                        });
+                                                    </script>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row">
+
+                                        <div class="col-md-12"><!-- badges -->
+                                            <div class="safe-purchase">
+                                                <ul>
+<!--                                                    <li><img src="https://ec2-52-24-108-83.us-west-2.compute.amazonaws.com/images/accr-bus.png" /></li>-->
+<!--                                                    <li><img src="https://ec2-52-24-108-83.us-west-2.compute.amazonaws.com/images/google.png" /></li>-->
+<!--                                                    <li><img src="https://ec2-52-24-108-83.us-west-2.compute.amazonaws.com/images/approved.png" /></li>-->
+                                                </ul>
+                                            </div>
+                                        </div><!-- badges -->
+
+                                    </div>
+
+                                    <button class="pull-right btn btn-submit next" onclick="location.href='finishPayment.html';">Process <span class="glyphicon glyphicon-ok"></span></button>
+<!--                                    <a href="https://google.com" class="button">Go to Google</a>-->
+                                    <button class="pull-right btn prevBtn prev" aria-label="Left Align" type="button">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> Previous</button>
+
+                                </div><!-- end step 3 -->
+
+
+
+                        </div><!-- end row A -->
+                        </form>
+
+
+                    </div><!-- end react-input-box -->
+
+<!--                    <footer>-->
+<!--                        <div class="react-footer-navigation clearfix">-->
+
+<!--                            <div class="col-md-3 col-sm-2 text-right col-xs-2">-->
+<!--                                <img src="https://ec2-52-24-108-83.us-west-2.compute.amazonaws.com/images/logo.png" alt="logo"/>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-2 col-sm-5 col-xs-5">-->
+<!--                                <ul>-->
+<!--                                    <li class="title">LEARN MORE</li>-->
+<!--                                    <li><a href="http://alliedcares.com/" target="_blank">Allied Cares</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-2 col-md-offset-0 col-sm-5 col-sm-offset-2 col-xs-5 col-xs-offset-2">-->
+<!--                                <ul>-->
+<!--                                    <li class="title">HELP</li>-->
+<!--                                    <li><a href="#">FAQ</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+
+<!--                            <div class="col-md-2 col-sm-5 col-xs-5">-->
+<!--                                <ul>-->
+<!--                                    <li class="title">CONNECT</li>-->
+<!--                                    <li><a href="http://www.alliedbuildings.com/contact-us/" target="_blank">Contact Us</a></li>-->
+<!--                                </ul>-->
+<!--                            </div>-->
+
+<!--                        </div>-->
+
+<!--                        <div class="text-center copyright clearfix">Copyright 2017 Allied Steel Buildings. All rights reserved.</div>-->
+
+<!--                    </footer>-->
+
+                </div><!-- end react-home & react-checkout -->
+
+
+                <script>
+                    $(document).ready(function () {
+
+                        var navListItems = $('div.setup-panel div a'),
+                            allWells = $('.setup-content'),
+                            allNextBtn = $('.nextBtn'),
+                            allPrevBtn = $('.prevBtn');
+
+                        allWells.hide();
+
+                        navListItems.click(function (e) {
+                            e.preventDefault();
+                            var $target = $($(this).attr('href')),
+                                $item = $(this);
+
+                            if (!$item.hasClass('disabled')) {
+                                navListItems.removeClass('btn-primary').addClass('btn-default');
+                                $item.addClass('btn-primary');
+                                allWells.hide();
+                                $target.show();
+                                $target.find('input:eq(0)').focus();
+                            }
+                        });
+
+                        allNextBtn.click(function(){
+                            var curStep = $(this).closest(".setup-content"),
+                                curStepBtn = curStep.attr("id"),
+                                nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                                curInputs = curStep.find("input[type='text'],input[type='email'],input[type='number'],select"),
+                                isValid = true;
+
+                            $(".form-group").removeClass("has-error");
+                            for(var i=0; i<curInputs.length; i++){
+                                if (!curInputs[i].validity.valid){
+                                    isValid = false;
+                                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+                                }
+                            }
+
+                            if (isValid)
+                                nextStepWizard.removeAttr('disabled').trigger('click');
+                        });
+
+                        allPrevBtn.click(function(){
+                            var curStep = $(this).closest(".setup-content"),
+                                curStepBtn = curStep.attr("id"),
+                                prevStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+
+                            $(".form-group").removeClass("has-error");
+                            prevStepWizard.removeAttr('disabled').trigger('click');
+                        });
+
+                        $('div.setup-panel div a.btn-primary').trigger('click');
+                    });
+
+                </script>
+
+
+
+
+
+<!--                <div class="row">-->
+<!--                    <div class="col-lg-12">-->
+<!--                        <div class="checkout-page__top">-->
+<!--                            <div class="title">-->
+<!--                                <h1 class="text-uppercase">CHECKOUT</h1>-->
+<!--                            </div>-->
+<!--                            <span class="phone">Support Call: +1-888-8765-1234</span>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-3">-->
+<!--                        <div class="checkout-page__sidebar">-->
+<!--                            <ul>-->
+<!--                                <li class="current"><a href="checkout-yourcart.html">Your Cart</a></li>-->
+<!--                                <li><a href="checkout-customer.html">Customer information</a></li>-->
+<!--                                <li><a href="checkout-complete.html">Complete order</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="col-lg-9">-->
+<!--                        <div class="checkout-page__content">-->
+<!--                            <div class="yourcart-content">-->
+<!--                                <div class="content-title">-->
+<!--                                    <h2><i class="awe-icon awe-icon-cart"></i>Check Your Cart</h2>-->
+<!--                                </div>-->
+<!--                                <div class="cart-content">-->
+<!--                                    <table class="cart-table">-->
+<!--                                        <thead>-->
+<!--                                            <tr>-->
+<!--                                                <th class="product-remove"></th>-->
+<!--                                                <th class="product-name">Product Category 1 eg.Hotel</th>-->
+<!--                                                <th class="product-price"></th>-->
+<!--                                                <th class="product-quantity"></th>-->
+<!--                                                <th class="product-subtotal">$ 67.909</th>-->
+<!--                                            </tr>-->
+<!--                                        </thead>-->
+<!--                                        <tbody>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Room type 1</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 748/night</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Room type 2</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 748/night</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Room type 3</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 748/night</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Room type 4</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 748/night</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                        </tbody>-->
+<!--                                    </table>-->
+<!--                                    <table class="cart-table">-->
+<!--                                        <thead>-->
+<!--                                            <tr>-->
+<!--                                                <th class="product-remove"></th>-->
+<!--                                                <th class="product-name">Product Category 2 eg.Transport</th>-->
+<!--                                                <th class="product-price"></th>-->
+<!--                                                <th class="product-quantity"></th>-->
+<!--                                                <th class="product-subtotal">$ 7.909</th>-->
+<!--                                            </tr>-->
+<!--                                        </thead>-->
+<!--                                        <tbody>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Adult 1</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 748/ticket</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Main car</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 748/day</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>extra driver</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 89/driver</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>name of extra service</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 89/set</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                        </tbody>-->
+<!--                                    </table>-->
+<!--                                    <table class="cart-table">-->
+<!--                                        <thead>-->
+<!--                                            <tr>-->
+<!--                                                <th class="product-remove"></th>-->
+<!--                                                <th class="product-name">Product Category 3 eg.Trip</th>-->
+<!--                                                <th class="product-price"></th>-->
+<!--                                                <th class="product-quantity"></th>-->
+<!--                                                <th class="product-subtotal">$ 7.909</th>-->
+<!--                                            </tr>-->
+<!--                                        </thead>-->
+<!--                                        <tbody>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Adult</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 89/ticket</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                            <tr>-->
+<!--                                                <td class="product-remove">-->
+<!--                                                    <a href="#"><i class="awe-icon awe-icon-close-o"></i></a>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-name">-->
+<!--                                                    <span>Kid</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-price">-->
+<!--                                                    <span class="amount">$ 89/ticket</span>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-quantity">-->
+<!--                                                    <div class="quantity buttons_added">-->
+<!--                                                        <button type="button" class="minus">-->
+<!--                                                            <i class="fa fa-caret-up"></i>-->
+<!--                                                        </button>-->
+<!--                                                        <input type="number" class="qty" value="2">-->
+<!--                                                        <button type="button" class="plus">-->
+<!--                                                            <i class="fa fa-caret-down"></i>-->
+<!--                                                        </button>-->
+<!--                                                    </div>-->
+<!--                                                </td>-->
+<!--                                                <td class="product-subtotal">-->
+<!--                                                    <span class="amount">$ 253</span>-->
+<!--                                                </td>-->
+<!--                                            </tr>-->
+<!--                                        </tbody>-->
+<!--                                    </table>-->
+
+<!--                                    <div class="cart-footer">-->
+<!--                                        <div class="cart-subtotal">-->
+<!--                                            <div class="subtotal-title">-->
+<!--                                                <h5>Cart Subtotal</h5>-->
+<!--                                            </div>-->
+<!--                                            <div class="subtotal">-->
+<!--                                                <span class="amount">$ 467.909</span>-->
+<!--                                                <span class="sale">- 30%</span>-->
+<!--                                            </div>-->
+<!--                                            <div class="coupon-code">-->
+<!--                                                <label for="coupon">Coupon Code</label>-->
+<!--                                                <div class="form-item">-->
+<!--                                                    <input type="text" id="coupon">-->
+<!--                                                </div>-->
+<!--                                                <div class="form-submit">-->
+<!--                                                    <input type="submit" value="Apply code" class="button">-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="shipping-handling">-->
+<!--                                            <h5 class="title">Shipping and Handling</h5>-->
+<!--                                            <span class="amount">$90</span>-->
+<!--                                            <div class="check-shipping-rate">-->
+<!--                                                <h4>Check Shipping rate</h4>-->
+<!--                                                <div class="form-row form-country">-->
+<!--                                                    <select class="awe-select">-->
+<!--                                                        <option>Country</option>-->
+<!--                                                    </select>-->
+<!--                                                </div>-->
+<!--                                                <div class="form-row form-state">-->
+<!--                                                    <input type="text" value="State / county">-->
+<!--                                                </div>-->
+<!--                                                <div class="form-row form-postal">-->
+<!--                                                    <input type="text" value="Postal/zip code">-->
+<!--                                                </div>-->
+<!--                                                <div class="form-submit">-->
+<!--                                                    <input type="submit" value="Check it" class="button">-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                        <div class="order-total">-->
+<!--                                            <h4 class="title">Order total</h4>-->
+<!--                                            <span class="amount">$ 467.909</span>-->
+<!--                                        </div>-->
+<!--                                        <div class="cart-submit">-->
+<!--                                            <input type="submit" value="Update Cart" class="update-cart">-->
+<!--                                            <input type="submit" value="Continue Checkout" class="checkout">-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+            </div>
+        </section>
+
+
+
+        <!-- FOOTER PAGE -->
+<!--        <footer id="footer-page">-->
+
+<!--            <footer>-->
+<!--                <svg viewBox="0 0 120 28">-->
+<!--                    <defs>-->
+<!--                        <mask id="xxx">-->
+<!--                            <circle cx="7" cy="12" r="40" fill="#fff" />-->
+<!--                        </mask>-->
+
+<!--                        <filter id="goo">-->
+<!--                            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />-->
+<!--                            <feColorMatrix in="blur" mode="matrix" values="-->
+<!--           1 0 0 0 0-->
+<!--           0 1 0 0 0-->
+<!--           0 0 1 0 0-->
+<!--           0 0 0 13 -9" result="goo" />-->
+<!--                            <feBlend in="SourceGraphic" in2="goo" />-->
+<!--                        </filter>-->
+
+<!--                        <path id="wave" d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />-->
+<!--                    </defs>-->
+
+<!--                    <use id="wave3" class="wave" xlink:href="#wave" x="0" y="-2" ></use>-->
+<!--                    <use id="wave2" class="wave" xlink:href="#wave" x="0" y="0" ></use>-->
+
+<!--                    <div class="topball">-->
+<!--                        <img class="ball" src="https://cdn3.iconfinder.com/data/icons/iconic-1/32/arrow_up_alt1-512.png" width="50"/>-->
+<!--                    </div>-->
+
+<!--                    <circle class="drop drop1" cx="20" cy="2" r="1.8"  />-->
+<!--                    <circle class="drop drop2" cx="25" cy="2.5" r="1.5"  />-->
+<!--                    <circle class="drop drop3" cx="16" cy="2.8" r="1.2"  />-->
+
+<!--                    <use id="wave1" class="wave" xlink:href="#wave" x="0" y="1" />-->
+<!--                </svg>-->
+
+<!--            </footer>-->
+
+
+<!--        </footer>-->
+        <!-- END / FOOTER PAGE -->
+
+    </div>
+    <!-- END / PAGE WRAP -->
+
+    <!-- LOAD JQUERY -->
+    <script type="text/javascript" src="js/lib/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript" src="js/lib/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.parallax-1.1.3.js"></script>
+    <script type="text/javascript" src="js/lib/jquery.owl.carousel.js"></script>
+    <script type='text/javascript' src="js/lib/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+</body>
+</html>
+
+
+<script>
+
+    $(document).ready(function () {
+
+        var navListItems = $('div.setup-panel div a'),
+            allWells = $('.setup-content'),
+            allNextBtn = $('.nextBtn'),
+            allPrevBtn = $('.prevBtn');
+
+        allWells.hide();
+
+        navListItems.click(function (e) {
+            e.preventDefault();
+            var $target = $($(this).attr('href')),
+                $item = $(this);
+
+            if (!$item.hasClass('disabled')) {
+                navListItems.removeClass('btn-primary').addClass('btn-default');
+                $item.addClass('btn-primary');
+                allWells.hide();
+                $target.show();
+                $target.find('input:eq(0)').focus();
+            }
+        });
+
+        allNextBtn.click(function(){
+            var curStep = $(this).closest(".setup-content"),
+                curStepBtn = curStep.attr("id"),
+                nextStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().next().children("a"),
+                curInputs = curStep.find("input[type='text'],input[type='email'],input[type='number'],select"),
+                isValid = true;
+
+            $(".form-group").removeClass("has-error");
+            for(var i=0; i<curInputs.length; i++){
+                if (!curInputs[i].validity.valid){
+                    isValid = false;
+                    $(curInputs[i]).closest(".form-group").addClass("has-error");
+                }
+            }
+
+            if (isValid)
+                nextStepWizard.removeAttr('disabled').trigger('click');
+        });
+
+        allPrevBtn.click(function(){
+            var curStep = $(this).closest(".setup-content"),
+                curStepBtn = curStep.attr("id"),
+                prevStepWizard = $('div.setup-panel div a[href="#' + curStepBtn + '"]').parent().prev().children("a");
+
+            $(".form-group").removeClass("has-error");
+            prevStepWizard.removeAttr('disabled').trigger('click');
+        });
+
+        $('div.setup-panel div a.btn-primary').trigger('click');
+    });
+
+</script>
+<link rel="stylesheet" href="css/checkoutForm.css">
+
+
+<style>
+
+    @import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700");
+
+    body {
+        font-family: Lato, sans-serif;
+        margin: 0;
+    }
+
+    footer {
+        width:100vw;
+        position:fixed;
+        bottom:0px;
+        height : 14vw;
+
+    }
+    footer div {
+        /*background-color:#4478e3;*/
+        margin: -5px 0px 0px 0px;
+        padding:0px;
+        /*color: #fff;*/
+        text-align:center;
+    }
+    svg {
+        width:100%;
+    }
+    .topball {
+        background: none;
+        position: absolute;
+        right: 200px;
+        bottom: 250px;
+        animation: ball 1s ease-in-out;
+        animation-iteration-count:infinite;
+        animation-direction: alternate;
+        animation-delay: 0.3s;
+        cursor:pointer;
+    }
+    .drop {
+        fill: transparent;
+        animation: drop 5s ease infinite normal;
+        stroke: #4478e3;
+        stroke-width:0.5;
+        opacity:.6;
+        transform: translateY(80%);
+    }
+    .drop1 {
+        transform-origin: 20px 3px;
+    }
+    .drop2 {
+        animation-delay: 3s;
+        animation-duration:3s;
+        transform-origin: 25px 3px;
+    }
+    .drop3 {
+        animation-delay: -2s;
+        animation-duration:3.4s;
+        transform-origin: 16px 3px;
+    }
+    .wave {
+        animation: wave 8s linear;
+        animation-iteration-count:infinite;
+        fill: #4478e3;
+    }
+    #wave2 {
+        animation-duration: 10s;
+        animation-direction: reverse;
+        opacity: .6
+    }
+    #wave3 {
+        animation-duration: 13s;
+        opacity:.3;
+    }
+    @keyframes drop {
+        0% {
+            transform: translateY(80%);
+            opacity:.6;
+        }
+        80% {
+            transform: translateY(80%);
+            opacity:.6;
+        }
+        90% {
+            transform: translateY(10%) ;
+            opacity:.6;
+        }
+        100% {
+            transform: translateY(0%) scale(1.5);
+            stroke-width:0.2;
+            opacity:0;
+        }
+    }
+    @keyframes wave {
+        to {transform: translateX(-100%);}
+    }
+    @keyframes ball {
+        to {transform: translateY(20%);}
+    }
+
+    .checkout-section-demo {
+         padding-top: 0px;
+        padding-bottom: 140px;
+    }
+
+    /*#footer-page {*/
+    /*    background-color: coral;*/
+    /*    padding-top: 60px;*/
+    /*    font-size: 13px;*/
+    /*    color: #EDEDED;*/
+    /*}*/
+</style>
+<script type="text/javascript" src="js/login.js"></script>
+<style>
+    input[type="radio"] {
+        -ms-transform: scale(0.5); /* IE 9 */
+        -webkit-transform: scale(0.5); /* Chrome, Safari, Opera */
+        transform: scale(0.5);
+        top: 30px; left:20px;
+    }
+</style>
+
+<script type="text/javascript" src="js/login.js"></script>
